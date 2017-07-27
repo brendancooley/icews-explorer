@@ -1,0 +1,838 @@
+region,claimdy,claim,name,dyadnum,chal,tgt,dyad,begclaim,endclaim,resolved,endviol,icowsal,icowsalc,salchal,saltgt,saltan,salint,salintc,salintt,midsiss,midsfat,warsiss,version,chalname,tgtname,notes
+1,201,2,Passamaquoddy Bay,1,2,200,2200,181601,181711,4,0,3,1,2,1,0,3,2,1,0,0,0,1.01,United States of America,United Kingdom of Great Britain and Northern Ireland,NA
+1,401,4,St. Croix-St. John Rivers,1,2,200,2200,181601,184210,4,0,5,2,3,2,2,3,2,1,1,0,0,1.01,United States of America,United Kingdom of Great Britain and Northern Ireland,NA
+1,601,6,49th Parallel,1,2,200,2200,181601,181810,4,0,1,1,1,0,0,1,1,0,0,0,0,1.01,United States of America,United Kingdom of Great Britain and Northern Ireland,NA
+1,801,8,Oregon Country,1,2,200,2200,181601,184607,4,0,7,2,4,3,4,3,2,1,1,0,0,1.01,United States of America,United Kingdom of Great Britain and Northern Ireland,NA
+1,802,8,Oregon Country,2,2,230,2230,181601,182102,4,0,4,1,3,1,2,2,2,0,0,0,0,1.01,United States of America,Spain,NA
+1,803,8,Oregon Country,3,230,200,200230,181601,182102,2,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Spain,United Kingdom of Great Britain and Northern Ireland,NA
+1,804,8,San Juan Islands,4,2,200,2200,184607,187210,12,0,7,2,4,3,4,3,2,1,0,0,0,1.01,United States of America,United Kingdom of Great Britain and Northern Ireland,NA
+1,1001,10,Alaska,1,365,200,200365,182109,186703,2,0,7,2,3,4,6,1,0,1,0,0,0,1.01,Russian Federation,United Kingdom of Great Britain and Northern Ireland,NA
+1,1002,10,Alaska,2,2,365,2365,182202,186703,4,0,7,2,3,4,6,1,0,1,0,0,0,1.01,United States of America,Russian Federation,NA
+1,1003,10,Alaska,3,200,2,2200,187208,190310,4,0,7,2,3,4,6,1,0,1,2,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,United States of America,NA
+1,1101,11,Wrangel Island,1,20,2,2020,192205,192407,2,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Canada,United States of America,NA
+1,1102,11,Wrangel Island,2,20,365,20365,192205,192407,2,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Canada,Russian Federation,NA
+1,1201,12,Labrador,1,20,200,20200,192001,192703,12,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Canada,United Kingdom of Great Britain and Northern Ireland,NA
+1,1401,14,Florida,1,2,230,2230,181601,182102,4,0,6,2,3,3,4,2,1,1,1,1,0,1.01,United States of America,Spain,NA
+1,1601,16,Texas,1,2,230,2230,181601,182102,4,0,9,3,5,4,6,3,2,1,0,0,0,1.01,United States of America,Spain,NA
+1,1602,16,Texas,2,2,70,2070,183101,184805,4,1,10,3,5,5,6,4,2,2,2,1,1,1.01,United States of America,Mexico,NA
+1,1801,18,Mesilla Valley,1,2,70,2070,185012,185406,4,0,3,1,1,2,0,3,1,2,1,0,0,1.01,United States of America,Mexico,NA
+1,2001,20,Morteritos & Sabinitos,1,70,2,2070,188400,188400,2,0,2,1,1,1,0,2,1,1,0,0,0,1.01,Mexico,United States of America,NA
+1,2201,22,Rio Grande Bancos,1,70,2,2070,188411,197200,4,0,4,1,2,2,0,4,2,2,0,0,0,1.01,Mexico,United States of America,NA
+1,2202,22,El Chamizal,2,70,2,2070,189509,196312,4,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Mexico,United States of America,NA
+1,2601,26,California & New Mexico,1,2,70,2070,183501,184802,4,1,7,2,3,4,4,3,1,2,2,1,1,1.01,United States of America,Mexico,NA
+1,2801,28,Fort Ross,1,230,365,230365,181601,182109,5,0,8,3,4,4,6,2,1,1,0,0,0,1.01,Spain,Russian Federation,NA
+1,2802,28,Fort Ross,2,70,365,70365,183101,184112,8,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Mexico,Russian Federation,NA
+1,3001,30,Baja California & Sonora,1,2,70,2070,184701,186512,1,0,9,3,4,5,6,3,1,2,0,0,0,1.01,United States of America,Mexico,NA
+1,3201,32,Ellesmere Island,1,20,2,2020,192201,192609,8,0,4,1,3,1,2,2,2,0,0,0,0,1.01,Canada,United States of America,NA
+1,3401,34,Sverdrup Islands,1,20,385,20385,192201,193008,4,0,1,1,1,0,0,1,1,0,0,0,0,1.01,Canada,Norway,NA
+1,3801,38,Eastern Greenland,1,385,390,385390,192107,193304,12,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Norway,Denmark,NA
+1,4001,40,Cuba,1,2,230,2230,184805,189812,4,1,8,3,4,4,6,2,1,1,1,1,1,1.01,United States of America,Spain,NA
+1,4201,42,Isla de Pinos (Isle of Pines),1,2,40,2040,190901,192503,4,0,4,1,1,3,2,2,0,2,0,0,0,1.01,United States of America,Cuba,NA
+1,4601,46,Navassa Island,1,41,2,2041,185901,191412,6,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Haiti,United States of America,NA
+1,4801,48,Mole St. Nicholas,1,2,41,2041,188903,191507,1,0,6,2,2,4,4,2,0,2,1,0,0,1.01,United States of America,Haiti,NA
+1,5001,50,Samana Bay,1,2,42,2042,189401,190404,1,0,6,2,2,4,4,2,0,2,0,0,0,1.01,United States of America,Dominican Republic,NA
+1,5201,52,Virgin Islands,1,2,390,2390,186501,191703,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United States of America,Denmark,NA
+1,5401,54,Rio Massacre,1,41,42,41042,189401,191507,6,0,2,1,1,1,0,2,1,1,1,0,0,1.01,Haiti,Dominican Republic,NA
+1,5402,54,Rio Massacre,2,41,42,41042,193408,193502,4,0,2,1,1,1,0,2,1,1,0,0,0,1.01,Haiti,Dominican Republic,NA
+1,5601,56,Quita Sueno-Roncador-Serrana,1,100,2,2100,189012,197209,4,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Colombia,United States of America,NA
+1,5602,56,Quita Sueno-Roncador-Serrana,2,93,2,2093,190001,192803,1,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Nicaragua,United States of America,NA
+1,5603,56,Quita Sueno-Roncador-Serrana,3,93,100,93100,190001,192803,4,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Nicaragua,Colombia,NA
+1,5605,56,Quita Sueno-Roncador-Serrana,5,91,2,2091,189901,192804,1,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Honduras,United States of America,NA
+1,5606,56,Quita Sueno-Roncador-Serrana,6,91,100,91100,189901,192804,1,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Honduras,Colombia,NA
+1,5701,57,Serranilla Bank & Bajo Nuevo,1,91,100,91100,198201,198608,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Honduras,Colombia,NA
+1,5801,58,San Andres y Providencia,1,93,100,93100,190001,193005,4,0,7,2,3,4,4,3,1,2,1,0,0,1.01,Nicaragua,Colombia,NA
+1,6001,60,Clipperton Island,1,70,220,70220,189712,193401,12,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Mexico,France,NA
+1,6201,62,Rio Hondo,1,70,200,70200,183101,189704,4,0,3,1,2,1,2,1,1,0,0,0,0,1.01,Mexico,United Kingdom of Great Britain and Northern Ireland,NA
+1,6401,64,Chiapas,1,90,70,70090,186801,188209,4,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Guatemala,Mexico,NA
+1,6601,66,Belize,1,90,200,90200,186801,198109,5,0,9,3,4,5,6,3,1,2,3,0,0,1.01,Guatemala,United Kingdom of Great Britain and Northern Ireland,NA
+1,6801,68,Ranguana & Sapodilla (Zapotillo),1,90,200,90200,198103,198109,5,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Guatemala,United Kingdom of Great Britain and Northern Ireland,NA
+1,6803,68,Ranguana & Sapodilla (Zapotillo),3,91,200,91200,198103,198109,5,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Honduras,United Kingdom of Great Britain and Northern Ireland,NA
+1,7001,70,Mosquito Coast,1,100,200,100200,183101,186008,9,0,8,3,4,4,6,2,1,1,0,0,0,1.01,Colombia,United Kingdom of Great Britain and Northern Ireland,NA
+1,7002,70,Mosquito Coast,2,100,93,93100,190001,192803,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Colombia,Nicaragua,NA
+1,7201,72,Rio Motagua,1,91,90,90091,189901,193301,12,0,6,2,3,3,2,4,2,2,2,1,0,1.01,Honduras,Guatemala,NA
+1,7401,74,Cordillera Monte Cristo,1,90,92,90092,193508,193804,4,0,2,1,1,1,0,2,1,1,1,1,0,1.01,Guatemala,El Salvador,NA
+1,7601,76,Bolsones,1,92,91,91092,189901,199209,12,0,6,2,3,3,2,4,2,2,2,1,1,1.01,El Salvador,Honduras,NA
+1,7801,78,Gulf of Fonseca Islands,1,92,91,91092,189901,199209,12,0,7,2,3,4,4,3,1,2,0,0,0,1.01,El Salvador,Honduras,NA
+1,8001,80,Teotecacinte,1,93,91,91093,190001,190612,12,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Nicaragua,Honduras,NA
+1,8002,80,Teotecacinte,2,93,91,91093,191203,196108,12,0,8,3,4,4,4,4,2,2,2,0,0,1.01,Nicaragua,Honduras,NA
+1,8201,82,Swan Islands,1,91,2,2091,192105,197209,4,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Honduras,United States of America,NA
+1,8401,84,Mangles (Corn) Islands,1,100,93,93100,190001,192803,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Colombia,Nicaragua,NA
+1,8402,84,Mangles (Corn) Islands,2,93,2,2093,196501,197102,4,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Nicaragua,United States of America,NA
+1,8501,85,Nicaragua Canal,1,2,93,2093,190001,191606,4,0,6,2,2,4,4,2,0,2,0,0,0,1.01,United States of America,Nicaragua,NA
+1,8601,86,Rio Sixaola y Rio Coto,1,94,95,94095,192001,194105,4,0,6,2,3,3,2,4,2,2,1,1,0,1.01,Costa Rica,Panama,NA
+1,8801,88,Jurado,1,95,100,95100,192001,193806,4,0,4,1,2,2,0,4,2,2,0,0,0,1.01,Panama,Colombia,NA
+1,9001,90,Canal Zone,1,2,100,2100,190103,190311,5,0,6,2,2,4,4,2,0,2,0,0,0,1.01,United States of America,Colombia,NA
+1,9002,90,Canal Zone,2,100,2,2100,190311,192203,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Colombia,United States of America,NA
+1,9003,90,Canal Zone,3,95,2,2095,192302,197910,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Panama,United States of America,NA
+1,10001,100,Goajira-Guainia,1,101,100,100101,184101,192203,12,0,8,3,4,4,4,4,2,2,1,1,0,1.01,"Venezuela, Bolivarian Republic of",Colombia,NA
+1,10401,104,Oriente-Aguarico,1,130,100,100130,185401,191907,4,0,6,2,3,3,2,4,2,2,1,0,0,1.01,Ecuador,Colombia,NA
+1,10601,106,Loreto,1,135,100,100135,183901,192203,4,0,8,3,4,4,4,4,2,2,5,2,0,1.01,Peru,Colombia,NA
+1,10602,106,Leticia,2,135,100,100135,193209,193509,13,1,8,3,4,4,2,6,3,3,2,1,0,1.01,Peru,Colombia,NA
+1,10801,108,Apaporis,1,140,100,100140,183101,192811,13,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Brazil,Colombia,NA
+1,11001,110,Aves (Bird) Island,1,101,210,101210,185403,186605,12,0,4,1,3,1,2,2,2,0,2,0,0,1.01,"Venezuela, Bolivarian Republic of",Netherlands,NA
+1,11201,112,Essequibo,1,101,200,101200,184101,189910,13,0,6,2,3,3,4,2,1,1,2,0,0,1.01,"Venezuela, Bolivarian Republic of",United Kingdom of Great Britain and Northern Ireland,NA
+1,11202,112,Essequibo,2,101,200,101200,195100,196605,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,"Venezuela, Bolivarian Republic of",United Kingdom of Great Britain and Northern Ireland,NA
+1,11401,114,Patos Island,1,101,200,101200,185905,194202,4,0,7,2,4,3,4,3,2,1,2,0,0,1.01,"Venezuela, Bolivarian Republic of",United Kingdom of Great Britain and Northern Ireland,NA
+1,11601,116,Amazonas,1,101,140,101140,184101,192807,4,0,6,2,3,3,4,2,1,1,0,0,0,1.01,"Venezuela, Bolivarian Republic of",Brazil,NA
+1,11801,118,Los Roques,1,210,101,101210,185000,185604,1,0,2,1,0,2,0,2,0,2,0,0,0,1.01,Netherlands,"Venezuela, Bolivarian Republic of",NA
+1,12001,120,Corentyn/New River Triangle,1,210,200,200210,181601,196605,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Netherlands,United Kingdom of Great Britain and Northern Ireland,NA
+1,12002,120,Corentyn/New River Triangle,2,210,110,110210,196605,197511,5,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Netherlands,Guyana,NA
+1,12201,122,Pirara,1,140,200,140200,183808,192604,12,0,2,1,2,0,0,2,2,0,3,0,0,1.01,Brazil,United Kingdom of Great Britain and Northern Ireland,NA
+1,12401,124,Maroni,1,210,220,210220,184900,197511,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Netherlands,France,NA
+1,12601,126,Tumuc-Humac,1,140,210,140210,185200,190605,4,0,1,1,1,0,0,1,1,0,0,0,0,1.01,Brazil,Netherlands,NA
+1,12801,128,Amapa,1,235,220,220235,181601,182207,5,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Portugal,France,NA
+1,12802,128,Amapa,2,220,140,140220,182601,190012,12,0,5,2,2,3,2,3,1,2,2,1,0,1.01,France,Brazil,NA
+1,13001,130,Oriente-Mainas,1,130,135,130135,185401,194503,7,1,10,3,5,5,6,4,2,2,16,6,0,1.01,Ecuador,Peru,NA
+1,13002,130,Cordillera del Condor,2,130,135,130135,194702,199810,12,1,8,3,4,4,4,4,2,2,13,5,0,1.01,Ecuador,Peru,NA
+1,13101,131,Galapagos Islands,1,2,130,2130,185409,185501,2,0,6,2,2,4,4,2,0,2,0,0,0,1.01,United States of America,Ecuador,NA
+1,13102,131,Galapagos Islands,2,2,130,2130,189208,190601,2,0,6,2,2,4,4,2,0,2,0,0,0,1.01,United States of America,Ecuador,NA
+1,13201,132,Amazonas-Caqueta,1,130,140,130140,185401,190405,4,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Ecuador,Brazil,NA
+1,13202,132,Amazonas-Ica,2,140,130,130140,190405,192203,11,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Brazil,Ecuador,NA
+1,13401,134,Chincha Islands,1,230,135,135230,186404,186605,1,0,7,2,3,4,4,3,1,2,2,1,1,1.01,Spain,Peru,NA
+1,13601,136,Acre,1,135,140,135140,183901,190909,13,0,8,3,4,4,4,4,2,2,1,1,0,1.01,Peru,Brazil,NA
+1,13602,136,Acre,2,135,145,135145,184801,191205,4,0,8,3,4,4,4,4,2,2,3,1,0,1.01,Peru,Bolivia (Plurinational State of),NA
+1,13603,136,Acre,3,140,145,140145,184801,190911,4,1,8,3,4,4,4,4,2,2,1,0,0,1.01,Brazil,Bolivia (Plurinational State of),NA
+1,14401,144,Apa,1,150,140,140150,184601,187006,4,1,8,3,4,4,4,4,2,2,5,1,1,1.01,Paraguay,Brazil,NA
+1,14402,144,Rio Paraguay Border,2,150,140,140150,187606,192910,4,0,4,1,2,2,0,4,2,2,1,1,0,1.01,Paraguay,Brazil,NA
+1,14601,146,Misiones,1,160,140,140160,184101,189510,12,0,6,2,3,3,2,4,2,2,1,0,0,1.01,Argentina,Brazil,NA
+1,15001,150,Trindade Island,1,140,200,140200,182601,189612,13,0,2,1,2,0,0,2,2,0,1,0,0,1.01,Brazil,United Kingdom of Great Britain and Northern Ireland,NA
+1,15201,152,Chaco Boreal,1,145,150,145150,187812,193810,13,1,10,3,5,5,6,4,2,2,19,5,1,1.01,Bolivia (Plurinational State of),Paraguay,NA
+1,15401,154,Antofagasta,1,155,145,145155,184801,188404,7,1,9,3,4,5,6,3,1,2,5,1,1,1.01,Chile,Bolivia (Plurinational State of),NA
+1,15403,154,Tacna-Arica,3,155,135,135155,187904,188403,7,1,9,3,4,5,6,3,1,2,2,1,1,1.01,Chile,Peru,NA
+1,15404,154,Tacna-Arica,4,135,155,135155,188403,192906,13,0,10,3,5,5,6,4,2,2,3,2,0,1.01,Peru,Chile,NA
+1,15405,154,Tacna-Arica,5,145,135,135145,188312,193609,4,0,9,3,4,5,6,3,1,2,0,0,0,1.01,Bolivia (Plurinational State of),Peru,NA
+1,15601,156,Puna de Atacama,1,160,145,145160,184801,194102,4,0,5,2,2,3,2,3,1,2,1,0,0,1.01,Argentina,Bolivia (Plurinational State of),NA
+1,15602,156,Los Andes,2,155,160,155160,189604,190405,12,0,2,1,1,1,0,2,1,1,1,0,0,1.01,Chile,Argentina,NA
+1,15801,158,Chaco Central,1,160,150,150160,184601,187811,12,0,6,2,3,3,2,4,2,2,1,1,1,1.01,Argentina,Paraguay,NA
+1,16001,160,Patagonia,1,155,160,155160,184101,190301,12,0,10,3,5,5,6,4,2,2,8,2,0,1.01,Chile,Argentina,NA
+1,16401,164,Beagle Channel,1,160,155,155160,190401,198505,13,0,6,2,3,3,4,2,1,1,19,1,0,1.01,Argentina,Chile,NA
+1,16601,166,Palena/Continental Glaciers,1,155,160,155160,190301,199812,4,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Chile,Argentina,NA
+1,16801,168,Rio de La Plata,1,160,165,160165,188201,197312,4,0,7,2,4,3,4,3,2,1,3,0,0,1.01,Argentina,Uruguay,NA
+2,20001,200,Northern Ireland,1,205,200,200205,192212,199805,13,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Ireland,United Kingdom of Great Britain and Northern Ireland,NA
+2,20201,202,Treaty Ports,1,205,200,200205,192704,193804,4,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Ireland,United Kingdom of Great Britain and Northern Ireland,NA
+2,20401,204,Ecrehos & Minquiers,1,220,200,200220,188612,195311,12,0,6,2,3,3,2,4,2,2,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+2,20801,208,Limburg,1,210,211,210211,183012,183904,13,0,11,3,5,6,6,5,2,3,2,2,0,1.01,Netherlands,Belgium,NA
+2,20802,208,Limburg & Zeeland Flanders,2,211,210,210211,191812,192008,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Belgium,Netherlands,NA
+2,21001,210,Baarle Enclaves,1,210,211,210211,192210,194005,6,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Netherlands,Belgium,NA
+2,21002,210,Baarle Enclaves,2,210,211,210211,194506,195906,12,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Netherlands,Belgium,NA
+2,21201,212,Elten & Tudderen,1,260,210,210260,195505,196302,4,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Federal Republic of Germany,Netherlands,NA
+2,21401,214,Belgium,1,220,211,211220,186608,186704,1,0,12,3,6,6,6,6,3,3,0,0,0,1.01,France,Belgium,NA
+2,21601,216,Neutral Moresnet (Altenberg),1,255,211,211255,184101,191906,14,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Germany,Belgium,NA
+2,21801,218,Eupen & Malmedy,1,211,255,211255,191706,191908,14,1,10,3,4,6,6,4,1,3,0,0,0,1.01,Belgium,Germany,NA
+2,21802,218,Eupen & Malmedy,2,255,211,211255,191908,194005,7,1,11,3,6,5,6,5,3,2,0,0,0,1.01,Germany,Belgium,NA
+2,22001,220,Luxembourg,1,210,211,210211,183012,183904,13,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Netherlands,Belgium,NA
+2,22002,220,Luxembourg,2,220,210,210220,186607,186705,13,0,10,3,5,5,6,4,2,2,0,0,0,1.01,France,Netherlands,NA
+2,22201,222,Vallee des Dappes,1,220,225,220225,181601,186212,4,0,6,2,3,3,2,4,2,2,0,0,0,1.01,France,Switzerland,NA
+2,22401,224,Alsace-Lorraine,1,255,220,220255,187008,187105,7,1,12,3,6,6,6,6,3,3,2,1,1,1.01,Germany,France,NA
+2,22402,224,Alsace-Lorraine,2,220,255,220255,187512,191906,14,1,12,3,6,6,6,6,3,3,1,1,1,1.01,France,Germany,NA
+2,22601,226,Prussian Rheinprovinz,1,220,255,220255,184911,187105,1,0,11,3,5,6,6,5,2,3,1,0,0,1.01,France,Germany,NA
+2,22602,226,Bavarian Palatinate (Pfalz),2,220,245,220245,184911,187101,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,France,Bavaria,NA
+2,22603,226,Rheinhessen,3,220,275,220275,184911,186704,1,0,9,3,4,5,4,5,2,3,0,0,0,1.01,France,Hesse Grand Ducal,NA
+2,22604,226,Saar (Sarre),4,220,255,220255,191701,192001,7,1,11,3,5,6,6,5,2,3,0,0,0,1.01,France,Germany,NA
+2,22605,226,Saar (Sarre),5,255,220,220255,192001,193502,10,0,11,3,6,5,6,5,3,2,0,0,0,1.01,Germany,France,NA
+2,22606,226,Saar (Sarre),6,260,220,220260,195505,195701,10,0,11,3,6,5,6,5,3,2,0,0,0,1.01,Federal Republic of Germany,France,NA
+2,22801,228,Jussy,1,225,325,225325,181601,181603,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Switzerland,Italy,NA
+2,23001,230,Savoy & Nice,1,220,325,220325,184803,186003,4,0,10,3,5,5,4,6,3,3,0,0,0,1.01,France,Italy,NA
+2,23002,230,Savoy & Nice,2,325,220,220325,193811,194211,1,0,10,3,5,5,4,6,3,3,2,1,1,1.01,Italy,France,NA
+2,23003,230,Upper Savoy (Haute Savoie),3,225,325,225325,185906,186003,11,0,8,3,3,5,4,4,1,3,0,0,0,1.01,Switzerland,Italy,NA
+2,23004,230,Upper Savoy (Haute Savoie),4,225,220,220225,186003,186012,1,0,8,3,3,5,4,4,1,3,0,0,0,1.01,Switzerland,France,NA
+2,23201,232,Corsica,1,325,220,220325,193811,194211,1,0,12,3,6,6,6,6,3,3,2,1,1,1.01,Italy,France,NA
+2,23401,234,Val d'Aosta-Briga-Tenda,1,220,325,220325,194504,194702,14,0,11,3,5,6,6,5,2,3,0,0,0,1.01,France,Italy,NA
+2,23601,236,Neuchatel,1,225,255,225255,184803,185705,13,0,6,2,4,2,2,4,3,1,1,0,0,1.01,Switzerland,Germany,NA
+2,23801,238,Kulmbach-Gersfeld-Orb,1,255,245,245255,186607,186608,4,0,7,2,4,3,2,5,3,2,0,0,0,1.01,Germany,Bavaria,NA
+2,24001,240,Badenese Corridor,1,245,267,245267,181601,183401,1,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Bavaria,Baden,NA
+2,24002,240,Germersheim Frontage,2,245,267,245267,183810,184004,1,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Bavaria,Baden,NA
+2,24003,240,Badenese Corridor,3,245,267,245267,187010,187010,1,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Bavaria,Baden,NA
+2,24201,242,Salzburg,1,300,245,245300,181601,181604,4,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Austria-Hungary,Bavaria,NA
+2,24401,244,Leipzig-Bautzen,1,255,269,255269,186607,186608,1,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Germany,Saxony,NA
+2,24601,246,Hohenzollern,1,271,255,255271,187011,187011,1,0,8,3,3,5,4,4,1,3,0,0,0,1.01,Wuerttemburg,Germany,NA
+2,24801,248,Homburg-Upper Hesse,1,255,275,255275,186607,186609,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Germany,Hesse Grand Ducal,NA
+2,25001,250,Heligoland (Helgoland),1,255,200,200255,188401,189007,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Germany,United Kingdom of Great Britain and Northern Ireland,NA
+2,25201,252,Schleswig-Holstein,1,255,390,255390,186401,186410,7,1,11,3,5,6,6,5,2,3,1,1,1,1.01,Germany,Denmark,NA
+2,25202,252,Schleswig-Holstein,2,255,300,255300,186411,186608,4,0,10,3,6,4,6,4,3,1,1,1,1,1.01,Germany,Austria-Hungary,NA
+2,25203,252,North Schleswig (Nord Slesvig),3,390,255,255390,191901,192004,10,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Denmark,Germany,NA
+2,25401,254,German Reunification,1,260,265,260265,195505,197212,13,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Federal Republic of Germany,German Democratic Republic,NA
+2,25601,256,West Berlin,1,365,2,2365,194803,197109,13,0,5,2,2,3,4,1,0,1,4,0,0,1.01,Russian Federation,United States of America,NA
+2,25602,256,West Berlin,2,265,260,260265,195805,197212,13,0,9,3,4,5,4,5,2,3,2,1,0,1.01,German Democratic Republic,Federal Republic of Germany,NA
+2,25801,258,Lombardy-Venetia,1,325,300,300325,184803,186610,7,1,9,3,5,4,6,3,2,1,3,3,3,1.01,Italy,Austria-Hungary,NA
+2,26001,260,Papal States,1,325,327,325327,185805,186010,7,1,7,2,3,4,2,5,2,3,1,1,1,1.01,Italy,Holy See (Vatican City State),NA
+2,26201,262,Modena,1,325,332,325332,184803,186003,10,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Italy,Modena,NA
+2,26401,264,Parma,1,325,335,325335,185101,186003,10,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Italy,Parma,NA
+2,26601,266,Trentino-Alto Adige (South Tyrol),1,325,300,300325,186606,191811,7,1,11,3,5,6,6,5,2,3,2,1,1,1.01,Italy,Austria-Hungary,NA
+2,26801,268,Graham Island (Ferdinandea),1,329,200,200329,183108,183112,11,0,3,1,2,1,2,1,1,0,0,0,0,1.01,Two Sicilies,United Kingdom of Great Britain and Northern Ireland,NA
+2,27001,270,Finnmark/Varangerfjord,1,365,380,365380,185106,185511,1,0,8,3,3,5,4,4,1,3,0,0,0,1.01,Russian Federation,Sweden,NA
+2,27201,272,Spitsbergen (Svalbard),1,365,385,365385,194505,194702,1,0,9,3,4,5,6,3,1,2,0,0,0,1.01,Russian Federation,Norway,NA
+2,27401,274,Aland (Aaland) Islands,1,380,365,365380,185407,185603,1,0,11,3,6,5,6,5,3,2,0,0,0,1.01,Sweden,Russian Federation,NA
+2,27402,274,Aland (Aaland) Islands,2,380,375,375380,191802,192106,12,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Sweden,Finland,NA
+2,27601,276,Finland,1,380,365,365380,185407,185603,1,0,11,3,6,5,6,5,3,2,0,0,0,1.01,Sweden,Russian Federation,NA
+2,27801,278,Karelia & Petsamo,1,375,365,365375,191804,192010,4,0,8,3,4,4,4,4,2,2,1,1,0,1.01,Finland,Russian Federation,NA
+2,27802,278,Karelia & Petsamo,2,365,375,365375,193808,194003,13,1,11,3,5,6,6,5,2,3,1,1,1,1.01,Russian Federation,Finland,NA
+2,27803,278,Karelia & Petsamo,3,375,365,365375,194105,194409,1,1,11,3,6,5,6,5,3,2,1,1,1,1.01,Finland,Russian Federation,NA
+2,27804,278,Karelia & Petsamo,4,365,375,365375,194112,194409,4,1,11,3,5,6,6,5,2,3,1,1,1,1.01,Russian Federation,Finland,NA
+2,27805,278,Karelia & Petsamo,5,375,365,365375,194509,194702,14,0,11,3,6,5,6,5,3,2,0,0,0,1.01,Finland,Russian Federation,NA
+2,28001,280,Upper Silesia (Oberschlesien),1,290,255,255290,191811,192110,14,0,9,3,4,5,4,5,2,3,2,2,0,1.01,Poland,Germany,NA
+2,28201,282,Allenstein & Marienwerder,1,290,255,255290,191811,192007,10,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Poland,Germany,NA
+2,28401,284,Danzig (Gdansk),1,290,255,255290,191811,191906,14,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Poland,Germany,NA
+2,28402,284,Western Poland (Danzig-Corridor-Upper Silesia),2,255,290,255290,192412,193909,7,1,10,3,5,5,4,6,3,3,1,1,1,1.01,Germany,Poland,NA
+2,28403,284,Western Poland (Danzig-Pomerania-Upper Silesia),3,260,290,260290,195505,197205,4,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Federal Republic of Germany,Poland,NA
+2,28601,286,Teschen,1,315,290,290315,191811,192007,14,1,11,3,5,6,6,5,2,3,1,1,0,1.01,Czechoslovakia,Poland,NA
+2,28602,286,Czech Teschen,2,290,315,290315,192009,193810,7,1,12,3,6,6,6,6,3,3,1,0,0,1.01,Poland,Czechoslovakia,NA
+2,28603,286,Czech Teschen,3,290,315,290315,194506,195801,4,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Poland,Czechoslovakia,NA
+2,28701,287,Orawa (Orava),1,290,315,290315,191811,192007,14,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Poland,Czechoslovakia,NA
+2,28801,288,Spisz (Spis),1,290,315,290315,191811,192405,12,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Poland,Czechoslovakia,NA
+2,29001,290,Eastern Galicia,1,365,300,300365,191407,191711,1,0,7,2,3,4,4,3,1,2,1,1,1,1.01,Russian Federation,Austria-Hungary,NA
+2,29002,290,Eastern Galicia,2,290,365,290365,191811,192303,7,1,9,3,5,4,4,5,3,2,1,1,1,1.01,Poland,Russian Federation,NA
+2,29101,291,Belz/Sokal/Bug River Exchange,1,365,290,290365,195006,195102,4,0,8,3,3,5,4,4,1,3,0,0,0,1.01,Russian Federation,Poland,NA
+2,29201,292,Eastern Poland (Belarus-Ukraine),1,290,365,290365,191901,192103,4,1,11,3,6,5,6,5,3,2,1,1,1,1.01,Poland,Russian Federation,NA
+2,29202,292,Eastern Poland (Belarus-Ukraine),2,365,290,290365,193907,193909,7,1,12,3,6,6,6,6,3,3,2,2,1,1.01,Russian Federation,Poland,NA
+2,29401,294,Konigsberg/East Prussia,1,365,255,255365,194311,194505,7,1,8,3,3,5,4,4,1,3,1,1,1,1.01,Russian Federation,Germany,NA
+2,29402,294,Kaliningrad (Konigsberg)/East Prussia,2,260,365,260365,195505,197205,4,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Federal Republic of Germany,Russian Federation,NA
+2,29601,296,Vilna (Vilnius),1,290,368,290368,191902,192203,7,1,10,3,5,5,4,6,3,3,3,3,1,1.01,Poland,Lithuania,NA
+2,29602,296,Vilna (Vilnius),2,368,290,290368,192203,193909,6,0,10,3,5,5,4,6,3,3,1,1,0,1.01,Lithuania,Poland,NA
+2,29801,298,Memel (Klaipeda),1,290,255,255290,191901,191906,9,0,8,3,3,5,4,4,1,3,0,0,0,1.01,Poland,Germany,NA
+2,29802,298,Memel (Klaipeda),2,368,255,255368,191901,191906,11,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Lithuania,Germany,NA
+2,29803,298,Memel (Klaipeda),3,255,368,255368,193803,193903,4,1,10,3,5,5,4,6,3,3,1,0,0,1.01,Germany,Lithuania,NA
+2,30001,300,Estonia,1,365,366,365366,191901,192002,4,1,10,3,5,5,4,6,3,3,1,1,0,1.01,Russian Federation,Estonia,NA
+2,30002,300,Estonia,2,365,366,365366,193908,194006,7,1,10,3,5,5,4,6,3,3,2,0,0,1.01,Russian Federation,Estonia,NA
+2,30201,302,Latvia,1,365,367,365367,191812,192008,4,1,10,3,5,5,4,6,3,3,1,1,0,1.01,Russian Federation,Latvia,NA
+2,30202,302,Latvia,2,365,367,365367,193908,194006,7,1,10,3,5,5,4,6,3,3,2,1,0,1.01,Russian Federation,Latvia,NA
+2,30401,304,Valga-Hainasi-Ruhnu,1,367,366,366367,191811,192007,12,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Latvia,Estonia,NA
+2,30601,306,Daugavpils & Palanga,1,368,367,367368,191811,192103,12,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Lithuania,Latvia,NA
+2,30801,308,Lithuania,1,365,368,365368,191811,192007,4,1,10,3,5,5,4,6,3,3,1,1,0,1.01,Russian Federation,Lithuania,NA
+2,30802,308,Lithuania,2,365,368,365368,193909,194006,7,1,10,3,5,5,4,6,3,3,1,0,0,1.01,Russian Federation,Lithuania,NA
+2,30803,308,Adutiskis - Druskininkai - Ignalina,3,370,368,368370,199112,199502,4,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Belarus,Lithuania,NA
+2,31001,310,Austria,1,255,305,255305,193305,193803,7,1,11,3,5,6,6,5,2,3,1,0,0,1.01,Germany,Austria,NA
+2,31201,312,Glatz & Ratibor,1,315,290,290315,194507,194903,1,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Czechoslovakia,Poland,NA
+2,31401,314,Sudetenland,1,255,315,255315,193711,193809,13,0,11,3,5,6,6,5,2,3,1,0,0,1.01,Germany,Czechoslovakia,NA
+2,31402,314,Bohemia & Moravia,2,255,315,255315,193810,193903,7,1,9,3,3,6,6,3,0,3,1,0,0,1.01,Germany,Czechoslovakia,NA
+2,31601,316,Burgenland,1,315,300,300315,191810,191811,6,0,9,3,4,5,6,3,1,2,0,0,0,1.01,Czechoslovakia,Austria-Hungary,NA
+2,31602,316,Burgenland,2,315,310,310315,191811,191909,14,0,10,3,4,6,6,4,1,3,0,0,0,1.01,Czechoslovakia,Hungary,NA
+2,31603,316,Burgenland,3,305,310,305310,191909,192110,13,0,10,3,5,5,4,6,3,3,1,1,0,1.01,Austria,Hungary,NA
+2,31604,316,Sopron,4,310,305,305310,192110,192202,10,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Hungary,Austria,NA
+2,31605,316,Burgenland,5,310,305,305310,193404,193803,6,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Hungary,Austria,NA
+2,31801,318,Carinthia,1,345,300,300345,191707,191811,6,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Yugoslavia,Austria-Hungary,NA
+2,31802,318,Klagenfurt,2,345,305,305345,191909,192011,10,0,11,3,5,6,6,5,2,3,1,1,0,1.01,Yugoslavia,Austria,NA
+2,32001,320,Southern Slovakia,1,315,300,300315,191810,191811,6,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Czechoslovakia,Austria-Hungary,NA
+2,32002,320,Southern Slovakia,2,315,310,310315,191811,192006,14,1,10,3,5,5,4,6,3,3,1,1,1,1.01,Czechoslovakia,Hungary,NA
+2,32003,320,Southern Slovakia,3,310,315,310315,192006,193903,7,1,10,3,5,5,4,6,3,3,2,2,0,1.01,Hungary,Czechoslovakia,NA
+2,32004,320,Southern Slovakia (limited),4,310,315,310315,194607,194702,14,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Hungary,Czechoslovakia,NA
+2,32005,320,Jarovce-Rusovce-Cunovco,5,315,310,310315,194608,194702,14,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Czechoslovakia,Hungary,NA
+2,32201,322,Banat,1,360,300,300360,191401,191811,6,0,11,3,5,6,6,5,2,3,1,1,1,1.01,Romania,Austria-Hungary,NA
+2,32202,322,Banat,2,360,310,310360,191811,192006,14,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Romania,Hungary,NA
+2,32203,322,Banat-Backa-Baranja,3,345,300,300345,191508,191811,6,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Yugoslavia,Austria-Hungary,NA
+2,32204,322,Banat-Backa-Baranja,4,345,310,310345,191811,192006,14,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Yugoslavia,Hungary,NA
+2,32205,322,Serbian Banat-Backa-Baranja,5,310,345,310345,192006,194104,6,0,12,3,6,6,6,6,3,3,2,1,0,1.01,Hungary,Yugoslavia,NA
+2,32206,322,Serbian Banat,6,360,345,345360,191811,192311,4,0,11,3,5,6,6,5,2,3,1,1,0,1.01,Romania,Yugoslavia,NA
+2,32207,322,Serbian Banat,7,310,255,255310,194104,194410,11,0,10,3,6,4,6,4,3,1,0,0,0,1.01,Hungary,Germany,NA
+2,32208,322,Serbian Banat & Timoc Valley,8,360,255,255360,194104,194410,11,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Romania,Germany,NA
+2,32401,324,Prekmurje & Medjumurje,1,345,300,300345,191707,191811,6,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Yugoslavia,Austria-Hungary,NA
+2,32402,324,Prekmurje & Medjumurje,2,345,310,310345,191811,192006,14,1,7,2,3,4,2,5,2,3,0,0,0,1.01,Yugoslavia,Hungary,NA
+2,32403,324,Prekmurje & Medjumurje,3,310,345,310345,192006,194104,7,1,8,3,4,4,2,6,3,3,2,1,0,1.01,Hungary,Yugoslavia,NA
+2,32601,326,Transylvania,1,360,300,300360,191608,191811,6,0,9,3,4,5,4,5,2,3,1,1,1,1.01,Romania,Austria-Hungary,NA
+2,32602,326,Transylvania,2,360,310,310360,191811,192006,14,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Romania,Hungary,NA
+2,32603,326,Transylvania,3,310,360,310360,192006,194008,12,1,10,3,5,5,4,6,3,3,1,0,0,1.01,Hungary,Romania,NA
+2,32604,326,Transylvania,4,360,310,310360,194008,194501,9,1,10,3,5,5,4,6,3,3,3,2,1,1.01,Romania,Hungary,NA
+2,32605,326,Transylvania,5,310,360,310360,194604,194702,14,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Hungary,Romania,NA
+2,32801,328,Ruthenia (Transcarpathia),1,315,300,300315,191810,191811,6,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Czechoslovakia,Austria-Hungary,NA
+2,32802,328,Ruthenia (Transcarpathia),2,315,310,310315,191811,192006,14,0,9,3,4,5,4,5,2,3,1,1,1,1.01,Czechoslovakia,Hungary,NA
+2,32803,328,Ruthenia (Transcarpathia),3,310,315,310315,192006,193903,7,1,10,3,5,5,4,6,3,3,1,1,0,1.01,Hungary,Czechoslovakia,NA
+2,32804,328,Ruthenia (Transcarpathia),4,365,315,315365,194505,194506,4,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Russian Federation,Czechoslovakia,NA
+2,33001,330,Sidonia & U Sabotu,1,316,317,316317,199401,199706,4,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Czech Republic,Slovakia,NA
+2,33201,332,Venezia Giulia (Julian March),1,325,300,300325,186607,187601,1,0,11,3,5,6,6,5,2,3,1,1,1,1.01,Italy,Austria-Hungary,NA
+2,33202,332,Venezia Giulia (Julian March),2,325,300,300325,191502,191811,6,0,11,3,5,6,6,5,2,3,2,1,1,1.01,Italy,Austria-Hungary,NA
+2,33203,332,Fiume (Rijeka),3,325,345,325345,191902,192011,4,1,9,3,4,5,4,5,2,3,0,0,0,1.01,Italy,Yugoslavia,NA
+2,33204,332,Fiume (Rijeka),4,325,345,325345,192210,192401,4,1,9,3,4,5,4,5,2,3,1,0,0,1.01,Italy,Yugoslavia,NA
+2,33205,332,Trieste & Eastern Istria,5,345,325,325345,191902,192011,4,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Yugoslavia,Italy,NA
+2,33206,332,Istria & Trieste,6,345,325,325345,194502,197510,13,0,12,3,6,6,6,6,3,3,1,0,0,1.01,Yugoslavia,Italy,NA
+2,33401,334,Dalmatia,1,325,300,300325,191408,191811,6,0,10,3,4,6,6,4,1,3,2,1,1,1.01,Italy,Austria-Hungary,NA
+2,33402,334,Dalmatia,2,345,300,300345,191408,191811,6,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Yugoslavia,Austria-Hungary,NA
+2,33403,334,Dalmatia,3,325,345,325345,191811,191908,1,0,10,3,4,6,6,4,1,3,0,0,0,1.01,Italy,Yugoslavia,NA
+2,33404,334,Dalmatia & Croatia,4,325,345,325345,193908,194104,7,1,10,3,4,6,6,4,1,3,1,1,1,1.01,Italy,Yugoslavia,NA
+2,33405,334,Zadar (Zara),5,345,325,325345,194410,194702,14,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Yugoslavia,Italy,NA
+2,33601,336,Saseno (Sazan) & Vlore (Valona),1,325,339,325339,191410,192008,4,0,7,2,2,5,4,3,0,3,3,2,0,1.01,Italy,Albania,NA
+2,33602,336,Scutari (Shkoder)-Durres-St Naum,2,345,339,339345,191506,192507,4,1,9,3,4,5,4,5,2,3,2,1,0,1.01,Yugoslavia,Albania,NA
+2,33603,336,Albania,3,325,339,325339,193703,193904,7,1,9,3,3,6,6,3,0,3,1,1,0,1.01,Italy,Albania,NA
+2,33604,336,Albania,4,345,339,339345,194707,194803,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Yugoslavia,Albania,NA
+2,33801,338,Epirus,1,350,640,350640,185310,191401,5,0,6,2,3,3,2,4,2,2,6,3,1,1.01,Greece,Turkey,NA
+2,33802,338,Northern Epirus,2,350,339,339350,191401,191402,13,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Greece,Albania,NA
+2,33803,338,Northern Epirus,3,350,339,339350,191505,192607,13,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Greece,Albania,NA
+2,33804,338,Southern Epirus,4,325,350,325350,194008,194104,7,1,5,2,1,4,2,3,0,3,2,2,1,1.01,Italy,Greece,NA
+2,33805,338,Northern Epirus,5,350,339,339350,194411,197105,1,0,7,2,3,4,2,5,2,3,1,1,0,1.01,Greece,Albania,NA
+2,34001,340,Kosovo,1,345,640,345640,187807,191307,14,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Yugoslavia,Turkey,NA
+2,34002,340,Kosovo,2,339,345,339345,191902,192111,14,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Albania,Yugoslavia,NA
+2,34201,342,Macedonia,1,350,640,350640,184401,191305,14,1,11,3,5,6,6,5,2,3,2,2,1,1.01,Greece,Turkey,NA
+2,34202,342,Macedonia,2,345,640,345640,188106,191305,14,1,11,3,5,6,6,5,2,3,1,1,1,1.01,Yugoslavia,Turkey,NA
+2,34203,342,Macedonia,3,355,640,355640,191203,191305,14,1,11,3,5,6,6,5,2,3,1,1,1,1.01,Bulgaria,Turkey,NA
+2,34204,342,Serbian Macedonia,4,355,345,345355,191306,191308,14,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Bulgaria,Yugoslavia,NA
+2,34205,342,Serbian Macedonia (Gevgelijia & Monastir),5,350,345,345350,191312,192701,4,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Greece,Yugoslavia,NA
+2,34206,342,Serbian Macedonia,6,355,345,345355,191408,191911,14,1,9,3,4,5,4,5,2,3,2,2,1,1.01,Bulgaria,Yugoslavia,NA
+2,34207,342,Serbian Macedonia,7,355,345,345355,194103,194104,7,1,9,3,4,5,4,5,2,3,1,1,0,1.01,Bulgaria,Yugoslavia,NA
+2,34208,342,Serbian Macedonia,8,345,355,345355,194410,194410,13,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Yugoslavia,Bulgaria,NA
+2,34209,342,Greek Macedonia,9,355,350,350355,191306,191308,14,1,11,3,5,6,6,5,2,3,1,1,1,1.01,Bulgaria,Greece,NA
+2,34210,342,Greek Macedonia,10,355,350,350355,191408,191911,14,1,11,3,5,6,6,5,2,3,3,2,1,1.01,Bulgaria,Greece,NA
+2,34211,342,Greek Macedonia,11,355,350,350355,194410,194410,13,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Bulgaria,Greece,NA
+2,34212,342,Greek Macedonia (Salonica/Thessaloniki),12,345,350,345350,192507,192903,1,0,10,3,4,6,6,4,1,3,0,0,0,1.01,Yugoslavia,Greece,NA
+2,34213,342,Greek Macedonia (Salonica/Thessaloniki),13,345,350,345350,194011,194104,1,0,10,3,4,6,6,4,1,3,0,0,0,1.01,Yugoslavia,Greece,NA
+2,34214,342,Greek Macedonia,14,345,350,345350,194510,194907,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Yugoslavia,Greece,NA
+2,34215,342,Strumica Valley,15,345,355,345355,191901,191911,14,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Yugoslavia,Bulgaria,NA
+2,34216,342,Pirin Macedonia,16,345,355,345355,194411,194806,1,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Yugoslavia,Bulgaria,NA
+2,34401,344,Prohor Pcinski Monastery-Sar Mountain-Kumanovo,1,345,343,343345,199304,200102,4,0,8,3,4,4,2,6,3,3,1,0,0,1.01,Yugoslavia,The former Yugoslav Republic of Macedonia,NA
+2,34801,348,Bihac & Martinbrod,1,344,346,344346,199610,199907,4,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Croatia,Bosnia and Herzegovina,NA
+2,35401,354,Bosnia-Hercegovina & Novi Pazar,1,300,640,300640,187607,187807,13,0,6,2,2,4,4,2,0,2,0,0,0,1.01,Austria-Hungary,Turkey,NA
+2,35402,354,Bosnia-Hercegovina & Novi Pazar,2,345,300,300345,187807,188106,4,0,9,3,5,4,4,5,3,2,0,0,0,1.01,Yugoslavia,Austria-Hungary,NA
+2,35403,354,Bosnia-Hercegovina,3,345,300,300345,190810,190903,1,0,9,3,5,4,4,5,3,2,1,1,0,1.01,Yugoslavia,Austria-Hungary,NA
+2,35404,354,Bosnia-Hercegovina,4,345,300,300345,191508,191811,6,0,9,3,5,4,4,5,3,2,1,1,1,1.01,Yugoslavia,Austria-Hungary,NA
+2,35601,356,Novi Pazar,1,345,300,300345,190403,190810,11,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Yugoslavia,Austria-Hungary,NA
+2,35602,356,Novi Pazar,2,345,640,345640,190810,191308,14,1,6,2,3,3,2,4,2,2,0,0,0,1.01,Yugoslavia,Turkey,NA
+2,35701,357,Alpha-Beta-Gamma Islands,1,355,350,350355,194805,195312,4,0,3,1,1,2,0,3,1,2,1,1,0,1.01,Bulgaria,Greece,NA
+2,35801,358,Southern Dobrudja,1,360,355,355360,191301,191308,13,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Romania,Bulgaria,NA
+2,35802,358,Southern Dobrudja,2,355,360,355360,191408,191805,13,1,10,3,5,5,4,6,3,3,1,1,1,1.01,Bulgaria,Romania,NA
+2,35803,358,Southern Dobrudja,3,360,355,355360,191811,191911,14,1,10,3,5,5,4,6,3,3,0,0,0,1.01,Romania,Bulgaria,NA
+2,35804,358,Southern Dobrudja,4,355,360,355360,193810,194009,4,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Bulgaria,Romania,NA
+2,36001,360,Thrace,1,355,640,355640,191203,191305,14,1,11,3,5,6,6,5,2,3,1,1,1,1.01,Bulgaria,Turkey,NA
+2,36002,360,Eastern Thrace,2,640,355,355640,191305,191308,4,1,10,3,5,5,4,6,3,3,1,1,1,1.01,Turkey,Bulgaria,NA
+2,36003,360,Eastern Thrace,3,355,640,355640,191308,191508,4,0,9,3,4,5,4,5,2,3,1,0,0,1.01,Bulgaria,Turkey,NA
+2,36004,360,Eastern Thrace,4,350,640,350640,191809,192008,14,1,9,3,4,5,4,5,2,3,2,2,2,1.01,Greece,Turkey,NA
+2,36005,360,Eastern Thrace,5,640,350,350640,192008,192307,14,1,10,3,5,5,4,6,3,3,0,0,0,1.01,Turkey,Greece,NA
+2,36006,360,Western Thrace,6,350,355,350355,191812,191911,14,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Greece,Bulgaria,NA
+2,36007,360,Western Thrace,7,355,350,350355,191911,192306,1,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Bulgaria,Greece,NA
+2,36008,360,Western Thrace,8,355,350,350355,194103,194104,7,1,12,3,6,6,6,6,3,3,0,0,0,1.01,Bulgaria,Greece,NA
+2,36009,360,Western Thrace,9,355,350,350355,194410,194702,14,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Bulgaria,Greece,NA
+2,36010,360,Burgos & Rhodope Mountains,10,350,355,350355,194607,194702,14,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Greece,Bulgaria,NA
+2,36201,362,Thessaly,1,350,640,350640,184008,188211,14,1,9,3,4,5,4,5,2,3,5,1,0,1.01,Greece,Turkey,NA
+2,36202,362,Thessaly,2,640,350,350640,189704,189705,4,1,10,3,5,5,4,6,3,3,0,0,0,1.01,Turkey,Greece,NA
+2,36401,364,Samos,1,350,640,350640,182801,183205,13,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Greece,Turkey,NA
+2,36402,364,Eastern Sporades,2,350,640,350640,188107,191402,7,1,7,2,3,4,4,3,1,2,1,0,0,1.01,Greece,Turkey,NA
+2,36403,364,Eastern Sporades,3,640,350,350640,191402,192307,14,1,8,3,4,4,4,4,2,2,0,0,0,1.01,Turkey,Greece,NA
+2,36404,364,Imbros & Tenedos,4,350,640,350640,191402,192307,14,1,7,2,3,4,4,3,1,2,0,0,0,1.01,Greece,Turkey,NA
+2,36405,364,Castellorizzo,5,325,640,325640,191201,191512,11,0,6,2,2,4,4,2,0,2,2,1,1,1.01,Italy,Turkey,NA
+2,36601,366,Crete,1,350,640,350640,182812,191305,14,1,9,3,4,5,4,5,2,3,4,1,1,1.01,Greece,Turkey,NA
+2,36801,368,Cyprus,1,200,640,200640,187803,187806,4,0,4,1,1,3,2,2,0,2,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Turkey,NA
+2,36802,368,Cyprus,2,350,200,200350,191212,192008,14,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Greece,United Kingdom of Great Britain and Northern Ireland,NA
+2,36803,368,Cyprus,3,640,200,200640,191906,192307,14,1,6,2,4,2,2,4,3,1,0,0,0,1.01,Turkey,United Kingdom of Great Britain and Northern Ireland,NA
+2,36804,368,Cyprus,4,350,200,200350,195309,195902,13,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Greece,United Kingdom of Great Britain and Northern Ireland,NA
+2,36805,368,Cyprus,5,640,200,200640,195508,195902,13,0,6,2,4,2,2,4,3,1,0,0,0,1.01,Turkey,United Kingdom of Great Britain and Northern Ireland,NA
+2,36806,368,Cyprus,6,350,352,350352,196312,198202,2,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Greece,Cyprus,NA
+2,36807,368,Northern Cyprus,7,640,352,352640,196312,197408,7,1,8,3,4,4,2,6,3,3,4,1,1,1.01,Turkey,Cyprus,NA
+2,37001,370,Dodecanese Islands,1,325,640,325640,191204,192008,14,1,7,2,2,5,4,3,0,3,2,1,1,1.01,Italy,Turkey,NA
+2,37002,370,Dodecanese Islands,2,640,325,325640,192008,192307,14,1,8,3,4,4,4,4,2,2,0,0,0,1.01,Turkey,Italy,NA
+2,37003,370,Dodecanese Islands,3,350,640,350640,191212,192307,11,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Greece,Turkey,NA
+2,37004,370,Dodecanese Islands,4,350,325,325350,192307,192809,4,0,7,2,4,3,4,3,2,1,1,0,0,1.01,Greece,Italy,NA
+2,37005,370,Dodecanese Islands,5,350,325,325350,194410,194702,14,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Greece,Italy,NA
+2,37006,370,Dodecanese Islands,6,640,325,325640,193903,194504,1,0,8,3,5,3,4,4,3,1,1,0,0,1.01,Turkey,Italy,NA
+2,37201,372,Ionian Islands,1,350,200,200350,186211,186403,4,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Greece,United Kingdom of Great Britain and Northern Ireland,NA
+2,37401,374,Southern Bessarabia & Serpent's Island,1,640,365,365640,185603,185701,13,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Turkey,Russian Federation,NA
+2,37402,374,Southern Bessarabia,2,365,640,365640,187007,187807,4,1,11,3,6,5,6,5,3,2,0,0,0,1.01,Russian Federation,Turkey,NA
+2,37403,374,Bessarabia,3,360,365,360365,191801,191805,14,1,12,3,6,6,6,6,3,3,1,1,0,1.01,Romania,Russian Federation,NA
+2,37404,374,Bessarabia,4,365,360,360365,191805,193307,4,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Russian Federation,Romania,NA
+2,37405,374,Bessarabia,5,365,360,360365,193706,194006,4,0,12,3,6,6,6,6,3,3,2,0,0,1.01,Russian Federation,Romania,NA
+2,37406,374,Bessarabia,6,360,365,360365,194106,194409,4,1,12,3,6,6,6,6,3,3,0,0,0,1.01,Romania,Russian Federation,NA
+2,37601,376,Bukovina,1,360,300,300360,191408,191811,6,0,8,3,4,4,4,4,2,2,1,1,1,1.01,Romania,Austria-Hungary,NA
+2,37602,376,Northern Bukovina,2,365,360,360365,194006,194006,4,0,9,3,4,5,4,5,2,3,1,0,0,1.01,Russian Federation,Romania,NA
+2,37603,376,Southern Bukovina,3,365,360,360365,194011,194106,1,0,9,3,4,5,4,5,2,3,1,0,0,1.01,Russian Federation,Romania,NA
+2,37604,376,Northern Bukovina,4,360,365,360365,194106,194409,13,1,10,3,5,5,4,6,3,3,1,1,1,1.01,Romania,Russian Federation,NA
+2,37801,378,Western Soviet Union,1,255,365,255365,194007,194505,1,1,9,3,3,6,6,3,0,3,2,2,1,1.01,Germany,Russian Federation,NA
+2,38002,380,Dzhurdzhulest Strip & Kopanka Road,2,359,369,359369,199609,199908,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Republic of Moldova,Ukraine,NA
+2,38201,382,Serpent's/Snake/Zmeinyy Island,1,365,360,360365,194802,194805,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Russian Federation,Romania,NA
+2,38202,382,Serpent's/Snake/Zmeinyy Island,2,360,365,360365,199104,199112,5,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Romania,Russian Federation,NA
+2,38401,384,Constantinople,1,365,640,365640,191503,191712,2,0,7,2,2,5,4,3,0,3,0,0,0,1.01,Russian Federation,Turkey,NA
+3,40001,400,Casamance,1,220,235,220235,185902,188605,4,0,3,1,2,1,2,1,1,0,0,0,0,1.01,France,Portugal,NA
+3,40201,402,Bulama Island,1,200,235,200235,181601,187004,12,0,6,2,3,3,4,2,1,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Portugal,NA
+3,40401,404,Gambia,1,220,200,200220,187003,190404,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,40402,404,Yarbutenda,2,220,200,200220,190404,191001,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,40403,404,Foni Brefet Border,3,433,420,420433,197101,197601,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Senegal,Gambia (Islamic Republic of the),NA
+3,40601,406,Eastern Hodh & Savannah,1,432,435,432435,196011,196302,4,0,8,3,4,4,4,4,2,2,1,1,0,1.01,Mali,Mauritania,NA
+3,40801,408,Agacher Strip,1,432,439,432439,196008,198612,12,0,9,3,5,4,4,5,3,2,3,3,0,1.01,Mali,Burkina Faso,NA
+3,41001,410,Senegal River Floodplain,1,433,435,433435,198905,199107,1,0,9,3,4,5,4,5,2,3,2,1,0,1.01,Senegal,Mauritania,NA
+3,41601,416,Ketenou,1,220,200,200220,187909,188908,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,41602,416,Cotonou,2,200,220,200220,188001,188004,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,France,NA
+3,41603,416,Agege Channel,3,200,220,200220,188401,188908,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,France,NA
+3,41604,416,San Joao de Ajuda,4,434,235,235434,196101,196108,8,0,3,1,2,1,0,3,2,1,1,0,0,1.01,Benin,Portugal,NA
+3,42001,420,Borgu-Boussa-Badjibo-Forcados,1,220,200,200220,189510,189806,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,42002,420,Badjibo & Forcados,2,200,220,200220,190310,190404,4,0,6,2,3,3,4,2,1,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,France,NA
+3,42003,420,Boussa-Illo-Sokoto Border,3,220,200,200220,190312,190404,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,42401,424,Cavally & Cess River Land,1,450,220,220450,195801,196008,5,0,6,2,4,2,2,4,3,1,0,0,0,1.01,Liberia,France,NA
+3,42402,424,Cavally & Cess River Land,2,450,437,437450,196008,196111,4,0,7,2,4,3,2,5,3,2,0,0,0,1.01,Liberia,Côte D'Ivoire,NA
+3,42601,426,Danish Gold Coast,1,200,390,200390,184901,185003,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Denmark,NA
+3,42602,426,East Dutch Gold Coast,2,200,210,200210,186001,186703,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Netherlands,NA
+3,42603,426,West British Gold Coast,3,210,200,200210,186001,186703,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Netherlands,United Kingdom of Great Britain and Northern Ireland,NA
+3,42604,426,Dutch Gold Coast,4,200,210,200210,186911,187202,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Netherlands,NA
+3,42605,426,Ivory Coast,5,200,220,200220,187504,187603,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,France,NA
+3,42606,426,Assinie Border Territory,6,200,220,200220,187705,188304,1,0,3,1,1,2,2,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,France,NA
+3,42607,426,Sanwi State,7,452,220,220452,195905,196008,5,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Ghana,France,NA
+3,42608,426,Sanwi State,8,452,437,437452,196008,196108,1,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Ghana,Côte D'Ivoire,NA
+3,42801,428,Zigida,1,450,220,220450,192006,192610,4,0,6,2,4,2,2,4,3,1,0,0,0,1.01,Liberia,France,NA
+3,42802,428,Mount Nimba,2,450,220,220450,195801,195810,1,0,8,3,5,3,4,4,3,1,0,0,0,1.01,Liberia,France,NA
+3,43001,430,Iles de Los,1,220,200,200220,187003,190404,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,43002,430,Matacong Island,2,220,200,200220,187903,188206,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,43003,430,Mellacourie,3,200,220,200220,187002,188206,4,0,7,2,3,4,6,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,France,NA
+3,43601,436,Komtenga Strip,1,452,439,439452,196310,196606,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Ghana,Burkina Faso,NA
+3,43801,438,Western German Togo,1,200,255,200255,191704,191907,14,1,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Germany,NA
+3,43802,438,Eastern German Togo,2,220,255,220255,191807,191907,14,1,5,2,2,3,4,1,0,1,1,1,1,1.01,France,Germany,NA
+3,43803,438,Togo,3,452,461,452461,196112,196607,1,0,8,3,4,4,4,4,2,2,1,1,0,1.01,Ghana,Togo,NA
+3,43804,438,British Togoland,4,461,452,452461,196109,197807,1,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Togo,Ghana,NA
+3,50001,500,Fernando Po & Annobon Islands,1,200,230,200230,183904,184107,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Spain,NA
+3,50002,500,Equatorial Guinea,2,471,230,230471,196307,196308,1,0,8,3,4,4,6,2,1,1,0,0,0,1.01,Cameroon,Spain,NA
+3,50401,504,British Cameroon,1,200,255,200255,191704,191907,14,1,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Germany,NA
+3,50402,504,French Cameroon,2,220,255,220255,191807,191907,14,1,7,2,3,4,6,1,0,1,1,1,1,1.01,France,Germany,NA
+3,50403,504,Northern Cameroons,3,471,475,471475,196104,196312,1,0,12,3,6,6,6,6,3,3,0,0,0,1.01,Cameroon,Nigeria,NA
+3,50801,508,French Congo,1,255,220,220255,191107,191111,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Germany,France,NA
+3,50802,508,Neu Kamerun,2,220,255,220255,191408,191906,14,1,6,2,3,3,4,2,1,1,1,1,1,1.01,France,Germany,NA
+3,51201,512,Logone River Triangle,1,220,255,220255,191107,191111,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,Germany,NA
+3,51801,518,Southwest Sudan & Fashoda,1,220,200,200220,189606,189903,4,0,5,2,2,3,4,1,0,1,2,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,51802,518,Southeast Sudan,2,530,200,200530,189806,189903,1,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Ethiopia,United Kingdom of Great Britain and Northern Ireland,NA
+3,51803,518,CAR Border Strip,3,220,200,200220,191909,191909,4,0,4,1,2,2,2,2,1,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+3,52001,520,Aozou Strip,1,325,220,220325,192906,193812,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Italy,France,NA
+3,52002,520,Aozou Strip,2,620,483,483620,197211,199405,12,0,10,3,5,5,6,4,2,2,6,3,0,1.01,Libya,Chad,NA
+3,52601,526,Mufumbiro,1,200,211,200211,190905,191005,13,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Belgium,NA
+3,52801,528,Lake Kivu Area,1,255,211,211255,190905,191005,13,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Germany,Belgium,NA
+3,52802,528,Ruanda-Urundi,2,211,255,211255,191606,191906,14,1,5,2,2,3,4,1,0,1,1,1,1,1.01,Belgium,Germany,NA
+3,53001,530,Kilwa Island,1,211,200,200211,193109,194005,6,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Belgium,United Kingdom of Great Britain and Northern Ireland,NA
+3,53002,530,Kilwa Island & Peake-Gendarme Border,2,211,200,200211,194506,196006,5,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Belgium,United Kingdom of Great Britain and Northern Ireland,NA
+3,53003,530,Katanga Pedicle,3,200,211,200211,193209,194005,6,0,7,2,3,4,6,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Belgium,NA
+3,53004,530,Katanga Pedicle,4,200,211,200211,194506,196006,5,0,7,2,3,4,6,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Belgium,NA
+3,53005,530,Kaputa District,5,490,551,490551,198008,198909,1,0,8,3,4,4,2,6,3,3,3,2,0,1.01,Democratic Republic of the Congo,Zambia,NA
+3,53601,536,Kagera Salient,1,500,510,500510,197209,197904,1,1,9,3,4,5,4,5,2,3,4,3,1,1.01,Uganda,United Republic of Tanzania,NA
+3,53602,536,Kamwema,2,500,510,500510,200007,200010,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Uganda,United Republic of Tanzania,NA
+3,54201,542,Vanga,1,255,200,200255,188901,189307,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Germany,United Kingdom of Great Britain and Northern Ireland,NA
+3,54202,542,German East Africa,2,200,255,200255,191704,191906,14,1,7,2,3,4,6,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Germany,NA
+3,54401,544,Jubaland,1,325,200,200325,191810,192506,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Italy,United Kingdom of Great Britain and Northern Ireland,NA
+3,54402,544,Northern Frontier District,2,520,200,200520,196202,196312,5,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Somalia,United Kingdom of Great Britain and Northern Ireland,NA
+3,54403,544,Northern Frontier District,3,520,501,501520,196312,198109,2,0,7,2,3,4,2,5,2,3,3,3,0,1.01,Somalia,Kenya,NA
+3,54801,548,Boran Galla,1,530,200,200530,189801,190712,4,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Ethiopia,United Kingdom of Great Britain and Northern Ireland,NA
+3,54802,548,Gadaduma Wells & Minor Territory,2,530,200,200530,190907,193605,6,0,9,3,5,4,6,3,2,1,0,0,0,1.01,Ethiopia,United Kingdom of Great Britain and Northern Ireland,NA
+3,54803,548,Gadaduma Wells & Minor Territory,3,530,200,200530,194105,196312,5,0,9,3,5,4,6,3,2,1,0,0,0,1.01,Ethiopia,United Kingdom of Great Britain and Northern Ireland,NA
+3,54804,548,Gadaduma Wells & Minor Territory,4,530,501,501530,196312,197006,4,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Ethiopia,Kenya,NA
+3,54805,548,El Mole Tiko-Lake Stefanie-River Daua,5,530,200,200530,195601,196312,5,0,9,3,5,4,6,3,2,1,0,0,0,1.01,Ethiopia,United Kingdom of Great Britain and Northern Ireland,NA
+3,54806,548,El Mole Tiko-Lake Stefanie-River Daua,6,530,501,501530,196312,197006,4,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Ethiopia,Kenya,NA
+3,55001,550,Baro Salient,1,200,325,200325,193801,193908,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Italy,NA
+3,55002,550,Ilemi Triangle,2,325,200,200325,193701,193908,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Italy,United Kingdom of Great Britain and Northern Ireland,NA
+3,55601,556,Kissaka,1,211,200,200211,192209,192308,13,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Belgium,United Kingdom of Great Britain and Northern Ireland,NA
+3,56001,560,Djibouti,1,520,220,220520,196404,197706,1,0,9,3,5,4,6,3,2,1,0,0,0,1.01,Somalia,France,NA
+3,56201,562,Eastern Ogaden,1,530,325,325530,191101,193605,7,1,7,2,4,3,4,3,2,1,4,1,1,1.01,Ethiopia,Italy,NA
+3,56202,562,Walwal-Wardair-Ethiopia,2,325,530,325530,193001,193605,7,1,9,3,3,6,6,3,0,3,1,1,1,1.01,Italy,Ethiopia,NA
+3,56203,562,Haud & Reserved Area,3,200,530,200530,194801,195601,1,0,8,3,3,5,4,4,1,3,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Ethiopia,NA
+3,56204,562,Italian Somaliland,4,530,325,325530,194105,194702,11,0,7,2,4,3,4,3,2,1,1,1,1,1.01,Ethiopia,Italy,NA
+3,56205,562,Ogaden,5,520,530,520530,196007,199101,1,0,9,3,4,5,4,5,2,3,17,12,1,1.01,Somalia,Ethiopia,NA
+3,56401,564,Afambo,1,530,220,220530,194408,194706,4,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Ethiopia,France,NA
+3,56402,564,Djibouti,2,530,220,220530,196609,196610,1,0,9,3,5,4,6,3,2,1,0,0,0,1.01,Ethiopia,France,NA
+3,56403,564,Jibuti,3,325,220,220325,191708,191909,1,0,7,2,3,4,6,1,0,1,0,0,0,1.01,Italy,France,NA
+3,56404,564,Western Jibuti & Doumeirah Island,4,325,220,220325,193409,194211,6,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Italy,France,NA
+3,56801,568,Eritrea,1,530,325,325530,194501,194702,11,0,9,3,5,4,6,3,2,1,0,0,0,1.01,Ethiopia,Italy,NA
+3,57001,570,Lake Rudolf Border,1,530,200,200530,190904,193605,6,0,5,2,3,2,2,3,2,1,0,0,0,1.01,Ethiopia,United Kingdom of Great Britain and Northern Ireland,NA
+3,57002,570,Umbrega Triangle & El Fashaqa Triangle,2,530,625,530625,196611,197207,4,0,7,2,3,4,2,5,2,3,1,0,0,1.01,Ethiopia,Sudan,NA
+3,57201,572,Kassala Region,1,325,200,200325,191901,191909,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Italy,United Kingdom of Great Britain and Northern Ireland,NA
+3,60201,602,Duizi Valley Strip,1,211,235,211235,190901,192707,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Belgium,Portugal,NA
+3,60202,602,Dilolo Boot,2,235,211,211235,192611,192707,4,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Portugal,Belgium,NA
+3,60203,602,Congo River Islands,3,235,211,211235,192201,193508,4,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Portugal,Belgium,NA
+3,60801,608,Kionga Triangle,1,255,235,235255,189407,189409,4,1,5,2,2,3,4,1,0,1,0,0,0,1.01,Germany,Portugal,NA
+3,60802,608,Kionga Triangle & Southern German East Africa,2,235,255,235255,191604,191908,14,1,6,2,3,3,4,2,1,1,1,1,1,1.01,Portugal,Germany,NA
+3,61002,610,Songwe-Njombe-Tunduma-Mbeya,2,553,510,510553,196809,196809,2,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Malawi,United Republic of Tanzania,NA
+3,61201,612,West Barotseland,1,200,235,200235,189305,190505,12,0,3,1,1,2,2,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Portugal,NA
+3,61401,614,Kavale Rapids Border,1,255,235,235255,190401,191507,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Germany,Portugal,NA
+3,61601,616,Manicaland,1,200,235,200235,188910,189106,4,0,5,2,2,3,4,1,0,1,1,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Portugal,NA
+3,61602,616,Eastern Manicaland,2,235,200,200235,189206,189701,12,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Portugal,United Kingdom of Great Britain and Northern Ireland,NA
+3,61801,618,Southwestern Mozambique,1,553,235,235553,196809,196809,2,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Malawi,Portugal,NA
+3,62001,620,Delagoa Bay,1,200,235,200235,182306,188210,12,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Portugal,NA
+3,62201,622,Krogh-Mpundweni Border,1,200,235,200235,190511,192710,4,0,3,1,1,2,2,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Portugal,NA
+3,62401,624,Singabezi Island,1,552,551,551552,199702,199705,1,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Zimbabwe,Zambia,NA
+3,62601,626,Eastern Province,1,553,551,551553,196809,196809,2,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Malawi,Zambia,NA
+3,62602,626,Mwami,2,553,551,551553,198108,198608,4,0,7,2,3,4,2,5,2,3,0,0,0,1.01,Malawi,Zambia,NA
+3,63601,636,Rooibank & Ururas Areas,1,255,200,200255,188508,191105,12,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Germany,United Kingdom of Great Britain and Northern Ireland,NA
+3,63602,636,German South West Africa,2,200,255,200255,191501,191507,7,1,7,2,3,4,6,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Germany,NA
+3,63603,636,Walvis Bay,3,565,560,560565,199003,199402,4,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Namibia,South Africa,NA
+3,63801,638,Conquered Territories,1,570,560,560570,196610,199507,1,0,9,3,5,4,4,5,3,2,0,0,0,1.01,Lesotho,South Africa,NA
+3,64201,642,Kasikili Island,1,560,200,200560,194902,196609,5,0,2,1,1,1,0,2,1,1,0,0,0,1.01,South Africa,United Kingdom of Great Britain and Northern Ireland,NA
+3,64202,642,Kasikili Island,2,560,571,560571,196609,199003,5,0,3,1,1,2,0,3,1,2,1,0,0,1.01,South Africa,Botswana,NA
+3,64203,642,Kasikili Island,3,565,571,565571,199003,199912,12,0,3,1,1,2,0,3,1,2,1,0,0,1.01,Namibia,Botswana,NA
+3,64801,648,Tromelin Island,1,580,220,220580,196006,197604,2,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Madagascar,France,NA
+3,67001,670,Melilla Valley,1,230,600,230600,185902,185908,13,0,6,2,2,4,4,2,0,2,0,0,0,1.01,Spain,Morocco,NA
+3,67002,670,Ceuta Border Areas,2,230,600,230600,185909,186004,4,1,6,2,2,4,4,2,0,2,1,1,1,1.01,Spain,Morocco,NA
+3,67003,670,Santa Cruz de Mar Pequena,3,230,600,230600,186004,188310,4,0,4,1,1,3,2,2,0,2,0,0,0,1.01,Spain,Morocco,NA
+3,67005,670,Ifni,5,600,230,230600,195603,196906,4,0,8,3,5,3,4,4,3,1,1,0,0,1.01,Morocco,Spain,NA
+3,67201,672,Mauritania,1,600,220,220600,195809,196011,5,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Morocco,France,NA
+3,67202,672,Mauritania,2,600,435,435600,196011,197006,4,0,9,3,4,5,4,5,2,3,0,0,0,1.01,Morocco,Mauritania,NA
+3,67401,674,Western Sahara,1,600,230,230600,195709,197511,13,1,7,2,4,3,4,3,2,1,1,0,0,1.01,Morocco,Spain,NA
+3,67402,674,Western Sahara,2,435,230,230435,197410,197511,13,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Mauritania,Spain,NA
+3,67601,676,Central Morocco,1,220,600,220600,190404,191203,13,0,9,3,3,6,6,3,0,3,1,1,0,1.01,France,Morocco,NA
+3,67602,676,Northern & Southern Morocco,2,230,600,230600,190410,191203,13,0,9,3,3,6,6,3,0,3,1,1,0,1.01,Spain,Morocco,NA
+3,67603,676,French Morocco,3,230,220,220230,194006,194201,1,0,7,2,3,4,6,1,0,1,0,0,0,1.01,Spain,France,NA
+3,67604,676,Tarfaya,4,600,230,230600,195603,195804,4,1,8,3,5,3,4,4,3,1,0,0,0,1.01,Morocco,Spain,NA
+3,67801,678,Gourara-Touat-Tidikelt,1,220,600,220600,189912,190107,4,1,9,3,3,6,6,3,0,3,0,0,0,1.01,France,Morocco,NA
+3,67802,678,Oran,2,230,220,220230,194006,194102,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Spain,France,NA
+3,67803,678,Tindouf,3,600,220,220600,195603,196207,5,0,6,2,3,3,4,2,1,1,1,0,0,1.01,Morocco,France,NA
+3,67804,678,Tindouf,4,600,615,600615,196207,197206,4,1,7,2,3,4,4,3,1,2,2,2,0,1.01,Morocco,Algeria,NA
+3,68001,680,Garet el Hamel & Edjele,1,616,220,220616,195704,196207,5,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Tunisia,France,NA
+3,68002,680,Garet el Hamel & Edjele,2,616,615,615616,196207,197001,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Tunisia,Algeria,NA
+3,68201,682,Libyan Sahara,1,325,220,220325,191504,191909,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Italy,France,NA
+3,68401,684,Tunisia,1,220,616,220616,187807,188105,7,1,9,3,3,6,6,3,0,3,0,0,0,1.01,France,Tunisia,NA
+3,68501,685,Bizerte,1,616,220,220616,195603,196310,4,1,8,3,5,3,4,4,3,1,5,4,0,1.01,Tunisia,France,NA
+3,68601,686,Wad al-Mukta & Biban,1,220,640,220640,188501,191005,4,0,3,1,1,2,2,1,0,1,0,0,0,1.01,France,Turkey,NA
+3,68801,688,Sarra Triangle,1,325,200,200325,193311,193407,4,0,1,1,0,1,0,1,0,1,0,0,0,1.01,Italy,United Kingdom of Great Britain and Northern Ireland,NA
+3,69001,690,Libya,1,325,640,325640,191107,191210,4,1,7,2,3,4,6,1,0,1,1,1,1,1.01,Italy,Turkey,NA
+3,69201,692,Al Jaghbub & Sollum,1,325,200,200325,191504,192512,4,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Italy,United Kingdom of Great Britain and Northern Ireland,NA
+3,69202,692,Bardiyah & Al Jaghbub,2,651,325,325651,194605,195012,1,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Egypt,Italy,NA
+3,69401,694,Egypt,1,200,651,200651,188207,188209,7,1,9,3,3,6,6,3,0,3,1,1,1,1.01,United Kingdom of Great Britain and Northern Ireland,Egypt,NA
+3,69601,696,Sudan,1,651,200,200651,194512,195302,4,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Egypt,United Kingdom of Great Britain and Northern Ireland,NA
+3,69602,696,Halaib Triangle,2,651,625,625651,195801,195802,1,0,6,2,3,3,2,4,2,2,1,0,0,1.01,Egypt,Sudan,NA
+4,70001,700,Khotur & Bajirge,1,630,640,630640,185501,193205,4,0,6,2,3,3,2,4,2,2,2,2,0,1.01,Iran (Islamic Republic of),Turkey,NA
+4,70401,704,Shatt al Arab,1,640,630,630640,187701,192008,11,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Turkey,Iran (Islamic Republic of),NA
+4,70402,704,Shatt al Arab,2,630,200,200630,192008,193210,5,0,8,3,4,4,6,2,1,1,0,0,0,1.01,Iran (Islamic Republic of),United Kingdom of Great Britain and Northern Ireland,NA
+4,70403,704,Shatt al Arab,3,630,645,630645,193210,197506,4,1,9,3,4,5,6,3,1,2,9,4,0,1.01,Iran (Islamic Republic of),Iraq,NA
+4,70404,704,Shatt al Arab,4,645,630,630645,197910,199008,4,0,10,3,5,5,6,4,2,2,4,3,1,1.01,Iraq,Iran (Islamic Republic of),NA
+4,70501,705,Khuzestan (Arabistan),1,645,630,630645,195912,197503,4,1,11,3,5,6,6,5,2,3,0,0,0,1.01,Iraq,Iran (Islamic Republic of),NA
+4,70502,705,Khuzestan (Arabistan),2,645,630,630645,198009,199008,4,0,11,3,5,6,6,5,2,3,1,1,1,1.01,Iraq,Iran (Islamic Republic of),NA
+4,70601,706,Cilicia,1,220,640,220640,191605,192008,14,1,9,3,3,6,6,3,0,3,2,2,2,1.01,France,Turkey,NA
+4,70602,706,Cilicia,2,640,220,220640,192008,192110,4,1,10,3,6,4,6,4,3,1,1,1,1,1.01,Turkey,France,NA
+4,70801,708,Antalya & Konya,1,325,640,325640,191504,192008,14,1,7,2,2,5,4,3,0,3,3,2,1,1.01,Italy,Turkey,NA
+4,70802,708,Antalya & Konya,2,640,325,325640,192008,192103,2,0,8,3,5,3,4,4,3,1,1,1,0,1.01,Turkey,Italy,NA
+4,71001,710,Smyrna (Izmir),1,350,640,350640,191505,192008,14,1,9,3,4,5,4,5,2,3,3,3,2,1.01,Greece,Turkey,NA
+4,71002,710,Smyrna (Izmir),2,325,640,325640,191704,192004,14,0,8,3,3,5,4,4,1,3,2,2,1,1.01,Italy,Turkey,NA
+4,71003,710,Smyrna (Izmir),3,640,350,350640,192008,192307,14,1,10,3,5,5,4,6,3,3,0,0,0,1.01,Turkey,Greece,NA
+4,71201,712,Greater Syria,1,220,640,220640,191503,192008,14,1,9,3,3,6,6,3,0,3,1,1,1,1.01,France,Turkey,NA
+4,71401,714,Mosul,1,200,640,200640,191811,192008,14,1,9,3,3,6,6,3,0,3,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Turkey,NA
+4,71402,714,Mosul,2,640,200,200640,192008,192606,4,0,10,3,6,4,6,4,3,1,1,0,0,1.01,Turkey,United Kingdom of Great Britain and Northern Ireland,NA
+4,71601,716,Hatay (Alexandretta),1,640,220,220640,193609,193906,4,0,8,3,5,3,4,4,3,1,2,0,0,1.01,Turkey,France,NA
+4,71602,716,Hatay (Alexandretta),2,652,640,640652,194604,195407,2,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Syrian Arab Republic,Turkey,NA
+4,71603,716,Hatay (Alexandretta),3,652,640,640652,195710,195802,6,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Syrian Arab Republic,Turkey,NA
+4,71604,716,Hatay (Alexandretta),4,651,640,640651,195802,196109,5,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Egypt,Turkey,NA
+4,72001,720,Basra & Baghdad,1,200,640,200640,191511,192008,14,1,9,3,3,6,6,3,0,3,1,1,1,1.01,United Kingdom of Great Britain and Northern Ireland,Turkey,NA
+4,72401,724,Iraq-Saudi Neutral Zone,1,670,645,645670,197506,198112,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Saudi Arabia,Iraq,NA
+4,72402,724,Iraq-Saudi Neutral Zone,2,645,670,645670,197506,198112,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Iraq,Saudi Arabia,NA
+4,72601,726,Kuwait,1,640,200,200640,190109,192008,14,1,6,2,3,3,4,2,1,1,0,0,0,1.01,Turkey,United Kingdom of Great Britain and Northern Ireland,NA
+4,72602,726,Kuwait,2,645,200,200645,193809,196106,5,0,9,3,5,4,6,3,2,1,1,0,0,1.01,Iraq,United Kingdom of Great Britain and Northern Ireland,NA
+4,72603,726,Kuwait,3,645,690,645690,196106,199411,13,1,10,3,5,5,6,4,2,2,9,4,0,1.01,Iraq,Kuwait,NA
+4,73001,730,Suez Canal,1,651,200,200651,195110,195606,13,1,7,2,4,3,4,3,2,1,1,1,0,1.01,Egypt,United Kingdom of Great Britain and Northern Ireland,NA
+4,73201,732,Negev-Gaza-Neutral Zone,1,651,666,651666,194805,194902,13,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Egypt,Israel,NA
+4,73202,732,Negev Desert,2,651,666,651666,194902,197904,13,1,9,3,4,5,4,5,2,3,10,6,2,1.01,Egypt,Israel,NA
+4,73203,732,Southern Negev & Demilitarized Zone,3,663,666,663666,194805,194912,1,0,9,3,4,5,4,5,2,3,2,2,1,1.01,Jordan,Israel,NA
+4,73401,734,Gaza Strip & Demilitarized Zones,1,666,651,651666,194902,196706,7,1,9,3,4,5,4,5,2,3,16,9,1,1.01,Israel,Egypt,NA
+4,73601,736,Sinai Peninsula,1,200,640,200640,189201,190610,4,0,6,2,2,4,4,2,0,2,1,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Turkey,NA
+4,73602,736,Sharm el Sheikh,2,666,651,651666,195511,195703,13,0,8,3,3,5,4,4,1,3,1,1,1,1.01,Israel,Egypt,NA
+4,73603,736,Sinai Peninsula,3,651,666,651666,196706,197904,13,0,10,3,5,5,4,6,3,3,5,5,3,1.01,Egypt,Israel,NA
+4,73604,736,Taba,4,651,666,651666,197904,198809,12,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Egypt,Israel,NA
+4,74001,740,Shebaa Farms,1,660,652,652660,195501,196706,11,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Lebanon,Syrian Arab Republic,NA
+4,74101,741,Syria,1,663,652,652663,194604,195707,1,0,11,3,5,6,6,5,2,3,1,0,0,1.01,Jordan,Syrian Arab Republic,NA
+4,74102,741,Iraq,2,663,645,645663,194603,195707,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Jordan,Iraq,NA
+4,74103,741,Lebanon,3,663,660,660663,194603,195707,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Jordan,Lebanon,NA
+4,74104,741,Israel (Palestine),4,663,666,663666,194805,196706,1,0,11,3,5,6,6,5,2,3,1,1,1,1.01,Jordan,Israel,NA
+4,74301,743,Israel (Palestine),1,652,666,652666,197402,198310,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Syrian Arab Republic,Israel,NA
+4,74302,743,Jordan,2,652,663,652663,197402,198310,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Syrian Arab Republic,Jordan,NA
+4,74303,743,Lebanon,3,652,660,652660,197402,198310,1,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Syrian Arab Republic,Lebanon,NA
+4,74401,744,Eastern Galilee/Syria-Israel Demilitarized Zones,1,652,666,652666,194805,195802,6,0,9,3,4,5,4,5,2,3,18,8,1,1.01,Syrian Arab Republic,Israel,NA
+4,74402,744,Syria-Israel Demilitarized Zones,2,651,666,651666,195802,196109,5,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Egypt,Israel,NA
+4,74801,748,West Bank-Jerusalem-Demilitarized Zones,1,666,663,663666,194904,196706,7,1,11,3,5,6,6,5,2,3,8,8,1,1.01,Israel,Jordan,NA
+4,74802,748,West Bank & East Jerusalem,2,663,666,663666,196706,199410,13,0,12,3,6,6,6,6,3,3,2,2,1,1.01,Jordan,Israel,NA
+4,75001,750,Palestine and Transjordan,1,200,640,200640,191605,192008,14,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Turkey,NA
+4,75201,752,Aqaba & At Tubayq Hills,1,670,200,200670,192705,194603,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Saudi Arabia,United Kingdom of Great Britain and Northern Ireland,NA
+4,75202,752,Aqaba & At Tubayq Hills,2,670,663,663670,194603,196508,4,0,7,2,3,4,4,3,1,2,1,0,0,1.01,Saudi Arabia,Jordan,NA
+4,75203,752,Aqaba Hinterland,3,663,670,663670,196109,196508,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Jordan,Saudi Arabia,NA
+4,75401,754,Farsi & al Arabiyah Islands,1,630,670,630670,194905,196810,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Iran (Islamic Republic of),Saudi Arabia,NA
+4,75601,756,Najran-Asir-Jizan,1,670,678,670678,192705,193406,4,1,7,2,3,4,4,3,1,2,3,3,1,1.01,Saudi Arabia,Yemen Arab Republic,NA
+4,75602,756,Najran-Asir-Jizan,2,678,670,670678,198001,199005,6,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Yemen Arab Republic,Saudi Arabia,NA
+4,75603,756,Najran-Asir-Jizan,3,679,670,670679,199005,200006,4,1,8,3,4,4,4,4,2,2,2,2,0,1.01,Yemen,Saudi Arabia,NA
+4,75604,756,Duwaimah-Huraym-Ashiq Islands,4,670,679,670679,199805,200006,4,1,6,2,3,3,2,4,2,2,0,0,0,1.01,Saudi Arabia,Yemen,NA
+4,75801,758,Al Wadiah-Beihan,1,670,200,200670,193504,196711,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Saudi Arabia,United Kingdom of Great Britain and Northern Ireland,NA
+4,75802,758,Al Wadiah-Beihan,2,670,680,670680,196711,199005,6,0,7,2,3,4,4,3,1,2,1,1,0,1.01,Saudi Arabia,Yemen People's Republic,NA
+4,75803,758,Al Wadiah-Beihan,3,670,679,670679,199005,200006,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Saudi Arabia,Yemen,NA
+4,76001,760,Southern Saudi-Kuwait Neutral Zone,1,670,200,200670,192705,196106,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Saudi Arabia,United Kingdom of Great Britain and Northern Ireland,NA
+4,76002,760,Southern Saudi-Kuwait Neutral Zone,2,670,690,670690,196106,196507,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Saudi Arabia,Kuwait,NA
+4,76003,760,Northern Saudi-Kuwait Neutral Zone,3,690,670,670690,196106,196507,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Kuwait,Saudi Arabia,NA
+4,76201,762,Qaruh & Umm al-Maradim Islands,1,670,200,200670,194901,196106,5,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Saudi Arabia,United Kingdom of Great Britain and Northern Ireland,NA
+4,76202,762,Qaruh & Umm al-Maradim Islands,2,670,690,670690,196106,200007,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Saudi Arabia,Kuwait,NA
+4,76401,764,Lubainah al-Saghirah & Lubainah al-Kabirah Islands,1,670,200,200670,194901,195802,4,0,2,1,1,1,0,2,1,1,0,0,0,1.01,Saudi Arabia,United Kingdom of Great Britain and Northern Ireland,NA
+4,76601,766,Al Khafous (Khafus),1,670,694,670694,199209,199906,4,0,8,3,4,4,4,4,2,2,2,0,0,1.01,Saudi Arabia,Qatar,NA
+4,76801,768,Abu Musa & Tunb Islands,1,630,200,200630,190307,197112,7,1,9,3,5,4,6,3,2,1,0,0,0,1.01,Iran (Islamic Republic of),United Kingdom of Great Britain and Northern Ireland,NA
+4,77001,770,Buraimi & Emirates Border Regions,1,670,200,200670,193504,197112,5,0,6,2,3,3,4,2,1,1,2,0,0,1.01,Saudi Arabia,United Kingdom of Great Britain and Northern Ireland,NA
+4,77002,770,Western Buraimi,2,670,696,670696,197112,197408,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Saudi Arabia,United Arab Emirates,NA
+4,77003,770,Eastern Buraimi,3,670,698,670698,197110,199003,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Saudi Arabia,Oman,NA
+4,77004,770,Sila,4,670,696,670696,197601,197701,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Saudi Arabia,United Arab Emirates,NA
+4,77005,770,Saudi/UAE Border,5,670,696,670696,199301,199301,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Saudi Arabia,United Arab Emirates,NA
+4,77401,774,South Yemen,1,678,200,200678,194101,196711,5,0,9,3,5,4,6,3,2,1,5,5,0,1.01,Yemen Arab Republic,United Kingdom of Great Britain and Northern Ireland,NA
+4,77402,774,South Yemen,2,678,680,678680,196711,199005,7,1,11,3,5,6,6,5,2,3,2,2,0,1.01,Yemen Arab Republic,Yemen People's Republic,NA
+4,77601,776,Kamaran Island,1,200,640,200640,191505,191506,7,1,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Turkey,NA
+4,77602,776,Kamaran Island,2,678,200,200678,195604,196711,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Yemen Arab Republic,United Kingdom of Great Britain and Northern Ireland,NA
+4,77603,776,Kamaran Island,3,678,680,678680,196711,197210,7,1,7,2,3,4,4,3,1,2,0,0,0,1.01,Yemen Arab Republic,Yemen People's Republic,NA
+4,77604,776,Kamaran Island,4,680,678,678680,197210,199005,11,1,8,3,4,4,4,4,2,2,0,0,0,1.01,Yemen People's Republic,Yemen Arab Republic,NA
+4,77801,778,Perim Island,1,640,200,200640,185707,185808,1,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Turkey,United Kingdom of Great Britain and Northern Ireland,NA
+4,78001,780,Hanish Islands,1,678,530,530678,197301,199005,6,0,9,3,4,5,6,3,1,2,0,0,0,1.01,Yemen Arab Republic,Ethiopia,NA
+4,78002,780,Hanish Islands,2,679,530,530679,199005,199305,5,0,10,3,5,5,6,4,2,2,0,0,0,1.01,Yemen,Ethiopia,NA
+4,78003,780,Hanish Islands,3,679,531,531679,199305,199810,12,0,10,3,5,5,6,4,2,2,2,1,0,1.01,Yemen,Eritrea,NA
+4,78201,782,Dhofar,1,698,680,680698,198101,199005,6,0,6,2,3,3,2,4,2,2,1,1,0,1.01,Oman,Yemen People's Republic,NA
+4,78202,782,Dhofar,2,698,679,679698,199005,199506,4,0,6,2,3,3,2,4,2,2,0,0,0,1.01,Oman,Yemen,NA
+4,78401,784,Kuria Muria Islands,1,680,200,200680,196711,197110,5,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Yemen People's Republic,United Kingdom of Great Britain and Northern Ireland,NA
+4,78402,784,Kuria Muria Islands,2,680,698,680698,197110,198210,1,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Yemen People's Republic,Oman,NA
+4,78601,786,Bahrain,1,630,200,200630,186901,197005,13,0,9,3,5,4,6,3,2,1,0,0,0,1.01,Iran (Islamic Republic of),United Kingdom of Great Britain and Northern Ireland,NA
+4,79001,790,Hawar Islands & Zubarah,1,694,692,692694,197109,200103,12,0,7,2,3,4,4,3,1,2,1,0,0,1.01,Qatar,Bahrain,NA
+4,79201,792,Ras al-Khaimah,1,698,696,696698,197712,199905,4,0,9,3,4,5,6,3,1,2,0,0,0,1.01,Oman,United Arab Emirates,NA
+5,80001,800,Maritime Territories,1,365,710,365710,186010,186011,4,0,11,3,5,6,6,5,2,3,0,0,0,1.01,Russian Federation,China,NA
+5,80002,800,Amur & Ussuri River Islands,2,365,710,365710,186011,186107,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Russian Federation,China,NA
+5,80003,800,Argun River Islands,3,365,710,365710,191101,191112,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Russian Federation,China,NA
+5,80004,800,Amur & Ussuri River Islands,4,710,365,365710,191907,193203,11,0,8,3,4,4,4,4,2,2,2,0,0,1.01,China,Russian Federation,NA
+5,80005,800,Amur & Ussuri River Islands,5,740,365,365740,193501,194508,7,1,8,3,4,4,4,4,2,2,5,3,2,1.01,Japan,Russian Federation,NA
+5,80201,802,Inner Mongolia,1,740,710,710740,193709,194508,7,1,7,2,2,5,4,3,0,3,0,0,0,1.01,Japan,China,NA
+5,80202,802,Liaotung Peninsula,2,740,710,710740,189501,189505,2,1,7,2,2,5,4,3,0,3,0,0,0,1.01,Japan,China,NA
+5,80203,802,Manchurian Railway Corridor,3,365,710,365710,189601,189606,4,0,5,2,1,4,2,3,0,3,0,0,0,1.01,Russian Federation,China,NA
+5,80204,802,Liaotung Peninsula,4,365,710,365710,189803,189803,4,0,7,2,2,5,4,3,0,3,1,0,0,1.01,Russian Federation,China,NA
+5,80205,802,Kinchow,5,365,710,365710,190102,190103,1,0,7,2,2,5,4,3,0,3,0,0,0,1.01,Russian Federation,China,NA
+5,80206,802,Liaotung Peninsula,6,740,365,365740,190407,190509,13,1,5,2,2,3,4,1,0,1,1,1,1,1.01,Japan,Russian Federation,NA
+5,80207,802,Liaotung Peninsula,7,710,740,710740,192112,194508,6,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,Japan,NA
+5,80208,802,Manchuria,8,740,710,710740,193109,193203,7,1,8,3,3,5,4,4,1,3,1,1,1,1.01,Japan,China,NA
+5,80209,802,Manchuria,9,710,740,710740,193203,194508,6,0,9,3,5,4,4,5,3,2,8,7,2,1.01,China,Japan,NA
+5,80210,802,North China,10,740,710,710740,193606,194508,6,0,10,3,4,6,6,4,1,3,2,2,2,1.01,Japan,China,NA
+5,80301,803,Shantung,1,255,710,255710,189511,189803,4,0,7,2,2,5,4,3,0,3,1,0,0,1.01,Germany,China,NA
+5,80302,803,Shantung,2,740,255,255740,191408,191411,7,1,5,2,2,3,4,1,0,1,0,0,0,1.01,Japan,Germany,NA
+5,80303,803,Shantung,3,710,740,710740,191812,192202,4,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,Japan,NA
+5,80401,804,Outer Mongolia,1,365,710,365710,192103,194601,10,1,10,3,4,6,6,4,1,3,0,0,0,1.01,Russian Federation,China,NA
+5,80402,804,Dalai & Buyr Lakes-Halhin River,2,740,712,712740,193501,194205,2,1,7,2,2,5,4,3,0,3,2,2,1,1.01,Japan,Mongolia,NA
+5,80403,804,Baytik Mountains & Hongshanzui,3,710,712,710712,194708,196212,4,0,10,3,4,6,6,4,1,3,1,1,0,1.01,China,Mongolia,NA
+5,80404,804,Tannu Tuva,4,365,710,365710,191404,192109,5,0,10,3,4,6,6,4,1,3,3,0,0,1.01,Russian Federation,China,NA
+5,80601,806,Weihaiwei,1,200,710,200710,189804,189807,4,0,7,2,2,5,4,3,0,3,1,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,China,NA
+5,80602,806,Weihaiwei,2,710,200,200710,190610,193010,4,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,United Kingdom of Great Britain and Northern Ireland,NA
+5,80701,807,Kwangchou-wan,1,220,710,220710,189804,189805,4,0,7,2,2,5,4,3,0,3,1,0,0,1.01,France,China,NA
+5,80702,807,Kwangchou-wan,2,710,220,220710,192112,194508,4,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,France,NA
+5,80801,808,Sanmen Bay,1,325,710,325710,189901,189906,1,0,7,2,2,5,4,3,0,3,1,0,0,1.01,Italy,China,NA
+5,80901,809,Taiwan,1,740,710,710740,189501,189504,4,1,9,3,3,6,6,3,0,3,0,0,0,1.01,Japan,China,NA
+5,80902,809,Taiwan,2,710,740,710740,194311,194508,6,0,10,3,6,4,6,4,3,1,0,0,0,1.01,China,Japan,NA
+5,81101,811,Pescadores Islands,1,740,710,710740,189501,189504,4,1,6,2,2,4,4,2,0,2,0,0,0,1.01,Japan,China,NA
+5,81102,811,Pescadores Islands,2,710,740,710740,194311,194508,6,1,7,2,4,3,4,3,2,1,0,0,0,1.01,China,Japan,NA
+5,81401,814,Kowloon Peninsula,1,200,710,200710,189301,189807,4,0,7,2,2,5,4,3,0,3,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,China,NA
+5,81402,814,Kowloon Peninsula,2,710,200,200710,192112,199707,4,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,United Kingdom of Great Britain and Northern Ireland,NA
+5,81403,814,Hong Kong,3,710,200,200710,197203,199707,4,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,United Kingdom of Great Britain and Northern Ireland,NA
+5,81601,816,Macao,1,710,235,235710,186010,188703,4,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,Portugal,NA
+5,81602,816,Lappa-Dom Joao-Wongkam Islands,2,710,235,235710,190101,191001,1,0,6,2,4,2,2,4,3,1,0,0,0,1.01,China,Portugal,NA
+5,81603,816,Macao,3,710,235,235710,197203,199912,4,0,8,3,5,3,4,4,3,1,0,0,0,1.01,China,Portugal,NA
+5,81801,818,Ryukyu Islands,1,710,740,710740,187405,188101,1,0,10,3,4,6,6,4,1,3,3,0,0,1.01,China,Japan,NA
+5,81802,818,Ryukyu Islands,2,710,740,710740,194211,194508,6,0,10,3,4,6,6,4,1,3,0,0,0,1.01,China,Japan,NA
+5,82401,824,Changbai Mountain,1,731,710,710731,195204,196210,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Democratic People's Republic of Korea,China,NA
+5,82601,826,Korea,1,740,730,730740,189408,190511,7,1,7,2,2,5,4,3,0,3,2,1,0,1.01,Japan,Korea,NA
+5,82602,826,Masampo (Masan),2,365,730,365730,189408,190511,1,0,7,2,2,5,4,3,0,3,1,0,0,1.01,Russian Federation,Korea,NA
+5,82801,828,Sakhalin Island,1,365,740,365740,186001,187505,4,0,9,3,4,5,6,3,1,2,2,1,0,1.01,Russian Federation,Japan,NA
+5,82802,828,Sakhalin Island,2,740,365,365740,190506,190509,13,1,10,3,5,5,6,4,2,2,1,1,1,1.01,Japan,Russian Federation,NA
+5,82803,828,Kuril Islands & South Sakhalin,3,365,740,365740,194011,194508,7,1,12,3,6,6,6,6,3,3,1,1,1,1.01,Russian Federation,Japan,NA
+5,85801,858,Western Georgia,1,365,640,365640,182804,182909,4,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Russian Federation,Turkey,NA
+5,85802,858,Kars,2,365,640,365640,185511,185603,13,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Russian Federation,Turkey,NA
+5,85803,858,Eastern Anatolia,3,365,640,365640,187704,187803,4,1,9,3,4,5,4,5,2,3,1,1,1,1.01,Russian Federation,Turkey,NA
+5,85804,858,Alashkert & Bayazit,4,640,365,365640,187803,187807,13,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Turkey,Russian Federation,NA
+5,85805,858,Eastern Anatolia,5,365,640,365640,191605,191712,2,0,10,3,5,5,4,6,3,3,1,1,1,1.01,Russian Federation,Turkey,NA
+5,85806,858,Kars-Ardahan-Batum,6,640,365,365640,191602,191803,13,1,10,3,5,5,4,6,3,3,1,1,1,1.01,Turkey,Russian Federation,NA
+5,85807,858,Batum,7,365,640,365640,192012,192103,4,0,10,3,5,5,4,6,3,3,1,0,0,1.01,Russian Federation,Turkey,NA
+5,85808,858,Kars & Ardahan,8,365,640,365640,194506,195307,2,0,10,3,5,5,4,6,3,3,1,0,0,1.01,Russian Federation,Turkey,NA
+5,86201,862,Krasnovodsk,1,365,630,365630,186911,186912,7,1,9,3,4,5,4,5,2,3,0,0,0,1.01,Russian Federation,Iran (Islamic Republic of),NA
+5,86202,862,Turkomen Tribal Areas,2,630,365,365630,187609,187705,1,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Iran (Islamic Republic of),Russian Federation,NA
+5,86203,862,Firuze,3,365,630,365630,189202,189306,4,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Russian Federation,Iran (Islamic Republic of),NA
+5,86204,862,Sarakhs,4,365,630,365630,190201,192102,4,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Russian Federation,Iran (Islamic Republic of),NA
+5,86205,862,Firuze-Achuradeh-Astrabad,5,630,365,365630,191901,192102,4,0,10,3,5,5,4,6,3,3,0,0,0,1.01,Iran (Islamic Republic of),Russian Federation,NA
+5,86206,862,Firuze,6,365,630,365630,193901,195412,4,0,8,3,4,4,2,6,3,3,0,0,0,1.01,Russian Federation,Iran (Islamic Republic of),NA
+5,86601,866,Badakshan,1,365,200,200365,187301,189503,4,0,6,2,3,3,4,2,1,1,1,0,0,1.01,Russian Federation,United Kingdom of Great Britain and Northern Ireland,NA
+5,86602,866,Urta-Turgai,2,365,700,365700,192501,192608,4,0,5,2,2,3,2,3,1,2,1,1,0,1.01,Russian Federation,Afghanistan,NA
+5,87701,877,Western Xinjiang,1,365,710,365710,186101,186409,4,0,11,3,5,6,6,5,2,3,1,1,0,1.01,Russian Federation,China,NA
+5,87702,877,Ili Valley & Lake Zaysan,2,365,710,365710,187008,188102,4,0,9,3,4,5,4,5,2,3,3,0,0,1.01,Russian Federation,China,NA
+5,87703,877,Sarykol Range,3,365,710,365710,189107,189401,4,0,9,3,4,5,4,5,2,3,1,0,0,1.01,Russian Federation,China,NA
+5,87704,877,Western Xinjiang,4,710,365,365710,196402,199112,5,0,12,3,6,6,6,6,3,3,1,0,0,1.01,China,Russian Federation,NA
+5,87706,877,Uzengi-Kuush,6,710,703,703710,199112,199908,4,0,10,3,5,5,4,6,3,3,0,0,0,1.01,China,Kyrgyzstan,NA
+5,87707,877,Chogan-Obo Valley & Bay-Murza Passes,7,710,705,705710,199112,199807,4,0,10,3,5,5,4,6,3,3,0,0,0,1.01,China,Kazakhstan,NA
+5,90001,900,Hashtadan,1,200,630,200630,188804,188907,9,0,2,1,0,2,0,2,0,2,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Iran (Islamic Republic of),NA
+5,90002,900,Musa Abad,2,700,630,630700,191908,193505,12,0,7,2,3,4,2,5,2,3,1,0,0,1.01,Afghanistan,Iran (Islamic Republic of),NA
+5,90401,904,Kuhak & Mashkil Valley,1,630,200,200630,187108,189512,4,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Iran (Islamic Republic of),United Kingdom of Great Britain and Northern Ireland,NA
+5,90402,904,Mirjaveh,2,200,630,200630,190201,190505,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Iran (Islamic Republic of),NA
+5,90801,908,Pashtunistan (Durand Line),1,200,365,200365,189301,192111,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Russian Federation,NA
+5,90901,909,Gwadar,1,770,200,200770,194708,195809,4,0,7,2,4,3,4,3,2,1,0,0,0,1.01,Pakistan,United Kingdom of Great Britain and Northern Ireland,NA
+5,91101,911,Sikkim,1,710,200,200710,187308,189003,4,1,7,2,4,3,4,3,2,1,0,0,0,1.01,China,United Kingdom of Great Britain and Northern Ireland,NA
+5,91201,912,Arunachal Pradesh,1,710,200,200710,186010,194708,5,0,11,3,6,5,6,5,3,2,0,0,0,1.01,China,United Kingdom of Great Britain and Northern Ireland,NA
+5,91401,914,Doklam-Sinchulumpa-Gieu,1,710,750,710750,196610,197109,5,0,7,2,3,4,4,3,1,2,0,0,0,1.01,China,India,NA
+5,91801,918,Mt Everest & Border Regions,1,710,790,710790,195910,196110,4,0,7,2,3,4,4,3,1,2,2,2,0,1.01,China,Nepal,NA
+5,92203,922,Trans-Karakoram Tract,3,710,770,710770,196105,196205,4,0,7,2,3,4,4,3,1,2,0,0,0,1.01,China,Pakistan,NA
+5,92204,922,Aksai Chin & Eastern Ladakh,4,710,750,710750,195407,196211,7,1,7,2,3,4,4,3,1,2,6,1,1,1.01,China,India,NA
+5,92301,923,Junagadh,1,750,770,750770,194708,194711,7,1,7,2,3,4,2,5,2,3,1,0,0,1.01,India,Pakistan,NA
+5,92401,924,Rann of Kutch,1,770,750,750770,194807,196802,12,1,7,2,3,4,2,5,2,3,3,3,1,1.01,Pakistan,India,NA
+5,92601,926,Goa-Daman-Diu-Dadra-Nagar Haveli,1,750,235,235750,194801,196112,7,1,7,2,4,3,4,3,2,1,3,1,0,1.01,India,Portugal,NA
+5,92602,926,Goa-Daman-Diu-Dadra-Nagar Haveli,2,235,750,235750,195407,197409,4,0,8,3,3,5,4,4,1,3,0,0,0,1.01,Portugal,India,NA
+5,92801,928,Pondicherry-Chandernagore-Karukal-Yanam-Mahe,1,750,220,220750,194708,195410,4,0,6,2,3,3,4,2,1,1,0,0,0,1.01,India,France,NA
+5,93001,930,Berubari Union & Bengali Enclaves,1,750,770,750770,194812,197112,5,0,7,2,3,4,2,5,2,3,4,4,0,1.01,India,Pakistan,NA
+5,93002,930,Cooch Behar & Bengali Enclaves,2,770,750,750770,194812,197112,5,0,7,2,3,4,2,5,2,3,3,2,0,1.01,Pakistan,India,NA
+5,93601,936,Kachchativu,1,780,750,750780,194901,197406,4,0,5,2,2,3,2,3,1,2,0,0,0,1.01,Sri Lanka,India,NA
+5,94001,940,Nam-Wan Tract,1,200,710,200710,188607,189702,4,0,6,2,2,4,4,2,0,2,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,China,NA
+5,94002,940,Hpimaw-Gawlam-Kangfang Villages,2,200,710,200710,191101,191101,7,1,4,1,1,3,2,2,0,2,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,China,NA
+5,94003,940,Wa State Border Regions,3,710,200,200710,193512,194106,4,0,7,2,4,3,4,3,2,1,0,0,0,1.01,China,United Kingdom of Great Britain and Northern Ireland,NA
+5,94004,940,Nam-Wan Tract,4,710,775,710775,194801,196010,4,0,8,3,4,4,4,4,2,2,1,1,0,1.01,China,Myanmar,NA
+5,94201,942,Sino District Tract,1,710,812,710812,196001,199110,4,0,6,2,3,3,2,4,2,2,0,0,0,1.01,China,Lao People's Democratic Republic,NA
+5,94401,944,Pe-Lung-Wei,1,220,710,220710,187505,188706,4,0,4,1,1,3,2,2,0,2,3,1,1,1.01,France,China,NA
+5,94402,944,Man Mei-Muong Neua-Neua Tay,2,220,710,220710,189201,189506,4,0,4,1,1,3,2,2,0,2,0,0,0,1.01,France,China,NA
+5,94403,944,White Dragon Tail Island,3,710,816,710816,195508,195705,1,0,7,2,3,4,4,3,1,2,0,0,0,1.01,China,Viet Nam,NA
+5,94404,944,China-Vietnam Border Regions,4,710,816,710816,195701,199912,4,0,5,2,2,3,2,3,1,2,5,5,1,1.01,China,Viet Nam,NA
+5,94501,945,South Vietnam,1,816,817,816817,195508,197504,7,1,11,3,5,6,6,5,2,3,2,2,1,1.01,Viet Nam,Republic of Vietnam,NA
+5,94601,946,Paracel Islands,1,710,220,220710,193209,193904,11,0,6,2,3,3,4,2,1,1,0,0,0,1.01,China,France,NA
+5,94602,946,Paracel Islands,2,740,220,220740,193807,193904,7,1,5,2,2,3,4,1,0,1,1,0,0,1.01,Japan,France,NA
+5,94603,946,Paracel Islands,3,220,740,220740,193904,194211,6,0,6,2,3,3,4,2,1,1,0,0,0,1.01,France,Japan,NA
+5,94604,946,Paracel Islands,4,220,740,220740,194408,194508,6,0,6,2,3,3,4,2,1,1,0,0,0,1.01,France,Japan,NA
+5,94605,946,Paracel Islands,5,710,740,710740,193904,194508,6,0,6,2,3,3,4,2,1,1,0,0,0,1.01,China,Japan,NA
+5,94606,946,Paracel Islands,6,710,220,220710,194611,195406,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,China,France,NA
+5,94607,946,Paracel Islands,7,710,817,710817,195406,197402,7,1,7,2,3,4,4,3,1,2,3,1,0,1.01,China,Republic of Vietnam,NA
+5,94608,946,Paracel Islands,8,817,710,710817,197402,197504,6,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Republic of Vietnam,China,NA
+5,95201,952,Lan Kwai & See Sok,1,800,200,200800,193401,193406,4,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Thailand,United Kingdom of Great Britain and Northern Ireland,NA
+5,95202,952,Shan States & Kentung,2,800,200,200800,194201,194601,4,1,6,2,3,3,4,2,1,1,1,1,0,1.01,Thailand,United Kingdom of Great Britain and Northern Ireland,NA
+5,95204,952,Mae Sot Islet,4,775,800,775800,199705,200101,4,0,3,1,1,2,0,3,1,2,0,0,0,1.01,Myanmar,Thailand,NA
+5,95401,954,Muong Sing,1,220,200,200220,189310,189601,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,France,United Kingdom of Great Britain and Northern Ireland,NA
+5,95501,955,Burma,1,740,200,200740,194007,194204,7,1,5,2,2,3,4,1,0,1,1,1,1,1.01,Japan,United Kingdom of Great Britain and Northern Ireland,NA
+5,95601,956,Battambang & Siemreap,1,220,800,220800,190601,190703,4,0,8,3,3,5,6,2,0,2,0,0,0,1.01,France,Thailand,NA
+5,95602,956,Preah Vihear,2,800,220,220800,194901,195311,5,0,4,1,3,1,0,4,3,1,0,0,0,1.01,Thailand,France,NA
+5,95603,956,Preah Vihear,3,800,811,800811,195311,196206,12,0,5,2,3,2,0,5,3,2,4,1,0,1.01,Thailand,Cambodia,NA
+5,95604,956,Ko Kut Island,4,800,811,800811,196307,196506,7,1,7,2,3,4,4,3,1,2,3,2,0,1.01,Thailand,Cambodia,NA
+5,95801,958,Luang-Prabang,1,220,800,220800,189303,189310,4,1,8,3,3,5,6,2,0,2,1,1,1,1.01,France,Thailand,NA
+5,95802,958,Sayaboury & Bassac,2,220,800,220800,190201,190402,4,0,6,2,2,4,4,2,0,2,0,0,0,1.01,France,Thailand,NA
+5,95803,958,Cardamoms Peninsula-Ko Chang-Ko Kut-West Luang Prabang,3,220,800,220800,190402,190406,4,0,4,1,1,3,2,2,0,2,0,0,0,1.01,France,Thailand,NA
+5,95804,958,Dan Sai-Cardamoms Peninsula-Ko Chang-Ko Kut,4,800,220,220800,190601,190703,4,0,6,2,4,2,2,4,3,1,0,0,0,1.01,Thailand,France,NA
+5,95805,958,Battambang-Siemreap-West Bank Mekong,5,800,220,220800,193908,194103,12,1,8,3,5,3,4,4,3,1,1,1,1,1.01,Thailand,France,NA
+5,95806,958,Battambang-Siemreap-West Bank Mekong,6,220,800,220800,194508,194706,13,0,7,2,3,4,4,3,1,2,1,1,0,1.01,France,Thailand,NA
+5,96001,960,Singapore-Benkulen-Fort Marlborough-Belitung,1,210,200,200210,181908,182403,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Netherlands,United Kingdom of Great Britain and Northern Ireland,NA
+5,96101,961,Dutch Malaya,1,200,210,200210,182006,182403,4,0,7,2,3,4,6,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Netherlands,NA
+5,96102,961,North Borneo and Sarawak,2,850,820,820850,196309,196703,1,0,7,2,3,4,2,5,2,3,1,1,0,1.01,Indonesia,Malaysia,NA
+5,96201,962,North Malay States,1,200,800,200800,190202,190903,4,0,8,3,3,5,6,2,0,2,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Thailand,NA
+5,96202,962,North Malay States,2,800,200,200800,194201,194601,4,1,9,3,5,4,6,3,2,1,1,1,0,1.01,Thailand,United Kingdom of Great Britain and Northern Ireland,NA
+5,96401,964,Prek Binh Gi-Bassac-Loc Ninh-Quan Phu Quoc,1,811,817,811817,195406,197504,6,0,7,2,3,4,2,5,2,3,6,2,0,1.01,Cambodia,Republic of Vietnam,NA
+5,96402,964,Prek Binh Gi-Bassac-Loc Ninh-Quan Phu Quoc,2,811,816,811816,197504,198512,4,1,7,2,3,4,2,5,2,3,0,0,0,1.01,Cambodia,Viet Nam,NA
+5,96501,965,French Indochina,1,740,220,220740,194007,194204,7,1,7,2,3,4,6,1,0,1,0,0,0,1.01,Japan,France,NA
+5,96901,969,British Southeast Asia (Malaysia / Singapore / Borneo),1,740,200,200740,194007,194204,7,1,7,2,3,4,6,1,0,1,1,1,1,1.01,Japan,United Kingdom of Great Britain and Northern Ireland,NA
+5,97001,970,Philippines,1,2,230,2230,189807,189812,13,1,7,2,3,4,6,1,0,1,1,1,1,1.01,United States of America,Spain,NA
+5,97002,970,Palmas Island,2,2,210,2210,190601,192804,12,0,3,1,1,2,2,1,0,1,0,0,0,1.01,United States of America,Netherlands,NA
+5,97003,970,Philippines,3,740,2,2740,194007,194204,7,1,7,2,3,4,6,1,0,1,1,1,1,1.01,Japan,United States of America,NA
+5,97101,971,North Borneo,1,230,200,200230,188111,188503,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Spain,United Kingdom of Great Britain and Northern Ireland,NA
+5,97102,971,North Borneo,2,840,200,200840,196206,196309,5,0,6,2,3,3,4,2,1,1,0,0,0,1.01,Philippines,United Kingdom of Great Britain and Northern Ireland,NA
+5,97401,974,Laurantuca-Woure-Pamangkaju,1,210,235,210235,185901,185904,4,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Netherlands,Portugal,NA
+5,97402,974,Tahakay & Tamiru Ailala,2,210,235,210235,189306,190410,4,0,3,1,1,2,2,1,0,1,0,0,0,1.01,Netherlands,Portugal,NA
+5,97403,974,Oecussi Enclave Border,3,235,210,210235,190906,191406,12,0,4,1,2,2,2,2,1,1,0,0,0,1.01,Portugal,Netherlands,NA
+5,97404,974,East Timor,4,850,235,235850,197404,197512,7,1,7,2,4,3,4,3,2,1,1,0,0,1.01,Indonesia,Portugal,NA
+5,97405,974,East Timor,5,235,850,235850,197512,199905,13,0,7,2,3,4,4,3,1,2,0,0,0,1.01,Portugal,Indonesia,NA
+5,97601,976,German New Guinea,1,200,255,200255,191409,191905,14,1,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Germany,NA
+5,97602,976,Papua New Guinea,2,740,900,740900,194007,194508,7,1,5,2,2,3,4,1,0,1,1,1,1,1.01,Japan,Australia,NA
+5,97603,976,West Irian,3,850,210,210850,194912,196207,13,0,7,2,4,3,4,3,2,1,7,3,0,1.01,Indonesia,Netherlands,NA
+5,97604,976,Torres Straits Islands,4,910,900,900910,197509,197812,4,0,8,3,4,4,4,4,2,2,0,0,0,1.01,Papua New Guinea,Australia,NA
+5,98101,981,Guam,1,2,230,2230,189804,189812,13,1,5,2,2,3,4,1,0,1,1,1,1,1.01,United States of America,Spain,NA
+5,98102,981,Caroline-Pelew-Marianas Islands,2,255,230,230255,188508,188512,12,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Germany,Spain,NA
+5,98103,981,Caroline-Pelew-Marianas Islands,3,255,230,230255,189808,189902,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,Germany,Spain,NA
+5,98104,981,Caroline-Marshall-Pelew-Marianas Islands,4,740,255,255740,191410,191906,14,1,5,2,2,3,4,1,0,1,1,1,1,1.01,Japan,Germany,NA
+5,98105,981,US Pacific Islands,5,740,2,2740,194112,194204,7,1,5,2,2,3,4,1,0,1,0,0,0,1.01,Japan,United States of America,NA
+5,98201,982,German Samoa (Upola and Savaii),1,2,255,2255,188701,189912,13,0,7,2,3,4,6,1,0,1,2,0,0,1.01,United States of America,Germany,NA
+5,98202,982,American Samoa (Tutuila and Manu'a),2,255,2,2255,188701,189912,13,0,7,2,3,4,6,1,0,1,0,0,0,1.01,Germany,United States of America,NA
+5,98203,982,American Samoa (Tutuila and Manu'a),3,200,2,2200,188701,189912,13,0,7,2,3,4,6,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,United States of America,NA
+5,98204,982,German Samoa (Upola and Savaii),4,200,255,200255,188701,189912,13,0,7,2,3,4,6,1,0,1,2,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Germany,NA
+5,98301,983,German Solomon Islands,1,200,255,200255,189505,189912,4,0,5,2,2,3,4,1,0,1,0,0,0,1.01,United Kingdom of Great Britain and Northern Ireland,Germany,NA
+5,98401,984,Spratly Islands,1,710,220,220710,193307,193903,11,0,6,2,3,3,4,2,1,1,0,0,0,1.01,China,France,NA
+5,98402,984,Spratly Islands,2,740,220,220740,193903,193903,7,1,5,2,2,3,4,1,0,1,1,0,0,1.01,Japan,France,NA
+5,98403,984,Spratly Islands,3,220,740,220740,193903,194211,6,0,6,2,3,3,4,2,1,1,0,0,0,1.01,France,Japan,NA
+5,98404,984,Spratly Islands,4,220,740,220740,194408,194508,6,0,6,2,3,3,4,2,1,1,0,0,0,1.01,France,Japan,NA
+5,98405,984,Spratly Islands,5,710,740,710740,193903,194508,6,0,7,2,3,4,4,3,1,2,0,0,0,1.01,China,Japan,NA
+5,98406,984,Spratly Islands,6,220,710,220710,194508,194801,1,0,8,3,4,4,4,4,2,2,0,0,0,1.01,France,China,NA
+5,98407,984,Spratly Islands,7,817,710,710817,195406,197504,6,0,8,3,4,4,4,4,2,2,2,0,0,1.01,Republic of Vietnam,China,NA
+5,98409,984,Spratly Islands,9,817,713,713817,195406,197504,6,0,8,3,4,4,4,4,2,2,4,0,0,1.01,Republic of Vietnam,"Taiwan, Province of China",NA
+5,98414,984,Kalayaan (Eastern Spratly Islands),14,840,817,817840,197107,197504,6,0,8,3,4,4,4,4,2,2,1,0,0,1.01,Philippines,Republic of Vietnam,NA
+1,501,5,Machias Seal Island,1,2,20,2020,197108,201799,NA,-9,5,2,2,3,2,3,1,2,0,0,0,1.01,United States of America,Canada,NA
+1,3601,36,Hans Island,1,20,390,20390,197101,201799,NA,-9,4,1,2,2,2,2,1,1,0,0,0,1.01,Canada,Denmark,NA
+1,4401,44,Guantanamo Bay,1,40,2,2040,196009,201799,NA,-9,7,2,4,3,4,3,2,1,0,0,0,1.01,Cuba,United States of America,NA
+1,4602,46,Navassa Island,2,41,2,2041,193501,201799,NA,-9,2,1,1,1,0,2,1,1,0,0,0,1.01,Haiti,United States of America,NA
+1,5604,56,Quita Sueno-Roncador-Serrana,4,93,100,93100,197912,201799,NA,-9,5,2,2,3,2,3,1,2,0,0,0,1.01,Nicaragua,Colombia,NA
+1,5802,58,San Andres y Providencia,2,93,100,93100,197912,201799,NA,-9,7,2,3,4,4,3,1,2,3,0,0,1.01,Nicaragua,Colombia,NA
+1,6602,66,Belize,2,90,80,80090,198109,201799,NA,-9,10,3,4,6,6,4,1,3,5,0,0,1.01,Guatemala,Belize,NA
+1,6802,68,Ranguana & Sapodilla (Zapotillo),2,90,80,80090,198109,201799,NA,-9,7,2,3,4,4,3,1,2,0,0,0,1.01,Guatemala,Belize,NA
+1,6804,68,Ranguana & Sapodilla (Zapotillo),4,91,80,80091,198109,201799,NA,-9,7,2,3,4,4,3,1,2,0,0,0,1.01,Honduras,Belize,NA
+1,6805,68,Ranguana & Sapodilla (Zapotillo),5,91,90,90091,198109,201799,NA,-9,6,2,3,3,4,2,1,1,0,0,0,1.01,Honduras,Guatemala,NA
+1,7802,78,Conejo Island,2,92,91,91092,200004,201799,NA,-9,5,2,2,3,2,3,1,2,0,0,0,1.01,El Salvador,Honduras,NA
+1,8101,81,Cayo Sur - Media Luna,1,93,91,91093,199806,NA,NA,-9,5,2,2,3,2,3,1,2,1,0,0,1.01,Nicaragua,Honduras,end date unknown - see codebook
+1,10201,102,Los Monjes,1,100,101,100101,195104,NA,NA,-9,7,2,3,4,4,3,1,2,3,0,0,1.01,Colombia,"Venezuela, Bolivarian Republic of",end date unknown - see codebook
+1,11203,112,Essequibo,3,101,110,101110,196605,201799,NA,-9,7,2,3,4,4,3,1,2,7,0,0,1.01,"Venezuela, Bolivarian Republic of",Guyana,NA
+1,12003,120,Corentyn/New River Triangle,3,115,110,110115,197511,201799,NA,-9,8,3,4,4,4,4,2,2,2,0,0,1.01,Suriname,Guyana,NA
+1,12402,124,Maroni,2,115,220,115220,197511,201799,NA,-9,7,2,4,3,4,3,2,1,0,0,0,1.01,Suriname,France,NA
+1,14801,148,Yaguaron,1,165,140,140165,188201,NA,NA,-9,4,1,2,2,0,4,2,2,0,0,0,1.01,Uruguay,Brazil,end date unknown - see codebook
+1,15402,154,Antofagasta,2,145,155,145155,188404,201799,NA,-9,10,3,5,5,6,4,2,2,2,1,0,1.01,Bolivia (Plurinational State of),Chile,NA
+1,17001,170,Falkland (Malvinas) Is. & Dependencies,1,160,200,160200,184101,201799,NA,-9,10,3,5,5,6,4,2,2,4,1,1,1.01,Argentina,United Kingdom of Great Britain and Northern Ireland,NA
+2,20601,206,Gibraltar,1,230,200,200230,181601,201799,NA,-9,7,2,4,3,4,3,2,1,3,0,0,1.01,Spain,United Kingdom of Great Britain and Northern Ireland,NA
+2,30003,300,Petseri & Narva,3,366,365,365366,199109,201799,NA,-9,8,3,4,4,2,6,3,3,0,0,0,1.01,Estonia,Russian Federation,NA
+2,30203,302,Abrene (Abrena) & Pytalovo (Pitalovo),3,367,365,365367,199109,200712,4,-9,8,3,4,4,2,6,3,3,1,0,0,1.01,Latvia,Russian Federation,NA
+2,34601,346,Prevlaka Peninsula,1,345,344,344345,199201,201799,NA,-9,8,3,4,4,4,4,2,2,1,1,0,1.01,Yugoslavia,Croatia,NA
+2,35001,350,Danube coast,1,345,344,344345,199201,201799,NA,-9,8,3,4,4,2,6,3,3,0,0,0,1.01,Yugoslavia,Croatia,NA
+2,35201,352,Dragonja River-Secovlje-Sneznik,1,349,344,344349,199201,201799,NA,-9,10,3,5,5,4,6,3,3,0,0,0,1.01,Slovenia,Croatia,NA
+2,36406,364,Aegean Sea Islands,6,640,350,350640,196404,NA,NA,-9,10,3,5,5,6,4,2,2,15,2,0,1.01,Turkey,Greece,NA
+2,36808,368,Northern Cyprus,8,352,640,352640,197408,201799,NA,-9,7,2,4,3,2,5,3,2,6,3,0,1.01,Cyprus,Turkey,NA
+2,38001,380,Reni-Odessa Highway near Palanca,1,369,359,359369,199609,201106,4,-9,7,2,3,4,2,5,2,3,0,0,0,1.01,Ukraine,Republic of Moldova,NA
+2,38203,382,Serpent's/Snake/Zmeinyy Island,3,360,369,360369,199112,200903,12,-9,10,3,5,5,6,4,2,2,0,0,0,1.01,Romania,Ukraine,NA
+3,41201,412,Lete Island,1,434,436,434436,196010,200507,12,-9,7,2,3,4,2,5,2,3,2,0,0,1.01,Benin,Niger,NA
+3,41801,418,Burkina Faso/Niger border,1,439,436,436439,196010,201505,12,-9,6,2,3,3,2,4,2,2,0,0,0,1.01,Burkina Faso,Niger,NA
+3,42201,422,Western Sipilou,1,438,437,437438,199508,201799,NA,-9,9,3,4,5,4,5,2,3,1,0,0,1.01,Guinea,Côte D'Ivoire,NA
+3,50201,502,Corisco Bay Islands,1,481,411,411481,197208,201799,NA,-9,10,3,5,5,6,4,2,2,1,0,0,1.01,Gabon,Equatorial Guinea,NA
+3,50404,504,Bakassi Peninsula,4,475,471,471475,197701,200808,12,-9,12,3,6,6,6,6,3,3,7,5,0,1.01,Nigeria,Cameroon,NA
+3,50405,504,Darak & Lake Chad Islands,5,475,471,471475,199404,20012,12,-9,5,2,2,3,2,3,1,2,4,4,0,1.01,Nigeria,Cameroon,NA
+3,51001,510,Garoua-Boulai,1,482,471,471482,200103,NA,NA,-9,5,2,2,3,2,3,1,2,1,0,0,1.01,Central African Republic,Cameroon,end date unknown - see codebook
+3,51401,514,Kainasara & Tetwa Islands,1,483,475,475483,198304,NA,NA,-9,5,2,2,3,2,3,1,2,2,1,0,1.01,Chad,Nigeria,end date unknown - see codebook
+3,53401,534,Migingo Island,1,500,501,500501,200110,201799,NA,-9,7,2,3,4,4,3,1,2,0,0,0,1.01,Uganda,Kenya,NA
+3,55003,550,Ilemi Triangle,3,501,625,501625,196701,201799,NA,-9,11,3,5,6,6,5,2,3,0,0,0,1.01,Kenya,Sudan,NA
+3,56405,564,Sultanate of Raheita,5,531,522,522531,199604,201799,NA,-9,7,2,3,4,2,5,2,3,1,0,0,1.01,Eritrea,Djibouti,NA
+3,56802,568,Badme-Zalambessa-Altena-Bure,2,531,530,530531,199305,201799,NA,-9,6,2,3,3,2,4,2,2,1,1,1,1.01,Eritrea,Ethiopia,NA
+3,57003,570,al-Fashqa Farmland,3,625,530,530625,199407,201799,NA,-9,5,2,2,3,2,3,1,2,1,1,0,1.01,Sudan,Ethiopia,NA
+3,57401,574,Chagos Archipelago,1,590,200,200590,198010,201799,NA,-9,6,2,3,3,4,2,1,1,0,0,0,1.01,Mauritius,United Kingdom of Great Britain and Northern Ireland,NA
+3,61001,610,Lundu-Papia-Ngkuyo Islands,1,510,553,510553,196701,201799,NA,-9,7,2,3,4,4,3,1,2,0,0,0,1.01,United Republic of Tanzania,Malawi,NA
+3,63604,636,Orange River Islands,4,565,560,560565,199003,201799,NA,-9,7,2,3,4,4,3,1,2,0,0,0,1.01,Namibia,South Africa,NA
+3,64001,640,KaNgwane-Ngwavuma-Nsikazi,1,572,560,560572,198107,201799,NA,-9,11,3,5,6,6,5,2,3,0,0,0,1.01,Swaziland,South Africa,NA
+3,64401,644,Iles Eparses,1,580,220,220580,196006,201799,NA,-9,6,2,3,3,4,2,1,1,0,0,0,1.01,Madagascar,France,NA
+3,64601,646,Mayotte,1,581,220,220581,197512,201799,NA,-9,6,2,3,3,4,2,1,1,0,0,0,1.01,Comoros,France,NA
+3,64802,648,Tromelin Island,2,590,220,220590,197604,201799,NA,-9,4,1,2,2,2,2,1,1,0,0,0,1.01,Mauritius,France,NA
+3,67004,670,Ceuta-Melilla-Chafarinas Islands,4,600,230,230600,195603,201799,NA,-9,7,2,4,3,4,3,2,1,2,0,0,1.01,Morocco,Spain,NA
+3,69603,696,Halaib Triangle,3,651,625,625651,199202,201799,NA,-9,8,3,4,4,4,4,2,2,2,2,0,1.01,Egypt,Sudan,NA
+4,71605,716,Hatay (Alexandretta),5,652,640,640652,196109,201799,NA,-9,10,3,5,5,4,6,3,3,1,0,0,1.01,Syrian Arab Republic,Turkey,NA
+4,74002,740,Shebaa Farms,2,660,666,660666,200005,201799,NA,-9,6,2,3,3,2,4,2,2,0,0,0,1.01,Lebanon,Israel,NA
+4,74201,742,Tabariyat & Daraa,1,652,663,652663,197009,201505,4,-9,6,2,3,3,2,4,2,2,0,0,0,1.01,Syrian Arab Republic,Jordan,NA
+4,74403,744,Golan Heights & Syria-Israel DMZ,3,652,666,652666,196109,201799,NA,-9,12,3,6,6,6,6,3,3,18,9,2,1.01,Syrian Arab Republic,Israel,NA
+4,76802,768,Abu Musa & Tunb Islands,2,696,630,630696,197112,201799,NA,-9,10,3,5,5,6,4,2,2,1,0,0,1.01,United Arab Emirates,Iran (Islamic Republic of),NA
+5,80006,800,Amur & Ussuri River Islands,6,710,365,365710,195401,200810,4,-9,8,3,4,4,4,4,2,2,9,5,0,1.01,China,Russian Federation,NA
+5,80903,809,Taiwan,3,710,713,710713,194912,201799,NA,-9,12,3,6,6,6,6,3,3,17,8,0,1.01,China,"Taiwan, Province of China",NA
+5,80904,809,China,4,713,710,710713,194912,201799,NA,-9,12,3,6,6,6,6,3,3,0,0,0,1.01,"Taiwan, Province of China",China,NA
+5,81103,811,Pescadores Islands,3,710,713,710713,194912,201799,NA,-9,8,3,4,4,4,4,2,2,0,0,0,1.01,China,"Taiwan, Province of China",NA
+5,82001,820,Diaoyu/Senkaku Islands,1,710,740,710740,197205,201799,NA,-9,6,2,3,3,2,4,2,2,4,0,0,1.01,China,Japan,NA
+5,82002,820,Diaoyu/Senkaku Islands,2,713,740,713740,197205,201799,NA,-9,6,2,3,3,2,4,2,2,1,0,0,1.01,"Taiwan, Province of China",Japan,NA
+5,82603,826,South Korea,3,731,732,731732,194906,201799,NA,-9,11,3,5,6,6,5,2,3,0,0,0,1.01,Democratic People's Republic of Korea,Republic of Korea,NA
+5,82604,826,North Korea,4,732,731,731732,194906,201799,NA,-9,11,3,5,6,6,5,2,3,22,15,1,1.01,Republic of Korea,Democratic People's Republic of Korea,NA
+5,82804,828,Kuril Islands & South Sakhalin,4,740,365,365740,195204,201799,NA,-9,12,3,6,6,6,6,3,3,17,0,0,1.01,Japan,Russian Federation,NA
+5,83001,830,Dokdo (Takeshima) Islands,1,740,732,732740,195204,201799,NA,-9,6,2,3,3,2,4,2,2,3,0,0,1.01,Japan,Republic of Korea,NA
+5,84001,840,Georgia-Russia Border,1,365,372,365372,199503,NA,NA,-9,10,3,5,5,4,6,3,3,0,0,0,1.01,Russian Federation,Georgia,end date unknown - see codebook
+5,84002,840,Russian Military Bases,2,372,365,365372,199610,200711,4,-9,7,2,4,3,4,3,2,1,0,0,0,1.01,Georgia,Russian Federation,NA
+5,84401,844,Russia/Kazakhstan Border,1,365,705,365705,199908,NA,NA,-9,8,3,4,4,4,4,2,2,0,0,0,1.01,Russian Federation,Kazakhstan,end date unknown - see codebook
+5,84801,848,Nagorno-Karabakh,1,371,373,371373,199112,NA,NA,-9,10,3,5,5,4,6,3,3,7,4,1,1.01,Armenia,Azerbaijan,NA
+5,85001,850,Karki,1,371,373,371373,199205,201799,NA,-9,7,2,3,4,2,5,2,3,0,0,0,1.01,Armenia,Azerbaijan,NA
+5,87401,874,Batken-Isfara,1,702,703,702703,200001,201799,NA,-9,7,2,3,4,2,5,2,3,0,0,0,1.01,Tajikistan,Kyrgyzstan,NA
+5,87705,877,Sarykol Range,5,710,702,702710,199112,201101,4,-9,10,3,5,5,4,6,3,3,0,0,0,1.01,China,Tajikistan,NA
+5,88001,880,Sokh Enclave Corridor,1,704,703,703704,199810,201799,NA,-9,9,3,4,5,4,5,2,3,1,0,0,1.01,Uzbekistan,Kyrgyzstan,NA
+5,88201,882,Kyrgyzstan/Kazakhstan Border,1,705,703,703705,199112,200808,4,-9,11,3,5,6,6,5,2,3,0,0,0,1.01,Kazakhstan,Kyrgyzstan,NA
+5,88601,886,Bagys & Turkestan,1,704,705,704705,199911,201799,NA,-9,9,3,4,5,4,5,2,3,0,0,0,1.01,Uzbekistan,Kazakhstan,NA
+5,90802,908,Pashtunistan (Durand Line),2,700,770,700770,194708,201799,NA,-9,10,3,5,5,4,6,3,3,8,3,0,1.01,Afghanistan,Pakistan,NA
+5,91102,911,Sikkim,2,710,750,710750,195912,201799,NA,-9,8,3,4,4,4,4,2,2,5,2,0,1.01,China,India,NA
+5,91202,912,Arunachal Pradesh,2,710,750,710750,194708,201799,NA,-9,12,3,6,6,6,6,3,3,6,3,1,1.01,China,India,NA
+5,91402,914,Doklam-Sinchulumpa-Gieu,2,710,760,710760,197109,201799,NA,-9,5,2,2,3,2,3,1,2,0,0,0,1.01,China,Bhutan,NA
+5,92201,922,Jammu & Kashmir,1,770,750,750770,194710,201799,NA,-9,9,3,4,5,4,5,2,3,29,19,4,1.01,Pakistan,India,NA
+5,92202,922,Azad Kashmir & Northern Areas,2,750,770,750770,194901,201799,NA,-9,12,3,6,6,6,6,3,3,1,1,0,1.01,India,Pakistan,NA
+5,92205,922,Trans-Karakoram Tract & Aksai Chin,5,750,710,710750,196205,201799,NA,-9,8,3,4,4,4,4,2,2,2,0,0,1.01,India,China,NA
+5,92302,923,Junagadh,2,770,750,750770,194711,201799,NA,-9,8,3,4,4,2,6,3,3,0,0,0,1.01,Pakistan,India,NA
+5,93003,930,Muhurir Char & Bengali Enclaves,3,750,771,750771,197112,201506,4,-9,7,2,3,4,2,5,2,3,1,0,0,1.01,India,Bangladesh,NA
+5,93004,930,Tin Bigha Corridor & Bengali Enclaves,4,771,750,750771,197112,201506,4,-9,8,3,4,4,2,6,3,3,1,1,0,1.01,Bangladesh,India,NA
+5,93201,932,New Moore (South Talpatty) Island,1,771,750,750771,197904,201003,15,-9,5,2,2,3,2,3,1,2,0,0,0,1.01,Bangladesh,India,resolved by climate change (new code)
+5,93401,934,Kalapani,1,790,750,750790,199706,201799,NA,-9,8,3,4,4,4,4,2,2,0,0,0,1.01,Nepal,India,NA
+5,94609,946,Paracel Islands,9,816,710,710816,197504,201799,NA,-9,8,3,4,4,4,4,2,2,1,0,0,1.01,Viet Nam,China,NA
+5,95203,952,Three Pagodas Pass,3,775,800,775800,199002,201799,NA,-9,8,3,4,4,4,4,2,2,1,0,0,1.01,Myanmar,Thailand,NA
+5,95301,953,Andaman Sea Islands,1,775,800,775800,198908,NA,NA,-9,5,2,2,3,2,3,1,2,1,1,0,1.01,Myanmar,Thailand,end date unknown - see codebook
+5,95605,956,Ko Kut Island,5,811,800,800811,196506,NA,NA,-9,8,3,4,4,4,4,2,2,5,3,0,1.01,Cambodia,Thailand,end date unknown - see codebook
+5,95807,958,Ban Rom Klao,7,800,812,800812,198403,201799,NA,-9,7,2,3,4,2,5,2,3,2,2,0,1.01,Thailand,Lao People's Democratic Republic,NA
+5,96403,964,Mondol Kiri Province & Minor Border Areas,3,811,816,811816,199308,201799,NA,-9,7,2,3,4,2,5,2,3,1,0,0,1.01,Cambodia,Viet Nam,NA
+5,96801,968,Limbang (North Sarawak),1,835,820,820835,198401,200903,4,-9,7,2,3,4,4,3,1,2,0,0,0,1.01,Brunei Darussalam,Malaysia,NA
+5,97103,971,Sabah (North Borneo),3,840,820,820840,196309,201799,NA,-9,7,2,3,4,4,3,1,2,2,0,0,1.01,Philippines,Malaysia,NA
+5,97201,972,Sipadan & Ligitan,1,850,820,820850,199106,200212,12,-9,5,2,2,3,2,3,1,2,0,0,0,1.01,Indonesia,Malaysia,NA
+5,97801,978,Matthew & Hunter Islands,1,935,220,220935,198201,201799,NA,-9,2,1,1,1,0,2,1,1,0,0,0,1.01,Vanuatu,France,NA
+5,98001,980,Pulau Batu Puteh (Pedra Branca),1,820,830,820830,197804,201799,NA,-9,5,2,2,3,2,3,1,2,1,0,0,1.01,Malaysia,Singapore,NA
+5,98408,984,Spratly Islands,8,816,710,710816,197504,201799,NA,-9,8,3,4,4,4,4,2,2,6,1,0,1.01,Viet Nam,China,NA
+5,98410,984,Spratly Islands,10,816,713,713816,197504,201799,NA,-9,8,3,4,4,4,4,2,2,2,0,0,1.01,Viet Nam,"Taiwan, Province of China",NA
+5,98411,984,Kalayaan (Eastern Spratly Islands),11,840,710,710840,197107,201799,NA,-9,8,3,4,4,4,4,2,2,5,0,0,1.01,Philippines,China,NA
+5,98412,984,Kalayaan (Eastern Spratly Islands),12,840,713,713840,197107,201799,NA,-9,8,3,4,4,4,4,2,2,1,0,0,1.01,Philippines,"Taiwan, Province of China",NA
+5,98413,984,Kalayaan (Eastern Spratly Islands),13,840,816,816840,197504,201799,NA,-9,8,3,4,4,4,4,2,2,2,0,0,1.01,Philippines,Viet Nam,NA
+5,98415,984,Southern Spratly Islands,15,820,710,710820,197912,201799,NA,-9,8,3,4,4,4,4,2,2,1,0,0,1.01,Malaysia,China,NA
+5,98416,984,Southern Spratly Islands,16,820,713,713820,197912,201799,NA,-9,8,3,4,4,4,4,2,2,0,0,0,1.01,Malaysia,"Taiwan, Province of China",NA
+5,98417,984,Southern Spratly Islands,17,820,816,816820,197912,201799,NA,-9,8,3,4,4,4,4,2,2,1,0,0,1.01,Malaysia,Viet Nam,NA
+5,98418,984,Southern Spratly Islands,18,820,840,820840,197912,201799,NA,-9,8,3,4,4,4,4,2,2,1,0,0,1.01,Malaysia,Philippines,NA
+5,99001,990,Minerva Reefs,1,950,955,950955,199909,201799,NA,-9,5,2,2,3,2,3,1,2,0,0,0,1.01,Fiji,Tonga,NA

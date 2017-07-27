@@ -3,8 +3,8 @@ title: icews_explorer
 account: brendancooley
 server: shinyapps.io
 appId: 194217
-bundleId: 900061
+bundleId: 900116
 url: https://brendancooley.shinyapps.io/icews_explorer/
-when: 1499799612.37726
+when: 1499801415.97889
 asMultiple: FALSE
 asStatic: FALSE

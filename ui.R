@@ -4,13 +4,11 @@ library(ggvis)
 library(dplyr)
 library(plotly)
 
-events <- read_csv('vmccY.csv')
 hensel1995 <- read_csv('hensel1995.csv')
 
 # Define UI for application that draws a histogram
-shinyUI(fluidPage(
+shinyUI(navbarPage("ICEWS Explorer",
   
-<<<<<<< HEAD
   tabPanel("Setup",
     fluidPage(
       column(6,
@@ -105,59 +103,12 @@ shinyUI(fluidPage(
            h4(textOutput("cameoHistTitle")),
            plotlyOutput('cameoHist')
            ),
-=======
-  titlePanel("ICEWS Dyadic Event Data"),
-  
-  fluidRow(
-    column(2,
-       wellPanel(
-         selectInput("source",
-                     "Source Country:",
-                     sort(unique(events$source))),
-         selectInput("target", 
-                     "Target Country:",
-                     ""),
-         sliderInput("topN",
-                     "Most Active:",
-                     0, 1000, 100, step = 50),
-         checkboxInput("gg",
-                       "Gov-Gov?",
-                       value=F),
-         radioButtons("agglevel",
-                      "Level of Aggregation:",
-                      c("Year", "Month")),
-         # checkboxInput("gov",
-         #               "Gov Only?",
-         #               value = T),
-         checkboxInput("dirdy",
-                       "Directed Dyad?",
-                       value = F),
-         selectInput("tsdim",
-                     "Time Series Dimension:",
-                     c('Conflict-Cooperation', 'Verbal-Material')),
-         selectInput("hensel",
-                     "Territorial Disputes:",
-                     c("", sort(unique(hensel1995$dys)))),
-         checkboxInput("reset",
-                       "Reset?",
-                       value = F)
-       )
-     ),
-  
-  column(5,
-         h4(textOutput("dyadB")),
-         plotlyOutput("biplot"),
-         hr(),
-         h4(textOutput("dyadTS")),
-         plotlyOutput("ts1")
-         ),
-  
-  column(5,
-         h4("Most Active Dyads"),
-         plotlyOutput("tn")
-        )
->>>>>>> parent of 8efe937... new version with tab 1 data selector
     
+    column(5,
+           h4("Most Active Dyads"),
+           plotlyOutput("tn")
+          )
+      
+    )
   )
-  
 ))

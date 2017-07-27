@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Setup -------------------------------------------------------------------
 
 library(shiny)
@@ -19,33 +18,6 @@ event.counts <- function(events, agg.date, source, target, code) {
   output <- spread_(counts, code, 'n')
   output[is.na(output)] <- 0
   return(output)
-=======
-library(shiny)
-library(dplyr)
-library(readr)
-library(plotly)
-library(zoo)
-
-vmccY <- read_csv('vmccY.csv')
-vmccYM <- read_csv('vmccYM.csv')
-vmccYM$date <- as.yearmon(vmccYM$date, "%b %Y")
-
-vmccYGG <- read_csv('vmccYGG.csv')
-vmccYMGG <- read_csv('vmccYMGG.csv')
-vmccYMGG$date <- as.yearmon(vmccYMGG$date, "%b %Y")
-# head(vmccYGG)
-
-hensel1995 <- read_csv('hensel1995.csv')
-
-add_title <- function(vis, ..., x_lab = "X units", title = "Plot Title") 
-{
-  add_axis(vis, "x", title = x_lab) %>% 
-    add_axis("x", orient = "top", ticks = 0, title = title,
-             properties = axis_props(
-               axis = list(stroke = "white"),
-               labels = list(fontSize = 0)
-             ), ...)
->>>>>>> parent of 8efe937... new version with tab 1 data selector
 }
 
 hensel1995 <- read_csv('hensel1995.csv')
@@ -60,7 +32,6 @@ colnames(quadNames) <- c('quadCode', 'quadN')
 
 shinyServer(function(input, output, session) {
   
-<<<<<<< HEAD
   master <- reactiveValues(events0 = NULL, eCounts = NULL)
   
   # Data Build Status
@@ -126,34 +97,18 @@ shinyServer(function(input, output, session) {
       betas <- c()
       for (i in 1:input$ndim) {
         betas <- c(betas, paste('beta', i, sep=""))
-=======
-  # events
-  events <- reactive({
-    
-    events <- vmccY
-    
-    # Gov to Gov or regular?
-    if (input$gg == T) {
-      # level of aggregation
-      if (input$agglevel == 'Month') {
-        events <- vmccYMGG
       }
-      else {
-        events <- vmccYGG
-      }
-    }
-    else {
-      if (input$agglevel == 'Month') {
-        events <- vmccYM
->>>>>>> parent of 8efe937... new version with tab 1 data selector
-      }
-    }
+      colnames(caBeta) <- betas
+      eCounts <- bind_cols(eCounts, caBeta)
+
+      master$eCounts <- eCounts
+      incProgress(amount = .34, message = 'complete!')
+      output$buildStatus <- renderText("Count data built.")
+      
+    })
     
-    print(head(events))
-    events
   })
   
-<<<<<<< HEAD
   observeEvent(input$buildViz, {
     # update visualization panel
     # TODO (make sure all settings are ready to go when user clicks over)
@@ -186,13 +141,6 @@ shinyServer(function(input, output, session) {
     else {
       targets = ""
     }
-=======
-  # selector
-  selector <- reactive({
-    events <- events()
-    events <- filter(events, source == input$source)
-    targets <- setdiff(unique(events$target), input$source)
->>>>>>> parent of 8efe937... new version with tab 1 data selector
     targets
   })
   
@@ -204,9 +152,10 @@ shinyServer(function(input, output, session) {
   
   observeEvent(input$reset, {
     if (input$reset == T) {
+      events <- master$eCounts
       updateSelectInput(session, "hensel", selected = "")
       updateCheckboxInput(session, "reset", value = F)
-      updateSelectInput(session, "source", choices=sort(unique(events()$source)), selected = sort(unique(events()$source))[1])
+      updateSelectInput(session, "source", choices=sort(unique(events$sourceName)), selected = sort(unique(events$sourceName))[1])
     }
   })
   
@@ -224,46 +173,25 @@ shinyServer(function(input, output, session) {
   filteredData <- eventReactive({
     input$source
     input$target
-    input$agglevel
     input$dirdy
     input$tsdim
-    input$gg
     }, 
     {
     
-<<<<<<< HEAD
     print('test3')
     st <- filter(master$eCounts, sourceName == input$source & tarName == input$target)
     # target-source events
     ts <- filter(master$eCounts, sourceName == input$target & tarName == input$source)
 
-=======
-    st <- filter(events(), source == input$source & target == input$target)
-    # target-source events
-    ts <- filter(events(), source == input$target & target == input$source)
-    
->>>>>>> parent of 8efe937... new version with tab 1 data selector
     output <- st
     if (input$dirdy == F) {
       output <- rbind(st, ts)
     }
-<<<<<<< HEAD
     
-=======
-    output$id <- 1:nrow(output)
-    output$betaD <- 0
-    if(input$tsdim == 'Conflict-Cooperation') {
-      output$betaD <- output$beta1
-    }
-    else {
-      output$betaD <- output$beta2
-    }
->>>>>>> parent of 8efe937... new version with tab 1 data selector
     output
     
   })
   
-<<<<<<< HEAD
   vis_dat <- reactive({
     
     output <- filteredData()
@@ -284,22 +212,13 @@ shinyServer(function(input, output, session) {
     
     output
   })
-=======
-  
-  # tooltip
-  date_tooltip <- function(x) {
-    if(is.null(x)) return(NULL)
-    row <- vis_dat()[vis_dat()$id == x$id, ]
-    paste0("date: ", row$date, "<br />", "n: ", row$n)
-  }
->>>>>>> parent of 8efe937... new version with tab 1 data selector
   
   # Biplot
   observeEvent({
     input$target
-    input$gg
-    input$agglevel
     input$dirdy
+    input$biplotDim1
+    input$biplotDim2
   },
   {
     if (input$target != "") {
@@ -308,14 +227,9 @@ shinyServer(function(input, output, session) {
       output$dyadTS <- renderText(paste(input$source, "-", input$target, " Time Series", sep=""))
       
       output$biplot <- renderPlotly({
-<<<<<<< HEAD
         plot_ly(data=vis_dat(), type='scatter', 
                 x=~beta1, y=~beta2, 
                 size=~n, color=~sourceName, mode='markers',
-=======
-        plot_ly(vis_dat(), type='scatter', x=~beta1, y=~beta2, 
-                size=~n, color=~source, mode='markers',
->>>>>>> parent of 8efe937... new version with tab 1 data selector
                 hoverinfo='text',
                 text=~paste('Date: ', date,
                             '<br> N Events: ', n)) %>%
@@ -341,7 +255,7 @@ shinyServer(function(input, output, session) {
   
   ### Most Active Dyads ###
   topN <- reactive({
-    events <- events()
+    events <- master$eCounts
     topN <- events[order(-events$n)[1:input$topN], ]
 
     # filter only dimensions to visualize (labeled beta1 and beta2)

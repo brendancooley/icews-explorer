@@ -5,7 +5,7 @@ ipak <- function(pkg){
   sapply(pkg, require, character.only = TRUE)
 }
 
-libs <- c('shiny', 'readr', 'dplyr', 'plotly', 'forcats')
+libs <- c('shiny', 'readr', 'dplyr', 'plotly')
 ipak(libs)
 
 hensel1995 <- read_csv('hensel1995.csv')

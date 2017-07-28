@@ -1,14 +1,14 @@
 # Setup -------------------------------------------------------------------
 
-library(shiny)
-library(dplyr)
-library(readr)
-library(tidyr)
-library(lubridate)
-library(plotly)
-library(zoo)
-library(ca)
-library(repmis)
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+libs <- c('shiny', 'dplyr', 'readr', 'tidyr', 'lubridate', 'plotly', 'zoo', 'ca', 'repmis')
+ipak(libs)
 
 event.counts <- function(events, agg.date, source, target, code) {
   counts <- events %>%
@@ -20,6 +20,7 @@ event.counts <- function(events, agg.date, source, target, code) {
   return(output)
 }
 
+### Load Data ###
 hensel1995 <- read_csv('hensel1995.csv')
 
 cameoNames <- read_csv('CAMEO Codes.csv')

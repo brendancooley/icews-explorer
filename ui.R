@@ -1,8 +1,12 @@
-library(shiny)
-library(readr)
-library(ggvis)
-library(dplyr)
-library(plotly)
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+libs <- c('shiny', 'readr', 'dplyr', 'plotly', 'forcats')
+ipak(libs)
 
 hensel1995 <- read_csv('hensel1995.csv')
 

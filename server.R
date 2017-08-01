@@ -22,6 +22,8 @@ event.counts <- function(events, agg.date, source, target, code) {
 
 ### Load Data ###
 hensel1995 <- read_csv('hensel1995.csv')
+disputesMall <- read_csv('disputesMall.csv')
+disputesYall <- read_csv('disputesYall.csv')
 
 cameoNames <- read_csv('CAMEO Codes.csv')
 cameoNames$cameoCode <- as.factor(cameoNames$cameoCode)
@@ -66,7 +68,7 @@ shinyServer(function(input, output, session) {
       }
       else {
         eventsSub$date <- eventsSub$y
-        eventsSub$date <- ymd(sprintf("%d-01-01",eventsSub$date))
+        # eventsSub$date <- ymd(sprintf("%d-01-01",eventsSub$date))
       }
 
       # event coding
@@ -101,7 +103,31 @@ shinyServer(function(input, output, session) {
       }
       colnames(caBeta) <- betas
       eCounts <- bind_cols(eCounts, caBeta)
+      
+      ### join cow codes/cow numbers/binary dispute indicator ###
+      varsSource <- c('sourceName', 'sourceNum')
+      varsTar <- c('tarName', 'tarNum')
+      eventsCowSource <- master$events0 %>% select(one_of(varsSource))
+      eventsCowTar <- master$events0 %>% select(one_of(varsTar))
+      
+      ecs <- unique(eventsCowSource)
+      ect <- unique(eventsCowTar)
+      
+      eCounts <- left_join(eCounts, ecs, by = 'sourceName')
+      eCounts <- left_join(eCounts, ect, by = 'tarName')
 
+      # merge hensel indicators
+      if(input$agglevel == 'Month') {
+        eCounts <- left_join(eCounts, disputesMall, by = c('sourceNum', 'tarNum', 'date'))
+      }
+      if(input$agglevel == 'Year') {
+        eCounts <- left_join(eCounts, disputesYall, by = c('sourceNum', 'tarNum', 'date'))
+      }
+      eCounts$dispute <- ifelse(is.na(eCounts$dispute), 0, eCounts$dispute)
+      
+      test <- filter(eCounts, dispute == 1)
+      
+      ### save and output data ###
       master$eCounts <- eCounts
       incProgress(amount = .34, message = 'complete!')
       output$buildStatus <- renderText("Count data built.")

@@ -31,9 +31,9 @@ shinyUI(navbarPage("ICEWS Explorer",
         radioButtons("agglevel",
                      "Level of Aggregation:",
                      c("Year", "Month")),
-        sliderInput("nfloor",
+        numericInput("nfloor",
                     "Event Count Floor:",
-                    1, 1000, 10, step = 10),
+                    10),
         
         # Step 3
         h4('3) Select Event Coding and Dimensionality:'),

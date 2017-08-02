@@ -143,6 +143,7 @@ shinyServer(function(input, output, session) {
     ec <- master$eCounts
     updateSelectInput(session, "source", choices = sort(unique(ec$sourceName)))
     updateSelectInput(session, "tsdim", choices = seq(1, ndim), selected=1)
+    updateSelectInput(session, "tsdate", choices = sort(unique(ec$date)))
     updateSelectInput(session, "biplotDim1", choices = seq(1, ndim), selected = 1)
     updateSelectInput(session, "biplotDim2", choices = seq(1, ndim), selected = 2)
     output$vizStatus <- renderText("Visualization built. Click 'Visualization' tab above to view." )
@@ -331,6 +332,7 @@ shinyServer(function(input, output, session) {
   counts <- reactive({
     dyad <- filteredData()
     output$cameoHistTitle <- renderText(paste(input$source, "-", input$target, " Event Counts (Pooled)", sep = ""))
+    
     if (input$eCode == 'CAMEO') {
       codes <- as.character(unique(cameoNames$cameoCode))
       counts <- select(dyad, one_of(codes))
@@ -343,15 +345,17 @@ shinyServer(function(input, output, session) {
     }
     
     if (input$eCode == 'Quad Score') {
-      codes <- quadNames$quadCode
+      codes <- as.character(quadNames$quadCode)
       counts <- select(dyad, one_of(codes))
       top4 <- sort(colSums(counts), decreasing=TRUE)
       top4 <- data.frame(names(top4), top4)
-      colnames(top4) <- c('quadN', 'Counts')
+      colnames(top4) <- c('quadCode', 'Counts')
       top4 <- left_join(top4, quadNames, by='quadCode')
+      print(top4)
       rownames(top4) <- NULL
       C <- top4
     }
+    
     C
   })
 
@@ -372,10 +376,10 @@ shinyServer(function(input, output, session) {
       }
       
       if (input$eCode == 'Quad Score') {
-          p <- plot_ly(counts(), x=~quadCode, y=~Counts,
-                  hoverinfo='text',
-                  text=~paste(quadN)) %>%
-            layout(xaxis = list(title='Quad Code'))
+        p <- plot_ly(counts(), x=~quadCode, y=~Counts,
+                hoverinfo='text',
+                text=~paste(quadN)) %>%
+          layout(xaxis = list(title='Quad Code'))
       }
       
     }

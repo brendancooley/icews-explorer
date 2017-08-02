@@ -143,10 +143,15 @@ shinyServer(function(input, output, session) {
     ec <- master$eCounts
     updateSelectInput(session, "source", choices = sort(unique(ec$sourceName)))
     updateSelectInput(session, "tsdim", choices = seq(1, ndim), selected=1)
-    updateSelectInput(session, "tsdate", choices = sort(unique(ec$date)))
+    updateSelectInput(session, "tsdate", choices = sort(unique(ec$date)), selected = sort(unique(ec$date))[1])
     updateSelectInput(session, "biplotDim1", choices = seq(1, ndim), selected = 1)
     updateSelectInput(session, "biplotDim2", choices = seq(1, ndim), selected = 2)
     output$vizStatus <- renderText("Visualization built. Click 'Visualization' tab above to view." )
+  })
+  
+  # reset button
+  observeEvent(input$resetData, {
+      js$reset()
   })
   
   # data downloader
@@ -161,15 +166,22 @@ shinyServer(function(input, output, session) {
   selector <- eventReactive(input$source, {
     if (!is.null(master$eCounts)) {
       events <- master$eCounts
-      print('test1')
       events <- filter(events, sourceName == input$source)
-      print('test2')
       targets <- setdiff(unique(events$tarName), input$source)
     }
     else {
       targets = ""
     }
     targets
+  })
+  
+  observeEvent(input$target, {
+    if (!is.null(master$eCounts)) {
+      # update options for ts viz
+      dyad <- filteredData()
+      print(dyad)
+      updateSelectInput(session, "tsdate", choices = sort(unique(dyad$date)), selected = sort(unique(dyad$date))[1])
+    }
   })
   
   observeEvent(input$source, {
@@ -206,7 +218,6 @@ shinyServer(function(input, output, session) {
     }, 
     {
     
-    print('test3')
     st <- filter(master$eCounts, sourceName == input$source & tarName == input$target)
     # target-source events
     ts <- filter(master$eCounts, sourceName == input$target & tarName == input$source)
@@ -234,9 +245,6 @@ shinyServer(function(input, output, session) {
     
     output <- select(output, one_of('date', 'n', 'sourceName', 'tarName', betas, 'betaD'))
     colnames(output) <- c('date', 'n', 'sourceName', 'tarName', 'beta1', 'beta2', 'betaD')
-    
-    print(output)
-    print('test4')
     
     output
   })
@@ -331,7 +339,8 @@ shinyServer(function(input, output, session) {
   ### CAMEO Counts ###
   counts <- reactive({
     dyad <- filteredData()
-    output$cameoHistTitle <- renderText(paste(input$source, "-", input$target, " Event Counts (Pooled)", sep = ""))
+    dyad <- filter(dyad, date == input$tsdate)
+    output$cameoHistTitle <- renderText(paste(input$source, "-", input$target, " Event Counts (", input$tsdate, ")", sep = ""))
     
     if (input$eCode == 'CAMEO') {
       codes <- as.character(unique(cameoNames$cameoCode))

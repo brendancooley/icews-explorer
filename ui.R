@@ -5,10 +5,12 @@ ipak <- function(pkg){
   sapply(pkg, require, character.only = TRUE)
 }
 
-libs <- c('shiny', 'readr', 'dplyr', 'plotly')
+libs <- c('shiny', 'readr', 'dplyr', 'plotly', 'shinyjs', 'V8')
 ipak(libs)
 
 hensel1995 <- read_csv('hensel1995.csv')
+
+jsResetCode <- "shinyjs.reset = function() {history.go(0)}" # Define the js method that resets the page
 
 # Define UI for application that draws a histogram
 shinyUI(navbarPage("ICEWS Explorer",
@@ -53,6 +55,12 @@ shinyUI(navbarPage("ICEWS Explorer",
         h4('5) Build Visualization'),
         actionButton("buildViz", "Build Viz"),
         helpText(textOutput("vizStatus")),
+        
+        # (Optional)
+        h4('(Optional) Reset and Build New Data'),
+        useShinyjs(),                                           
+        extendShinyjs(text = jsResetCode),                      
+        actionButton("resetData", "Reset Page"),
         
         # (Optional)
         h4("(Optional) Download Count Data and Scaling"),

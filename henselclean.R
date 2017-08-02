@@ -1,9 +1,9 @@
 library(readr)
 library(dplyr)
 
-hensel <- read_csv('icow_ext2017.csv')
+# v2 includes post-2001 claims
+hensel <- read_csv('icow_ext2017_v2.csv')
 
-### MOVE ALL OF THIS TO SEPARATE SCRIPT ###
 name_conv <- read_csv('name_conv.csv', col_names = F)
 
 colnames(name_conv) <- c('chalname', 'newname')

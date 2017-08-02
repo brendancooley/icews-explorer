@@ -26,9 +26,12 @@ shinyUI(navbarPage("ICEWS Explorer",
         tableOutput("sectorCounts"),
         # Step 2
         # TODO - shade out buttons that have already been chosen and shouldn't be modified
-        h4("2) Select sectors and time aggregation"),
+        h4("2) Select sectors, regions, and time aggregation"),
         checkboxGroupInput("sectors",
                            "Sectors:",
+                           choices=c()),
+        checkboxGroupInput("continents",
+                           "Continents:",
                            choices=c()),
         radioButtons("agglevel",
                      "Level of Aggregation:",
@@ -121,7 +124,12 @@ shinyUI(navbarPage("ICEWS Explorer",
     
     column(5,
            h4("Most Active Dyads"),
-           plotlyOutput("tn")
+           plotlyOutput("tn"),
+           h4("Column Loadings"),
+           h5(textOutput("clD1head")),
+           tableOutput("clD1data"),
+           h5(textOutput("clD2head")),
+           tableOutput("clD2data")
           )
       
     )

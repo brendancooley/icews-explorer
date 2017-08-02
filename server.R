@@ -35,7 +35,7 @@ colnames(quadNames) <- c('quadCode', 'quadN')
 
 shinyServer(function(input, output, session) {
   
-  master <- reactiveValues(events0 = NULL, eCounts = NULL)
+  master <- reactiveValues(events0 = NULL, eCounts = NULL, colLoadings = NULL)
   
   # Data Build Status
   events0 <- observeEvent(input$loadData, {
@@ -43,7 +43,16 @@ shinyServer(function(input, output, session) {
       # TODO events.csv to large for GitHub, maybe host elsewhere and query
       e <- source_data('https://www.dropbox.com/s/koctuiks16uyxal/events.csv?dl=1', header=T, sep=",")
       e <- as_tibble(e)
-      updateCheckboxGroupInput(session, "sectors", choices = sort(unique(e$sourceSec)) )
+      # add continent variable
+      ### TODO move this to preprocessing and fix non matches
+      e$sourceContinent <- countrycode(e$sourceNum, 'cown', 'continent')
+      e$tarContinent <- countrycode(e$tarNum, 'cown', 'continent')
+      e$sourceContinent <- ifelse(is.na(e$sourceContinent), '---', e$sourceContinent)
+      e$tarContinent <- ifelse(is.na(e$tarContinent), '---', e$tarContinent)
+      ###
+      print(unique(e$sourceContinent))
+      updateCheckboxGroupInput(session, "continents", choices = sort(unique(e$sourceContinent)), selected = unique(e$sourceContinent))
+      updateCheckboxGroupInput(session, "sectors", choices = sort(unique(e$sourceSec)))
       output$loadStatus <- renderText('Event data loaded. Ready to build count data.')
       incProgress(amount=.5, message='Building sector counts...')
       eCounts <- e %>% group_by(sourceSec) %>%
@@ -60,7 +69,9 @@ shinyServer(function(input, output, session) {
       
       # filter by sector
       sectors <- input$sectors
-      eventsSub <- filter(master$events0, sourceSec %in% sectors & tarSec %in% sectors)
+      continents <- input$continents
+      eventsSub <- filter(master$events0, sourceSec %in% sectors & tarSec %in% sectors & 
+                            sourceContinent %in% continents & tarContinent %in% continents)
       
       # Change date based on aggregation level
       if(input$agglevel == 'Month') {
@@ -103,6 +114,21 @@ shinyServer(function(input, output, session) {
       }
       colnames(caBeta) <- betas
       eCounts <- bind_cols(eCounts, caBeta)
+      
+      # save column loadings to master
+      caGamma <- as_tibble(eCountsCA$colcoord)
+      
+      caCol <- as_tibble(data.frame(colnames(countData), caGamma))
+      
+      if (input$eCode == 'CAMEO') {
+        colnames(caCol)[1] <- 'cameoCode'
+        caCol <- left_join(caCol, cameoNames, by='cameoCode')
+      }
+      if (input$eCode == 'Quad Score') {
+        colnames(caCol)[1] <- 'quadCode'
+        caCol <- left_join(caCol, quadNames, by='quadCode')
+      }
+      master$colLoadings <- caCol
       
       ### join cow codes/cow numbers/binary dispute indicator ###
       varsSource <- c('sourceName', 'sourceNum')
@@ -179,7 +205,6 @@ shinyServer(function(input, output, session) {
     if (!is.null(master$eCounts)) {
       # update options for ts viz
       dyad <- filteredData()
-      print(dyad)
       updateSelectInput(session, "tsdate", choices = sort(unique(dyad$date)), selected = sort(unique(dyad$date))[1])
     }
   })
@@ -395,6 +420,47 @@ shinyServer(function(input, output, session) {
     
     p
     
+  })
+  
+  ### column loading tables ###
+  output$clD1data <- renderTable({
+    clD1data <- data.frame()
+    if (!is.null(master$colLoadings)) {
+      dim1 <- as.integer(input$biplotDim1)
+      output$clD1head <- renderText(paste('Dimension ', dim1, sep=""))
+      var <- colnames(master$colLoadings)[dim1+1]
+      print(var)
+      print(master$colLoadings)
+      if (input$eCode == 'CAMEO') {
+        bottom <- head(arrange_(master$colLoadings, .dots=var), 5)
+        top <- tail(arrange_(master$colLoadings, .dots=var), 5)
+        clD1data <- select(bind_rows(bottom, top), one_of('cameoCode', var, 'eventName'))
+      }
+      if (input$eCode == 'Quad Score') {
+        clD1data <- arrange_(master$colLoadings, .dots=var)
+        clD1data <- select(clD1data, one_of('quadCode', var, 'quadN'))
+      }
+    }
+    clD1data
+  })
+  
+  output$clD2data <- renderTable({
+    clD2data <- data.frame()
+    if (!is.null(master$colLoadings)) {
+      dim2 <- as.integer(input$biplotDim2)
+      output$clD2head <- renderText(paste('Dimension ', dim2, sep=""))
+      var <- colnames(master$colLoadings)[dim2+1]
+      if (input$eCode == 'CAMEO') {
+        bottom <- head(arrange_(master$colLoadings, .dots=var), 5)
+        top <- tail(arrange_(master$colLoadings, .dots=var), 5)
+        clD2data <- select(bind_rows(bottom, top), one_of('cameoCode', var, 'eventName'))
+      }
+      if (input$eCode == 'Quad Score') {
+        clD2data <- arrange_(master$colLoadings, .dots=var)
+        clD2data <- select(clD2data, one_of('quadCode', var, 'quadN'))
+      }
+    }
+    clD2data
   })
   
 })

@@ -249,3 +249,54 @@ library(data.table)
 events3 <- fread('~/Dropbox/Public/events.csv')  
 
 events3 <- as_tibble(events3)
+
+
+
+### column loadings ###
+
+e <- source_data('https://www.dropbox.com/s/koctuiks16uyxal/events.csv?dl=1', header=T, sep=",")
+
+sectors <- c('GOV')
+eventsSub <- filter(e, sourceSec %in% sectors & tarSec %in% sectors)
+eventsSub$date <- eventsSub$y
+
+eCounts <- event.counts(eventsSub, 'date', 'sourceName', 'tarName', 'CAMEO')
+
+eCounts$n <- rowSums(eCounts[,4:ncol(eCounts)])
+eCounts <- filter(eCounts, n > 10)
+
+codes <- unique(e$CAMEO)
+countData <- eCounts[,colnames(eCounts) %in% codes]
+countData <- countData[,colSums(countData) > 0]
+
+eCountsCA <- ca(countData, 2)
+caGamma <- as_tibble(eCountsCA$colcoord)
+
+caCol <- as_tibble(data.frame(colnames(countData), caGamma))
+colnames(caCol) <- c('cameoCode', 'gamma1', 'gamma2')
+
+cameoNames <- read_csv('CAMEO Codes.csv')
+cameoNames$cameoCode <- as.factor(cameoNames$cameoCode)
+
+caCol <- left_join(caCol, cameoNames, by='cameoCode')
+caCol[order(caCol$gamma1), ]
+
+var <- caCol[,1+1]
+caCol[ order(caCol[ , 2]), ]
+dim1 <- 1
+var <- colnames(caCol)[dim1+1]
+
+caCol[,var]
+
+arrange_(caCol, .dots=var)[1:5]
+
+
+### add continent indicator to event data ###
+library(countrycode)
+e <- source_data('https://www.dropbox.com/s/koctuiks16uyxal/events.csv?dl=1', header=T, sep=",")
+e <- as_tibble(e)
+
+e$sourceContinent <- countrycode(e$sourceNum, 'cown', 'continent')
+e$tarContinent <- countrycode(e$tarNum, 'cown', 'continent')
+ifelse(is.na(e$sourceContinent), '---', e$sourceContinent)
+ifelse(is.na(e$tarContinent), '---', e$tarContinent)

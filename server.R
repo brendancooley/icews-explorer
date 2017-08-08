@@ -7,7 +7,8 @@ ipak <- function(pkg){
   sapply(pkg, require, character.only = TRUE)
 }
 
-libs <- c('shiny', 'dplyr', 'readr', 'tidyr', 'lubridate', 'plotly', 'zoo', 'ca', 'repmis')
+libs <- c('shiny', 'dplyr', 'readr', 'tidyr', 'lubridate', 'plotly', 'zoo', 'ca', 'repmis',
+          'countrycode')
 ipak(libs)
 
 event.counts <- function(events, agg.date, source, target, code) {

@@ -351,8 +351,13 @@ e$sourceContinent <- countrycode(e$sourceNum, 'cown', 'continent')
 e$tarContinent <- countrycode(e$tarNum, 'cown', 'continent')
 e$sourceContinent <- ifelse(is.na(e$sourceContinent), '---', e$sourceContinent)
 e$tarContinent <- ifelse(is.na(e$tarContinent), '---', e$tarContinent)
+
+# manual continent assignment for Hong Kong, Montenegro, Kosovo, Palestine
+e$sourceContinent <- ifelse(e$sourceNum %in% c(0, 997), 'Asia', e$sourceContinent)
+e$tarContinent <- ifelse(e$tarNum %in% c(0, 997), 'Asia', e$tarContinent)
+e$sourceContinent <- ifelse(e$sourceNum %in% c(345, 347), 'Europe', e$sourceContinent)
+e$tarContinent <- ifelse(e$sourceNum %in% c(345, 347), 'Europe', e$tarContinent)
 ###
-head(e)
 # ~7,000,000 observations
 
 eventsSub <- filter(e, sourceSec %in% c('GOV') & tarSec %in% c('GOV'))
@@ -390,8 +395,8 @@ head(eCounts)
 # still same number of observations
 
 ## join cow codes/cow numbers/binary dispute indicator ###
-varsSource <- c('sourceName', 'sourceNum')
-varsTar <- c('tarName', 'tarNum')
+varsSource <- c('sourceName', 'sourceNum', 'sourceContinent')
+varsTar <- c('tarName', 'tarNum', 'tarContinent')
 eventsCowSource <- e %>% select(one_of(varsSource))
 eventsCowTar <- e %>% select(one_of(varsTar))
 
@@ -400,8 +405,8 @@ ect <- unique(eventsCowTar)
 
 ecs$sourceName[duplicated(ecs$sourceName)]
 
-eCounts <- left_join(eCounts, ecs, by = 'sourceNum')
-eCounts <- left_join(eCounts, ect, by = 'tarNum')
+eCounts2 <- left_join(eCounts, ecs, by = 'sourceNum')
+eCounts3 <- left_join(eCounts2, ect, by = 'tarNum')
 
 # do by number rather than name, problem with the conversion
 

@@ -50,6 +50,11 @@ shinyServer(function(input, output, session) {
       e$tarContinent <- countrycode(e$tarNum, 'cown', 'continent')
       e$sourceContinent <- ifelse(is.na(e$sourceContinent), '---', e$sourceContinent)
       e$tarContinent <- ifelse(is.na(e$tarContinent), '---', e$tarContinent)
+      # manual continent assignment for Hong Kong, Montenegro, Kosovo, Palestine
+      e$sourceContinent <- ifelse(e$sourceNum %in% c(0, 997), 'Asia', e$sourceContinent)
+      e$tarContinent <- ifelse(e$tarNum %in% c(0, 997), 'Asia', e$tarContinent)
+      e$sourceContinent <- ifelse(e$sourceNum %in% c(345, 347), 'Europe', e$sourceContinent)
+      e$tarContinent <- ifelse(e$tarNum %in% c(345, 347), 'Europe', e$tarContinent)
       ###
       updateCheckboxGroupInput(session, "continents", choices = sort(unique(e$sourceContinent)), selected = unique(e$sourceContinent))
       updateCheckboxGroupInput(session, "sectors", choices = sort(unique(e$sourceSec)))
@@ -95,7 +100,6 @@ shinyServer(function(input, output, session) {
       incProgress(amount = .33, message = 'aggregating data...')
       
       # build count data
-      print(eventsSub)
       eCounts <- event.counts(eventsSub, 'date', 'sourceNum', 'tarNum', eCode)
       # end <- nCodes - 1
       eCounts$n <- rowSums(eCounts[,4:ncol(eCounts)])
@@ -132,8 +136,8 @@ shinyServer(function(input, output, session) {
       master$colLoadings <- caCol
       
       ### join cow codes/cow numbers/binary dispute indicator ###
-      varsSource <- c('sourceName', 'sourceNum')
-      varsTar <- c('tarName', 'tarNum')
+      varsSource <- c('sourceName', 'sourceNum', 'sourceContinent')
+      varsTar <- c('tarName', 'tarNum', 'tarContinent')
       eventsCowSource <- master$events0 %>% select(one_of(varsSource))
       eventsCowTar <- master$events0 %>% select(one_of(varsTar))
       

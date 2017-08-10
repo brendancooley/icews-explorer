@@ -300,3 +300,114 @@ e$sourceContinent <- countrycode(e$sourceNum, 'cown', 'continent')
 e$tarContinent <- countrycode(e$tarNum, 'cown', 'continent')
 ifelse(is.na(e$sourceContinent), '---', e$sourceContinent)
 ifelse(is.na(e$tarContinent), '---', e$tarContinent)
+
+
+
+
+### truplication problem
+
+# ym quad GOV-GOV
+
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+libs <- c('shiny', 'dplyr', 'readr', 'tidyr', 'lubridate', 'plotly', 'zoo', 'ca', 'repmis',
+          'countrycode')
+ipak(libs)
+
+event.counts <- function(events, agg.date, source, target, code) {
+  counts <- events %>%
+    group_by_(agg.date, source, target, code) %>%
+    summarise(n = n()) %>%
+    ungroup()  # this seems trivial but screws up a lot of stuff if you don't do it
+  output <- spread_(counts, code, 'n')
+  output[is.na(output)] <- 0
+  return(output)
+}
+
+
+### Load Data ###
+hensel1995 <- read_csv('hensel1995.csv')
+disputesMall <- read_csv('disputesMall.csv')
+disputesYall <- read_csv('disputesYall.csv')
+
+cameoNames <- read_csv('CAMEO Codes.csv')
+cameoNames$cameoCode <- as.factor(cameoNames$cameoCode)
+
+quad <- c(1,2,3,4)
+quadN <- c('Verbal Cooperation', 'Material Cooperation', 'Verbal Conflict', 'Material Conflict')
+quadNames <- data.frame(as.factor(quad), quadN)
+colnames(quadNames) <- c('quadCode', 'quadN')
+
+e <- source_data('https://www.dropbox.com/s/koctuiks16uyxal/events.csv?dl=1', header=T, sep=",")
+e <- as_tibble(e)
+# add continent variable
+### TODO move this to preprocessing and fix non matches
+e$sourceContinent <- countrycode(e$sourceNum, 'cown', 'continent')
+e$tarContinent <- countrycode(e$tarNum, 'cown', 'continent')
+e$sourceContinent <- ifelse(is.na(e$sourceContinent), '---', e$sourceContinent)
+e$tarContinent <- ifelse(is.na(e$tarContinent), '---', e$tarContinent)
+###
+head(e)
+# ~7,000,000 observations
+
+eventsSub <- filter(e, sourceSec %in% c('GOV') & tarSec %in% c('GOV'))
+eventsSub$date <- eventsSub$ym
+# ~ 1,600,000 observations
+
+eCode <- 'quad'
+nCodes <- length(unique(eventsSub$quad))
+codes <- unique(eventsSub$quad)
+
+# build count data
+eCounts <- event.counts(eventsSub, 'date', 'sourceNum', 'tarNum', eCode)
+# end <- nCodes - 1
+eCounts$n <- rowSums(eCounts[,4:ncol(eCounts)])
+# filter <nfloor event dyads (greater than 10)
+eCounts <- filter(eCounts, n >= 10)
+# 35,625 observations
+eCountsdyym <- select(eCounts, one_of('sourceNum', 'tarNum', 'date'))
+
+# same number of observations, no duplication here
+unique(eCountsdyym)
+
+
+countData <- eCounts[,colnames(eCounts) %in% codes]
+countData <- countData[,colSums(countData) > 0]
+eCountsCA <- ca(countData, nd=2)
+caBeta <- as_tibble(eCountsCA$rowcoord)
+betas <- c()
+for (i in 1:2) {
+  betas <- c(betas, paste('beta', i, sep=""))
+}
+colnames(caBeta) <- betas
+eCounts <- bind_cols(eCounts, caBeta)
+head(eCounts)
+# still same number of observations
+
+## join cow codes/cow numbers/binary dispute indicator ###
+varsSource <- c('sourceName', 'sourceNum')
+varsTar <- c('tarName', 'tarNum')
+eventsCowSource <- e %>% select(one_of(varsSource))
+eventsCowTar <- e %>% select(one_of(varsTar))
+
+ecs <- unique(eventsCowSource)
+ect <- unique(eventsCowTar)
+
+ecs$sourceName[duplicated(ecs$sourceName)]
+
+eCounts <- left_join(eCounts, ecs, by = 'sourceNum')
+eCounts <- left_join(eCounts, ect, by = 'tarNum')
+
+# do by number rather than name, problem with the conversion
+
+eCounts <- left_join(eCounts, disputesMall, by = c('sourceNum', 'tarNum', 'date'))
+
+
+unique(disputesMall)
+disputesYall
+unique(disputesYall)

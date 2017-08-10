@@ -58,6 +58,10 @@ colnames(disputesYts) <- c('date', 'tarNum', 'sourceNum')
 disputesYall <- bind_rows(disputesYst, disputesYts)
 disputesYall$dispute <- 1
 
+# there are duplicates because there are sometimes muliple disputes
+# we only want an indicator so clean these up
+disputesYall <- unique(disputesYall)
+
 write_csv(disputesYall, 'disputesYall.csv')
 
 
@@ -83,6 +87,8 @@ colnames(disputesMts) <- c('date', 'tarNum', 'sourceNum')
 disputesMall <- bind_rows(disputesMst, disputesMts)
 disputesMall$date <- as.yearmon(disputesMall$date)
 disputesMall$dispute <- 1
+
+disputesMall <- unique(disputesMall)
 
 write_csv(disputesMall, 'disputesMall.csv')
 

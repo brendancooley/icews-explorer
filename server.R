@@ -51,7 +51,6 @@ shinyServer(function(input, output, session) {
       e$sourceContinent <- ifelse(is.na(e$sourceContinent), '---', e$sourceContinent)
       e$tarContinent <- ifelse(is.na(e$tarContinent), '---', e$tarContinent)
       ###
-      print(unique(e$sourceContinent))
       updateCheckboxGroupInput(session, "continents", choices = sort(unique(e$sourceContinent)), selected = unique(e$sourceContinent))
       updateCheckboxGroupInput(session, "sectors", choices = sort(unique(e$sourceSec)))
       output$loadStatus <- renderText('Event data loaded. Ready to build count data.')
@@ -96,7 +95,8 @@ shinyServer(function(input, output, session) {
       incProgress(amount = .33, message = 'aggregating data...')
       
       # build count data
-      eCounts <- event.counts(eventsSub, 'date', 'sourceName', 'tarName', eCode)
+      print(eventsSub)
+      eCounts <- event.counts(eventsSub, 'date', 'sourceNum', 'tarNum', eCode)
       # end <- nCodes - 1
       eCounts$n <- rowSums(eCounts[,4:ncol(eCounts)])
       # filter <nfloor event dyads
@@ -140,8 +140,8 @@ shinyServer(function(input, output, session) {
       ecs <- unique(eventsCowSource)
       ect <- unique(eventsCowTar)
       
-      eCounts <- left_join(eCounts, ecs, by = 'sourceName')
-      eCounts <- left_join(eCounts, ect, by = 'tarName')
+      eCounts <- left_join(eCounts, ecs, by = 'sourceNum')
+      eCounts <- left_join(eCounts, ect, by = 'tarNum')
 
       # merge hensel indicators
       if(input$agglevel == 'Month') {
@@ -151,8 +151,6 @@ shinyServer(function(input, output, session) {
         eCounts <- left_join(eCounts, disputesYall, by = c('sourceNum', 'tarNum', 'date'))
       }
       eCounts$dispute <- ifelse(is.na(eCounts$dispute), 0, eCounts$dispute)
-      
-      test <- filter(eCounts, dispute == 1)
       
       ### save and output data ###
       master$eCounts <- eCounts

@@ -84,7 +84,6 @@ shinyServer(function(input, output, session) {
       }
       else {
         eventsSub$date <- eventsSub$y
-        # eventsSub$date <- ymd(sprintf("%d-01-01",eventsSub$date))
       }
 
       # event coding

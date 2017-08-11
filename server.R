@@ -8,8 +8,12 @@ ipak <- function(pkg){
 }
 
 libs <- c('shiny', 'dplyr', 'readr', 'tidyr', 'lubridate', 'plotly', 'zoo', 'ca', 'repmis',
-          'countrycode')
+          'countrycode', 'knitr', 'knitcitations', 'bibtex', 'shinyjs', 'V8')
 ipak(libs)
+
+# citations for README
+write.bib(libs)
+bib <- read.bib('Rpackages.bib')
 
 event.counts <- function(events, agg.date, source, target, code) {
   counts <- events %>%

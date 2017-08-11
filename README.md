@@ -107,3 +107,59 @@ The file 'clAnalysis.R' conducts a brief analysis of the scalings produced by th
 |Material Conflict    |   2.3445690| -3.6881863|  3.4936377|  3.4125436|  3.3192515|  3.3016508|  3.2338664|  3.1434710|  3.1345373|  3.0321333|
 
 The results show that the first dimension tends to distinguish cooperative from conflictual events, while the second dimension tends to distinguish verbal from material events. Note, however, that the scale sometimes flips. While conflictual events usually have negative values on the first dimensions, in some cases the most conflictual events take on positive values. The absolute values of the column loadings are relatively consistent, however, providing us with some confidence that the scaling algorithm is recovering a similar scale at each thresholds. Users should always check the column loadings before proceeding to analysis, to ensure that coefficients are interpreted properly.
+
+## References
+
+Chang W, Cheng J, Allaire J, Xie Y and McPherson J (2017). _shiny: Web Application
+Framework for R_. R package version 1.0.3, <URL:
+https://CRAN.R-project.org/package=shiny>.
+
+Wickham H, Francois R, Henry L and Müller K (2017). _dplyr: A Grammar of Data
+Manipulation_. R package version 0.7.2, <URL:
+https://CRAN.R-project.org/package=dplyr>.
+
+Wickham H, Hester J and Francois R (2016). _readr: Read Tabular Data_. R package
+version 1.0.0, <URL: https://CRAN.R-project.org/package=readr>.
+
+Wickham H (2017). _tidyr: Easily Tidy Data with 'spread()' and 'gather()'
+Functions_. R package version 0.6.3, <URL:
+https://CRAN.R-project.org/package=tidyr>.
+
+Grolemund G and Wickham H (2011). “Dates and Times Made Easy with lubridate.”
+_Journal of Statistical Software_, *40*(3), pp. 1-25. <URL:
+http://www.jstatsoft.org/v40/i03/>.
+
+Sievert C, Parmer C, Hocking T, Chamberlain S, Ram K, Corvellec M and Despouy P
+(2017). _plotly: Create Interactive Web Graphics via 'plotly.js'_. R package version
+4.7.0, <URL: https://CRAN.R-project.org/package=plotly>.
+
+Zeileis A and Grothendieck G (2005). “zoo: S3 Infrastructure for Regular and
+Irregular Time Series.” _Journal of Statistical Software_, *14*(6), pp. 1-27. doi:
+10.18637/jss.v014.i06 (URL: http://doi.org/10.18637/jss.v014.i06).
+
+Nenadic O and Greenacre M (2007). “Correspondence Analysis in R, with two- and
+three-dimensional graphics: The ca package.” _Journal of Statistical Software_,
+*20*(3), pp. 1-13. <URL: http://www.jstatsoft.org>.
+
+Gandrud C (2016). _repmis: Miscellaneous Tools for Reproducible Research_. R package
+version 0.5, <URL: https://CRAN.R-project.org/package=repmis>.
+
+Arel-Bundock V (2017). _countrycode: Convert Country Names and Country Codes_. R
+package version 0.19, <URL: https://CRAN.R-project.org/package=countrycode>.
+
+Xie Y (2017). _knitr: A General-Purpose Package for Dynamic Report Generation in R_.
+R package version 1.16, <URL: http://yihui.name/knitr/>.
+
+Xie Y (2015). _Dynamic Documents with R and knitr_, 2nd edition. Chapman and
+Hall/CRC, Boca Raton, Florida. ISBN 978-1498716963, <URL: http://yihui.name/knitr/>.
+
+Xie Y (2014). “knitr: A Comprehensive Tool for Reproducible Research in R.” In
+Stodden V, Leisch F and Peng RD (eds.), _Implementing Reproducible Computational
+Research_. Chapman and Hall/CRC. ISBN 978-1466561595, <URL:
+http://www.crcpress.com/product/isbn/9781466561595>.
+
+Boettiger C (2017). _knitcitations: Citations for 'Knitr' Markdown Files_. R package
+version 1.0.8, <URL: https://CRAN.R-project.org/package=knitcitations>.
+
+Francois R (2017). _bibtex: Bibtex Parser_. R package version 0.4.2, <URL:
+https://CRAN.R-project.org/package=bibtex>.

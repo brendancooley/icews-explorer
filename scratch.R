@@ -416,3 +416,6 @@ eCounts <- left_join(eCounts, disputesMall, by = c('sourceNum', 'tarNum', 'date'
 unique(disputesMall)
 disputesYall
 unique(disputesYall)
+
+e <- read_csv('/Users/brendancooley/Dropbox/2016-2017/Lee Prather/Paper 1 - Enforcement Effects/ICEWS analysis/territorial dispute data/events.csv')
+

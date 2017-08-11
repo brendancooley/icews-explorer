@@ -25,7 +25,7 @@ The script 'icewsReadr.R' processes the .txt files produced by the Schrodt softw
 
 The application allows users flexibility in how they filter and scale this data. 
 
-[[https://raw.githubusercontent.com/brendancooley/icews-explorer/master/app_setup.png]]
+![setup](https://raw.githubusercontent.com/brendancooley/icews-explorer/master/app_setup.png)
 
 In the first step, users load the raw data. This can take a few minutes due to the size of the underlying event data. Once the data is loaded, a table of event counts by source sector is produced. In step 2, users filter and scale the data. Filtering can occur by continent and sector. For example, if only 'Africa' and 'GOV' are selected under 'Continents' and 'Sectors,' respectively, then only events that occured between governments in Africa will be included. In server.R, 
 
@@ -84,7 +84,7 @@ master$colLoadings <- caCol
 
 Once the data has been produced, users can either download it or proceed to the visualization on the second tab, an example of which is reproduced here:
 
-[[https://raw.githubusercontent.com/brendancooley/icews-explorer/master/app_viz.png]]
+![viz](https://raw.githubusercontent.com/brendancooley/icews-explorer/master/app_viz.png)
 
 The file 'clAnalysis.R' conducts a brief analysis of the scalings produced by the correspondence analysis. It conducts a two-dimensional scaling of government-government events aggregated by year-month and categorized by quad score (verbal/material conflict/cooperation) for various event count floors. The column loadings produced by these scalings are reproduced here.
 

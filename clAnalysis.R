@@ -46,8 +46,7 @@ for (i in 1:10) {
   collabel <- paste0('floor', i)
   dim1 <- caCol %>% pull(Dim1)
   dim2 <- caCol %>% pull(Dim2)
-  print(dim1)
-  
+
   Dim1[ , collabel] <- dim1
   Dim2[ , collabel] <- dim2
 }

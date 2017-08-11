@@ -90,20 +90,20 @@ The file 'clAnalysis.R' conducts a brief analysis of the scalings produced by th
 
 **Dimension 1:**
 
-|quadN                |     floor0|     floor1|     floor2|     floor3|     floor4|     floor5|     floor6|     floor7|     floor8|     floor9|    floor10|
-|:--------------------|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
-|Verbal Cooperation   | -0.2017274| -0.2017274| -0.1947035| -0.1920362| -0.1915102| -0.1913303| -0.1923145| -0.1927148|  0.1930594|  0.1943069|  0.1941384|
-|Material Cooperation |  3.0103006|  3.0103006|  2.0539494|  1.7426425|  1.6082685|  1.5237554|  1.4780429|  1.4691721| -1.4494438| -1.4478242| -1.4006162|
-|Verbal Conflict      |  2.1606949|  2.1606949|  2.1504111|  2.0758776|  2.0382932|  1.9940767|  1.9919117|  1.9534699| -1.9063064| -1.9097470| -1.8559348|
-|Material Conflict    |  7.5817133|  7.5817133|  7.8087666|  7.8339917|  7.8041390|  7.7640850|  7.7096856|  7.6726670| -7.6251326| -7.5728805| -7.5338724|
+|quadN                |     floor1|     floor2|     floor3|     floor4|     floor5|     floor6|     floor7|     floor8|     floor9|    floor10|
+|:--------------------|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
+|Verbal Cooperation   | -0.2017274| -0.1947035| -0.1920362| -0.1915102| -0.1913303| -0.1923145| -0.1927148|  0.1930594|  0.1943069|  0.1941384|
+|Material Cooperation |  3.0103006|  2.0539494|  1.7426425|  1.6082685|  1.5237554|  1.4780429|  1.4691721| -1.4494438| -1.4478242| -1.4006162|
+|Verbal Conflict      |  2.1606949|  2.1504111|  2.0758776|  2.0382932|  1.9940767|  1.9919117|  1.9534699| -1.9063064| -1.9097470| -1.8559348|
+|Material Conflict    |  7.5817133|  7.8087666|  7.8339917|  7.8041390|  7.7640850|  7.7096856|  7.6726670| -7.6251326| -7.5728805| -7.5338724|
 
 **Dimension 2:**
 
-|quadN                |      floor0|      floor1|     floor2|     floor3|     floor4|     floor5|     floor6|     floor7|     floor8|     floor9|    floor10|
-|:--------------------|-----------:|-----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
-|Verbal Cooperation   |   0.0387312|   0.0387312| -0.1210403|  0.1230214|  0.1246692|  0.1262031|  0.1261990|  0.1276886|  0.1292959|  0.1287924|  0.1306992|
-|Material Cooperation | -10.1848151| -10.1848151|  0.3907325| -0.1428822| -0.1667697| -0.1423416| -0.0927976| -0.0856832| -0.0560325|  0.0289781|  0.0347545|
-|Verbal Conflict      |   0.7294221|   0.7294221|  5.0928095| -5.1174553| -5.1092452| -5.1041054| -5.0795993| -5.0679168| -5.0608281| -5.0411647| -5.0434213|
-|Material Conflict    |   2.3445690|   2.3445690| -3.6881863|  3.4936377|  3.4125436|  3.3192515|  3.3016508|  3.2338664|  3.1434710|  3.1345373|  3.0321333|
+|quadN                |      floor1|     floor2|     floor3|     floor4|     floor5|     floor6|     floor7|     floor8|     floor9|    floor10|
+|:--------------------|-----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
+|Verbal Cooperation   |   0.0387312| -0.1210403|  0.1230214|  0.1246692|  0.1262031|  0.1261990|  0.1276886|  0.1292959|  0.1287924|  0.1306992|
+|Material Cooperation | -10.1848151|  0.3907325| -0.1428822| -0.1667697| -0.1423416| -0.0927976| -0.0856832| -0.0560325|  0.0289781|  0.0347545|
+|Verbal Conflict      |   0.7294221|  5.0928095| -5.1174553| -5.1092452| -5.1041054| -5.0795993| -5.0679168| -5.0608281| -5.0411647| -5.0434213|
+|Material Conflict    |   2.3445690| -3.6881863|  3.4936377|  3.4125436|  3.3192515|  3.3016508|  3.2338664|  3.1434710|  3.1345373|  3.0321333|
 
 The results show that the first dimension tends to distinguish cooperative from conflictual events, while the second dimension tends to distinguish verbal from material events. Note, however, that the scale sometimes flips. While conflictual events usually have negative values on the first dimensions, in some cases the most conflictual events take on positive values. The absolute values of the column loadings are relatively consistent, however, providing us with some confidence that the scaling algorithm is recovering a similar scale at each thresholds. Users should always check the column loadings before proceeding to analysis, to ensure that coefficients are interpreted properly.

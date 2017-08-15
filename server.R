@@ -146,6 +146,8 @@ shinyServer(function(input, output, session) {
       
       ecs <- unique(eventsCowSource)
       ect <- unique(eventsCowTar)
+      ecs$sourceName[ecs$sourceNum == 345] <- 'Yugoslavia'
+      ect$tarName[ect$tarNum == 345] <- 'Yugoslavia'
       
       eCounts <- left_join(eCounts, ecs, by = 'sourceNum')
       eCounts <- left_join(eCounts, ect, by = 'tarNum')

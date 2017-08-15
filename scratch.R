@@ -402,16 +402,20 @@ eventsCowTar <- e %>% select(one_of(varsTar))
 
 ecs <- unique(eventsCowSource)
 ect <- unique(eventsCowTar)
+ecs$sourceName[ecs$sourceNum == 345] <- 'Yugoslavia'
+ect$tarName[ect$tarNum == 345] <- 'Yugoslavia'
+
+ecs %>% arrange(sourceName) %>% print(n=200)
 
 ecs$sourceName[duplicated(ecs$sourceName)]
 
-eCounts2 <- left_join(eCounts, ecs, by = 'sourceNum')
-eCounts3 <- left_join(eCounts2, ect, by = 'tarNum')
+eCounts <- left_join(eCounts, ecs, by = 'sourceNum')
+eCounts <- left_join(eCounts, ect, by = 'tarNum')
 
 # do by number rather than name, problem with the conversion
 
 eCounts <- left_join(eCounts, disputesMall, by = c('sourceNum', 'tarNum', 'date'))
-
+sort(unique(eCounts$sourceName))
 
 unique(disputesMall)
 disputesYall

@@ -1,0 +1,80 @@
+---
+title: "ICEWS Descriptive Analysis"
+author: "Brendan Cooley"
+date: "August 24, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+libs <- c('dplyr', 'readr', 'tidyr', 'repmis', 'ggplot2', 'zoo', 'knitr', 'countrycode')
+ipak(libs)
+```
+
+```{r readnclean, include=FALSE}
+# get data
+events <- source_data('https://www.dropbox.com/s/koctuiks16uyxal/events.csv?dl=1', header=T, sep=",")
+events <- as_tibble(events)
+# add continent variable
+events$sourceContinent <- countrycode(events$sourceNum, 'cown', 'continent')
+events$tarContinent <- countrycode(events$tarNum, 'cown', 'continent')
+events$sourceContinent <- ifelse(is.na(events$sourceContinent), '---', events$sourceContinent)
+events$tarContinent <- ifelse(is.na(events$tarContinent), '---', events$tarContinent)
+# manual continent assignment for Hong Kong, Montenegro, Kosovo, Palestine
+events$sourceContinent <- ifelse(events$sourceNum %in% c(0, 997), 'Asia', events$sourceContinent)
+events$tarContinent <- ifelse(events$tarNum %in% c(0, 997), 'Asia', events$tarContinent)
+events$sourceContinent <- ifelse(events$sourceNum %in% c(345, 347), 'Europe', events$sourceContinent)
+events$tarContinent <- ifelse(events$tarNum %in% c(345, 347), 'Europe', events$tarContinent)
+```
+
+The data explored here is subsetted to include only inter-state events. Events that occur between actors within countries are not included. In these data, there are `r format(nrow(events), big.mark=",", scientific=FALSE)` unique events between Apr. 1995 and Dec. 2015, covering `r length(unique(events$sourceName))` unique countries (there are 15,220,347 total events in the broader ICEWS database). Back of the envelope calculations show that this means there are 6-7 events per day per country in the data (events / (365*15) / countries). With The plot below shows the number of events by year-month (looks comfortingly similar to the plot produced here: http://andybeger.com/2015/04/08/public-icews-data/)
+
+```{r timePlot, message=FALSE, warning=FALSE}
+events$ym <- as.yearmon(events$ym)
+countsYM <- events %>% group_by(ym) %>% summarise(n = n()) %>% ungroup()
+
+ggplot(countsYM, aes(x=ym, y=n)) +
+  geom_line() +
+  theme_classic()
+```
+
+The distribution over continents (by source continent) is shown here:
+```{r continents}
+countsContinent <- events %>% group_by(sourceContinent) %>%
+    summarise(n=prettyNum(n(), big.mark=","))
+kable(countsContinent)
+```
+
+The following table shows the number of events for each source category.
+```{r sectors}
+countsSec <- events %>% group_by(sourceSec) %>%
+    summarise(n=prettyNum(n(), big.mark=","))
+GG <- filter(events, sourceSec == 'GOV' & tarSec == 'GOV')
+kable(countsSec)
+```
+
+`r format(nrow(GG), big.mark=",", scientific=FALSE)` of the events are government-government interactions.
+
+Here's the distribution by quad code:
+```{r quad}
+countsQuad <- events %>% group_by(quad) %>%
+    summarise(n=prettyNum(n(), big.mark=","))
+colnames(countsQuad) <- c('quadCode', 'n')
+
+quad <- c(1,2,3,4)
+quadN <- c('Verbal Cooperation', 'Material Cooperation', 'Verbal Conflict', 'Material Conflict')
+quadNames <- data.frame(as.integer(quad), quadN)
+colnames(quadNames) <- c('quadCode', 'quadName')
+
+countsQuad <- left_join(quadNames, countsQuad, by='quadCode')
+
+kable(countsQuad)
+```

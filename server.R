@@ -28,6 +28,7 @@ event.counts <- function(events, agg.date, source, target, code) {
 ### Load Data ###
 hensel1995 <- read_csv('hensel1995.csv')
 disputesMall <- read_csv('disputesMall.csv')
+disputesMall$date <- as.yearmon(disputesMall$date)
 disputesYall <- read_csv('disputesYall.csv')
 
 cameoNames <- read_csv('CAMEO Codes.csv')
@@ -59,6 +60,8 @@ shinyServer(function(input, output, session) {
       e$tarContinent <- ifelse(e$tarNum %in% c(0, 997), 'Asia', e$tarContinent)
       e$sourceContinent <- ifelse(e$sourceNum %in% c(345, 347), 'Europe', e$sourceContinent)
       e$tarContinent <- ifelse(e$tarNum %in% c(345, 347), 'Europe', e$tarContinent)
+      # convert yearmon back to date object
+      e$ym <- as.yearmon(e$ym)
       ###
       updateCheckboxGroupInput(session, "continents", choices = sort(unique(e$sourceContinent)), selected = unique(e$sourceContinent))
       updateCheckboxGroupInput(session, "sectors", choices = sort(unique(e$sourceSec)))

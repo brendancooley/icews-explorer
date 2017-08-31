@@ -423,3 +423,24 @@ unique(disputesYall)
 
 e <- read_csv('/Users/brendancooley/Dropbox/2016-2017/Lee Prather/Paper 1 - Enforcement Effects/ICEWS analysis/territorial dispute data/events.csv')
 
+
+
+### descriptive stats
+events <- as_tibble(events)
+# add continent variable
+events$sourceContinent <- countrycode(events$sourceNum, 'cown', 'continent')
+events$tarContinent <- countrycode(events$tarNum, 'cown', 'continent')
+events$sourceContinent <- ifelse(is.na(events$sourceContinent), '---', events$sourceContinent)
+events$tarContinent <- ifelse(is.na(events$tarContinent), '---', events$tarContinent)
+# manual continent assignment for Hong Kong, Montenegro, Kosovo, Palestine
+events$sourceContinent <- ifelse(events$sourceNum %in% c(0, 997), 'Asia', events$sourceContinent)
+events$tarContinent <- ifelse(events$tarNum %in% c(0, 997), 'Asia', events$tarContinent)
+events$sourceContinent <- ifelse(events$sourceNum %in% c(345, 347), 'Europe', events$sourceContinent)
+events$tarContinent <- ifelse(events$tarNum %in% c(345, 347), 'Europe', events$tarContinent)
+
+countsContinent <- events %>% group_by(sourceContinent) %>%
+  summarise(n=prettyNum(n(), big.mark=","))
+kable(countsContinent)
+
+
+disputesMall$date <- ymd(sprintf("%d-01-01", disputesMall$date))
